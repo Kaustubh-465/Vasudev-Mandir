@@ -41,8 +41,8 @@ export default function HomePage() {
 
           <p className="text-base sm:text-lg text-amber-200/90 font-devanagari max-w-xl mx-auto leading-relaxed">
             {language === "mr"
-              ? "भोगावती नदी, वाटेगाव येथे स्थित श्री वासुदेव मंदिर."
-              : "Shree Vasudev Mandir situated along Bhogawati river in Wategaon (Sangli)."}
+              ? "भोगावती नदीच्या तीरावर स्थित वातेगावचे श्री वासुदेव मंदिर."
+              : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon (Sangli)."}
           </p>
         </div>
       </section>
@@ -103,8 +103,8 @@ export default function HomePage() {
           </h2>
           <p className="text-gray-600 font-devanagari max-w-xl mx-auto">
             {language === "mr"
-              ? "भोगावती नदी काठ स्थित या देवस्थानाची प्रमुख वैशिष्ट्ये"
-              : "Key highlights of the shrine situated along Bhogawati river"}
+              ? "भोगावती नदीच्या तीरावर वसलेल्या या देवस्थानाची प्रमुख वैशिष्ट्ये"
+              : "Key highlights of the shrine situated on the banks of Bhogawati river"}
           </p>
         </div>
 
@@ -147,7 +147,7 @@ export default function HomePage() {
             </h3>
             <p className="text-xs text-amber-200/80 font-devanagari leading-relaxed">
               {language === "mr"
-                ? "भोगावती नदी, मंदिर स्थापना व सागवानी लाकडी स्थापत्य."
+                ? "भोगावती नदीच्या तीरावर मंदिर स्थापना, सागवानी लाकडी स्थापत्य."
                 : "Historical background, teakwood mandap construction, and Divekar heritage."}
             </p>
           </Link>
@@ -192,7 +192,7 @@ export default function HomePage() {
             </h3>
             <p className="text-xs text-gray-700 font-devanagari leading-relaxed">
               {language === "mr"
-                ? "वाटेगाव (ता. वाळवा, जि. सांगली) मंदिराचा सविस्तर पत्ता व नकाशे."
+                ? "वातेगाव (ता. वाळवा, जि. सांगली) मंदिराचा सविस्तर पत्ता व नकाशे."
                 : "Detailed address, road/bus routes, and Google Maps location pin."}
             </p>
           </Link>
