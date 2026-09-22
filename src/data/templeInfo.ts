@@ -50,7 +50,7 @@ export const templeData: TempleData = {
   },
   quickStats: [
     { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव (सांगली)", en: "Wategaon (Sangli)" } },
-    { label: { mr: "भक्तिमय नदी", en: "Holy River" }, value: { mr: "भोगावती नदीकाठ", en: "Bhogawati River Bank" } },
+    { label: { mr: "भोगावती नदी", en: "Holy River" }, value: { mr: "भोगावती नदीकाठ", en: "Bhogawati River Bank" } },
     { label: { mr: "मुख्य देवता", en: "Main Deity" }, value: { mr: "श्री वासुदेव (श्रीकृष्ण)", en: "Shree Vasudev (Krishna)" } },
     { label: { mr: "वार्षिक उत्सव", en: "Annual Festival" }, value: { mr: "महिन्याचा दीपोत्सव", en: "Month-long Deepotsav" } },
   ],
@@ -85,5 +85,6 @@ export const templeData: TempleData = {
     },
   ],
 };
+
 
 
