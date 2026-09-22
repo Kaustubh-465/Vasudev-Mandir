@@ -1,4 +1,4 @@
-﻿export interface TempleData {
+export interface TempleData {
   title: { mr: string; en: string };
   subtitle: { mr: string; en: string };
   tagline: { mr: string; en: string };
@@ -28,12 +28,12 @@ export const templeData: TempleData = {
     en: "Shree Vasudev Mandir, Wategaon",
   },
   subtitle: {
-    mr: "वाटेगाव (जि. सांगली) • भोगावती नदीतीर",
-    en: "Wategaon (Sangli) • Bhogawati River Bank",
+    mr: "वाटेगाव (जि. सांगली) • भोगावती नदी",
+    en: "Wategaon (Sangli) • Bhogawati River",
   },
   tagline: {
-    mr: "॥ ॐ नमो भगवते वासुदेवाय ॥ • भोगावती नदीच्या भक्तिमय तीरावर स्थित श्री वासुदेव देवस्थान",
-    en: "॥ Om Namo Bhagavate Vasudevaya ॥ • Sacred shrine situated on the banks of Bhogawati river",
+    mr: "॥ ॐ नमो भगवते वासुदेवाय ॥ • भोगावती नदी, वाटेगाव",
+    en: "॥ Om Namo Bhagavate Vasudevaya ॥ • Bhogawati River, Wategaon",
   },
   location: {
     village: { mr: "वाटेगाव", en: "Wategaon" },
@@ -41,8 +41,8 @@ export const templeData: TempleData = {
     district: { mr: "सांगली", en: "Sangli" },
     state: { mr: "महाराष्ट्र", en: "Maharashtra" },
     fullAddress: {
-      mr: "भोगावती नदीकाठ, वाटेगाव, तालुका वाळवा, जिल्हा सांगली - ४१५४१०, महाराष्ट्र",
-      en: "Bhogawati River Bank, Wategaon, Taluka Walwa, District Sangli - 415410, Maharashtra",
+      mr: "भोगावती नदी, वाटेगाव, तालुका वाळवा, जिल्हा सांगली - ४१५४१०, महाराष्ट्र",
+      en: "Bhogawati River, Wategaon, Taluka Walwa, District Sangli - 415410, Maharashtra",
     },
     river: { mr: "भोगावती नदी", en: "Bhogawati River" },
     googleMapsUrl: "https://maps.google.com/?q=Wategaon+Sangli+Maharashtra",
@@ -50,7 +50,7 @@ export const templeData: TempleData = {
   },
   quickStats: [
     { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव (सांगली)", en: "Wategaon (Sangli)" } },
-    { label: { mr: "भोगावती नदी", en: "Holy River" }, value: { mr: "भोगावती नदीकाठ", en: "Bhogawati River Bank" } },
+    { label: { mr: "नदी", en: "River" }, value: { mr: "भोगावती नदी", en: "Bhogawati River" } },
     { label: { mr: "मुख्य देवता", en: "Main Deity" }, value: { mr: "श्री वासुदेव (श्रीकृष्ण)", en: "Shree Vasudev (Krishna)" } },
     { label: { mr: "वार्षिक उत्सव", en: "Annual Festival" }, value: { mr: "महिन्याचा दीपोत्सव", en: "Month-long Deepotsav" } },
   ],
@@ -72,8 +72,8 @@ export const templeData: TempleData = {
     {
       title: { mr: "उत्तराभिमुख मंदिर", en: "North-facing Layout" },
       desc: {
-        mr: "भोगावती नदीच्या भक्तिमय तीरावर वसलेले उत्तराभिमुख मंदिर आणि शांत आध्यात्मिक परिसर.",
-        en: "North-facing sacred layout situated peacefully on the holy banks of Bhogawati river.",
+        mr: "भोगावती नदीकाठ उत्तराभिमुख मंदिर आणि शांत परिसर.",
+        en: "North-facing layout situated along Bhogawati river.",
       },
     },
     {
@@ -85,6 +85,3 @@ export const templeData: TempleData = {
     },
   ],
 };
-
-
-

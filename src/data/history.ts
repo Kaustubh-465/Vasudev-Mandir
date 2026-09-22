@@ -32,7 +32,7 @@ export const templeHistory: HistorySection = {
       period: { mr: "मंदिर स्थापना", en: "Temple Foundation" },
       event: { mr: "उत्तराभिमुख मंदिर रचना", en: "North-facing Layout" },
       description: {
-        mr: "भोगावती नदीकाठी दिवेकर पूर्वजांकडून उत्तराभिमुख वासुदेव मंदिराची स्थापना व सागवानी लाकडी सभामंडपाची उभारणी.",
+        mr: "भोगावती नदीी दिवेकर पूर्वजांकडून उत्तराभिमुख वासुदेव मंदिराची स्थापना व सागवानी लाकडी सभामंडपाची उभारणी.",
         en: "Establishment of the north-facing temple and teakwood hall by Divekar ancestors along Bhogawati river.",
       },
     },
@@ -54,4 +54,5 @@ export const templeHistory: HistorySection = {
     },
   ],
 };
+
 

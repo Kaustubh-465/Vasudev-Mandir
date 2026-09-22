@@ -1,4 +1,4 @@
-export interface RouteOption {
+﻿export interface RouteOption {
   mode: { mr: string; en: string };
   icon: string;
   details: Array<{
@@ -11,7 +11,7 @@ export interface RouteOption {
 export const locationInfo = {
   address: {
     name: { mr: "श्री वासुदेव मंदिर", en: "Shree Vasudev Mandir" },
-    street: { mr: "भोगावती नदीकाठ, मंदिर गल्ली", en: "Bhogawati River Bank, Temple Street" },
+    street: { mr: "भोगावती नदी, मंदिर गल्ली", en: "Bhogawati River Bank, Temple Street" },
     village: { mr: "वाटेगाव", en: "Wategaon" },
     taluka: { mr: "वाळवा", en: "Walwa" },
     district: { mr: "सांगली", en: "Sangli" },
@@ -83,4 +83,5 @@ export const locationInfo = {
     },
   ],
 };
+
 
