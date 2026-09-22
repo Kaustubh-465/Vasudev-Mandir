@@ -10,29 +10,30 @@ import {
   BookOpen,
   MapPin,
   ChevronRight,
+  Sparkles,
 } from "lucide-react";
 
 export default function HomePage() {
   const { language } = useLanguage();
 
   return (
-    <div className="space-y-12 pb-16">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-temple-maroon via-temple-deepRed to-amber-950 text-white pt-16 pb-20 px-4 sm:px-6 lg:px-8 border-b-4 border-temple-gold overflow-hidden">
+    <div className="space-y-8 sm:space-y-12 pb-12 sm:pb-16">
+      {/* Hero Banner Section */}
+      <section className="relative bg-gradient-to-b from-temple-maroon via-temple-deepRed to-amber-950 text-white pt-10 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 border-b-4 border-temple-gold overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
 
-        <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 relative z-10">
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-6xl font-black text-amber-100 font-devanagari tracking-tight leading-tight drop-shadow-md">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-amber-100 font-devanagari tracking-tight leading-tight drop-shadow-md">
             {templeData.title[language]}
           </h1>
 
           {/* Subtitle & Description */}
-          <p className="text-xl sm:text-2xl font-bold text-temple-gold font-devanagari max-w-2xl mx-auto">
+          <p className="text-lg sm:text-2xl font-bold text-temple-gold font-devanagari max-w-2xl mx-auto">
             {templeData.subtitle[language]}
           </p>
 
-          <p className="text-base sm:text-lg text-amber-200/90 font-devanagari max-w-xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-lg text-amber-200/90 font-devanagari max-w-xl mx-auto leading-relaxed">
             {language === "mr"
               ? "भोगावती नदीच्या तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर."
               : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon (Sangli)."}
@@ -42,10 +43,10 @@ export default function HomePage() {
 
       {/* Feature Section: Vasudev Identity (Bhagwan Shri Krishna) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border-2 border-temple-gold/40 relative overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-8 space-y-4">
-              <h2 className="text-3xl font-black text-temple-maroon font-devanagari">
+        <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-xl border-2 border-temple-gold/40 relative overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+            <div className="lg:col-span-8 space-y-3 sm:space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
                 {language === "mr"
                   ? "वासुदेव म्हणजेच साक्षात भगवान श्रीकृष्ण!"
                   : "Vasudev is Bhagwan Shri Krishna Himself"}
@@ -60,7 +61,7 @@ export default function HomePage() {
               <div className="pt-2">
                 <Link
                   href="/who-is-vasudev"
-                  className="inline-flex items-center space-x-2 text-temple-saffron hover:text-temple-darkSaffron font-bold text-base group font-devanagari"
+                  className="inline-flex items-center space-x-2 text-temple-saffron hover:text-temple-darkSaffron font-bold text-sm sm:text-base group font-devanagari active:scale-95 transition-transform"
                 >
                   <span>{language === "mr" ? "सविस्तर माहिती व संदर्भ वाचा" : "Read Complete Details"}</span>
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -68,9 +69,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="lg:col-span-4 bg-gradient-to-br from-amber-50 to-amber-100 p-6 rounded-2xl border-2 border-amber-300/80 text-center space-y-3">
-              <div className="text-4xl">🪈</div>
-              <h3 className="text-xl font-bold text-temple-maroon font-devanagari">
+            <div className="lg:col-span-4 bg-gradient-to-br from-amber-50 to-amber-100 p-5 sm:p-6 rounded-2xl border-2 border-amber-300/80 text-center space-y-2.5">
+              <div className="text-3xl sm:text-4xl">🪈</div>
+              <h3 className="text-lg sm:text-xl font-bold text-temple-maroon font-devanagari">
                 {language === "mr" ? "॥ ॐ नमो भगवते वासुदेवाय ॥" : "Om Namo Bhagavate Vasudevaya"}
               </h3>
               <p className="text-xs text-amber-950 font-devanagari leading-relaxed">
@@ -84,31 +85,31 @@ export default function HomePage() {
       </section>
 
       {/* Main Highlights Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-black text-temple-maroon font-devanagari">
+          <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
             {language === "mr" ? "मंदिराची प्रमुख वैशिष्ट्ये" : "Temple Highlights"}
           </h2>
-          <p className="text-gray-600 font-devanagari max-w-xl mx-auto">
+          <p className="text-sm sm:text-base text-gray-600 font-devanagari max-w-xl mx-auto">
             {language === "mr"
               ? "भोगावती नदीच्या तीरावर वसलेल्या या देवस्थानाची प्रमुख वैशिष्ट्ये"
               : "Key highlights of the shrine situated on the banks of Bhogawati river"}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {templeData.keyHighlights.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white p-6 rounded-2xl shadow-lg border border-amber-200 space-y-3"
+              className="bg-white p-5 sm:p-6 rounded-2xl shadow-lg border border-amber-200 space-y-2.5 hover:shadow-xl transition-shadow"
             >
               <div className="w-10 h-10 rounded-xl bg-amber-100 text-temple-saffron flex items-center justify-center font-bold text-lg">
                 ✨
               </div>
-              <h3 className="text-xl font-bold text-temple-maroon font-devanagari">
+              <h3 className="text-lg sm:text-xl font-bold text-temple-maroon font-devanagari">
                 {item.title[language]}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed font-devanagari">
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-devanagari">
                 {item.desc[language]}
               </p>
             </div>
@@ -119,18 +120,18 @@ export default function HomePage() {
       {/* Portal Navigation Cards */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-black text-temple-maroon font-devanagari">
+          <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
             {language === "mr" ? "माहिती दालने" : "Temple Portal"}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <Link
             href="/history"
-            className="group bg-gradient-to-br from-amber-900 to-temple-maroon text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all space-y-3 border border-amber-600/40"
+            className="group bg-gradient-to-br from-amber-900 to-temple-maroon text-white p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl active:scale-98 transition-all space-y-2.5 border border-amber-600/40 touch-manipulation"
           >
-            <ScrollText className="w-7 h-7 text-temple-gold" />
-            <h3 className="text-xl font-bold font-devanagari group-hover:text-temple-gold transition-colors">
+            <ScrollText className="w-6 h-6 sm:w-7 sm:h-7 text-temple-gold" />
+            <h3 className="text-lg sm:text-xl font-bold font-devanagari group-hover:text-temple-gold transition-colors">
               {language === "mr" ? "मंदिराचा इतिहास" : "Temple History"}
             </h3>
             <p className="text-xs text-amber-200/80 font-devanagari leading-relaxed">
@@ -142,10 +143,10 @@ export default function HomePage() {
 
           <Link
             href="/who-is-vasudev"
-            className="group bg-gradient-to-br from-amber-800 to-amber-950 text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all space-y-3 border border-amber-500/40"
+            className="group bg-gradient-to-br from-amber-800 to-amber-950 text-white p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl active:scale-98 transition-all space-y-2.5 border border-amber-500/40 touch-manipulation"
           >
-            <BookOpen className="w-7 h-7 text-temple-gold" />
-            <h3 className="text-xl font-bold font-devanagari group-hover:text-temple-gold transition-colors">
+            <BookOpen className="w-6 h-6 sm:w-7 sm:h-7 text-temple-gold" />
+            <h3 className="text-lg sm:text-xl font-bold font-devanagari group-hover:text-temple-gold transition-colors">
               {language === "mr" ? "वासुदेव स्वरूप (श्रीकृष्ण)" : "Who is Vasudev?"}
             </h3>
             <p className="text-xs text-amber-200/80 font-devanagari leading-relaxed">
@@ -157,10 +158,10 @@ export default function HomePage() {
 
           <Link
             href="/deepotsav"
-            className="group bg-gradient-to-br from-amber-600 to-temple-saffron text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all space-y-3 border border-amber-400/40"
+            className="group bg-gradient-to-br from-amber-600 to-temple-saffron text-white p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl active:scale-98 transition-all space-y-2.5 border border-amber-400/40 touch-manipulation"
           >
-            <Flame className="w-7 h-7 text-amber-200" />
-            <h3 className="text-xl font-bold font-devanagari group-hover:text-amber-100 transition-colors">
+            <Flame className="w-6 h-6 sm:w-7 sm:h-7 text-amber-200" />
+            <h3 className="text-lg sm:text-xl font-bold font-devanagari group-hover:text-amber-100 transition-colors">
               {language === "mr" ? "महिन्याचा दीपोत्सव" : "Deepotsav Festival"}
             </h3>
             <p className="text-xs text-amber-100/90 font-devanagari leading-relaxed">
@@ -172,10 +173,10 @@ export default function HomePage() {
 
           <Link
             href="/location"
-            className="group bg-gradient-to-br from-white to-amber-50 text-temple-maroon p-6 rounded-2xl shadow-lg border-2 border-amber-300 hover:shadow-2xl transition-all space-y-3"
+            className="group bg-gradient-to-br from-white to-amber-50 text-temple-maroon p-5 sm:p-6 rounded-2xl shadow-lg border-2 border-amber-300 hover:shadow-2xl active:scale-98 transition-all space-y-2.5 touch-manipulation"
           >
-            <MapPin className="w-7 h-7 text-temple-saffron" />
-            <h3 className="text-xl font-bold font-devanagari group-hover:text-temple-saffron transition-colors">
+            <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-temple-saffron" />
+            <h3 className="text-lg sm:text-xl font-bold font-devanagari group-hover:text-temple-saffron transition-colors">
               {language === "mr" ? "कसे पोहोचावे" : "Location & Map"}
             </h3>
             <p className="text-xs text-gray-700 font-devanagari leading-relaxed">

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Mukta } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -12,16 +12,21 @@ const mukta = Mukta({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#78350F",
+};
+
 export const metadata: Metadata = {
   title: "श्री वासुदेव मंदिर, वाटेगाव | Shree Vasudev Mandir Wategaon",
   description:
-    "सांगली जिल्ह्यातील वाटेगाव येथील २०० वर्षांचे ऐतिहासिक व भारतातील एकमेव वासुदेव मंदिर. एकनाथी भागवत संप्रदाय स्थान, दीपोत्सव व इतिहास माहिती.",
+    "वाटेगाव (जि. सांगली) येथील भोगावती नदीच्या तीरावर स्थित श्री वासुदेव मंदिर माहिती, इतिहास, दीपोत्सव व वासुदेव स्वरूप.",
   keywords: [
     "Vasudev Mandir Wategaon",
     "श्री वासुदेव मंदिर वाटेगाव",
     "वाटेगाव सांगली",
-    "Eknathi Bhagwat Sampradaya",
-    "एकनाथी भागवत",
     "Divekar Kuldaivat",
     "Deepotsav Wategaon",
     "Vasudev Mandir History",
@@ -31,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "श्री वासुदेव मंदिर, वाटेगाव | Shree Vasudev Mandir Wategaon",
     description:
-      "भारतातील एकमेव वासुदेव मंदिर • एकनाथी भागवत संप्रदाय स्थान • २०० वर्षांची परंपरा",
+      "वाटेगाव (जि. सांगली) येथील श्री वासुदेव मंदिर अधिकृत माहिती संकेतस्थळ",
     locale: "mr_IN",
     type: "website",
   },
@@ -43,15 +48,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="mr" className={`${mukta.variable}`}>
-      <body className="min-h-screen flex flex-col font-devanagari bg-temple-warmBg text-gray-900 selection:bg-temple-gold selection:text-temple-maroon">
+    <html lang="mr" className={`${mukta.variable} scroll-smooth`}>
+      <body className="min-h-screen flex flex-col font-devanagari bg-temple-warmBg text-gray-900 selection:bg-temple-gold selection:text-temple-maroon antialiased text-rendering-optimizeLegibility">
         <LanguageProvider>
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow w-full">{children}</main>
           <Footer />
         </LanguageProvider>
       </body>
     </html>
   );
 }
-
