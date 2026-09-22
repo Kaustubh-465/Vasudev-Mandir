@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export function Footer() {
               <span className="text-3xl">🛕</span>
               <div>
                 <h2 className="text-xl font-bold text-amber-200 font-devanagari">
-                  {language === "mr" ? "श्री वासुदेव मंदिर, वातेगाव" : "Shree Vasudev Mandir, Wategaon"}
+                  {language === "mr" ? "श्री वासुदेव मंदिर, वाटेगाव" : "Shree Vasudev Mandir, Wategaon"}
                 </h2>
                 <p className="text-xs text-amber-400 font-devanagari">
                   {language === "mr" ? "॥ ॐ नमो भगवते वासुदेवाय ॥" : "॥ Om Namo Bhagavate Vasudevaya ॥"}
@@ -27,7 +27,7 @@ export function Footer() {
             </div>
             <p className="text-sm text-amber-200/80 leading-relaxed font-devanagari">
               {language === "mr"
-                ? "भोगावती नदीच्या तीरावर स्थित श्री वासुदेव मंदिर, वातेगाव. गाभाऱ्यातील पंचधातूची श्रीकृष्ण मूर्ती व सागवानी लाकडी सभामंडप हे वातेगावचे मुख्य स्थान आहे."
+                ? "भोगावती नदीच्या तीरावर स्थित श्री वासुदेव मंदिर, वाटेगाव. गाभाऱ्यातील पंचधातूची श्रीकृष्ण मूर्ती व सागवानी लाकडी सभामंडप हे वाटेगावचे मुख्य स्थान आहे."
                 : "Shrine of Shree Vasudev situated on the banks of Bhogawati river in Wategaon. Features a Panchadhatu Krishna idol & teakwood assembly hall."}
             </p>
             <div className="inline-flex items-center space-x-2 bg-amber-900/60 px-3 py-1.5 rounded-full text-xs text-amber-300 border border-amber-600/40 font-devanagari">
@@ -75,7 +75,7 @@ export function Footer() {
           <p className="font-devanagari">
             © {new Date().getFullYear()}{" "}
             {language === "mr"
-              ? "श्री वासुदेव मंदिर देवस्थान, वातेगाव (जि. सांगली). सर्व हक्क राखीव."
+              ? "श्री वासुदेव मंदिर देवस्थान, वाटेगाव (जि. सांगली). सर्व हक्क राखीव."
               : "Shree Vasudev Mandir Devasthan, Wategaon (Sangli). All rights reserved."}
           </p>
           <div className="flex items-center space-x-2 font-devanagari">
@@ -86,3 +86,4 @@ export function Footer() {
     </footer>
   );
 }
+

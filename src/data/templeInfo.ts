@@ -1,4 +1,4 @@
-export interface TempleData {
+﻿export interface TempleData {
   title: { mr: string; en: string };
   subtitle: { mr: string; en: string };
   tagline: { mr: string; en: string };
@@ -24,11 +24,11 @@ export interface TempleData {
 
 export const templeData: TempleData = {
   title: {
-    mr: "श्री वासुदेव मंदिर, वातेगाव",
+    mr: "श्री वासुदेव मंदिर, वाटेगाव",
     en: "Shree Vasudev Mandir, Wategaon",
   },
   subtitle: {
-    mr: "वातेगाव (जि. सांगली) • भोगावती नदीच्या तीरावर",
+    mr: "वाटेगाव (जि. सांगली) • भोगावती नदीच्या तीरावर",
     en: "Wategaon (Sangli) • On the banks of Bhogawati river",
   },
   tagline: {
@@ -36,12 +36,12 @@ export const templeData: TempleData = {
     en: "॥ Om Namo Bhagavate Vasudevaya ॥ • Shree Vasudev Mandir situated on the banks of Bhogawati river",
   },
   location: {
-    village: { mr: "वातेगाव", en: "Wategaon" },
+    village: { mr: "वाटेगाव", en: "Wategaon" },
     taluka: { mr: "वाळवा", en: "Walwa" },
     district: { mr: "सांगली", en: "Sangli" },
     state: { mr: "महाराष्ट्र", en: "Maharashtra" },
     fullAddress: {
-      mr: "भोगावती नदीच्या काठी, वातेगाव, तालुका वाळवा, जिल्हा सांगली - ४१५४१०, महाराष्ट्र",
+      mr: "भोगावती नदीच्या काठी, वाटेगाव, तालुका वाळवा, जिल्हा सांगली - ४१५४१०, महाराष्ट्र",
       en: "Bhogawati River Bank, Wategaon, Taluka Walwa, District Sangli - 415410, Maharashtra",
     },
     river: { mr: "भोगावती नदी", en: "Bhogawati River" },
@@ -49,7 +49,7 @@ export const templeData: TempleData = {
     coordinates: { lat: 17.0784, lng: 74.2718 },
   },
   quickStats: [
-    { label: { mr: "स्थान", en: "Location" }, value: { mr: "वातेगाव (सांगली)", en: "Wategaon (Sangli)" } },
+    { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव (सांगली)", en: "Wategaon (Sangli)" } },
     { label: { mr: "नदी", en: "River" }, value: { mr: "भोगावती नदी", en: "Bhogawati River" } },
     { label: { mr: "मुख्य देवता", en: "Main Deity" }, value: { mr: "श्री वासुदेव (श्रीकृष्ण)", en: "Shree Vasudev (Krishna)" } },
     { label: { mr: "वार्षिक उत्सव", en: "Annual Festival" }, value: { mr: "महिन्याचा दीपोत्सव", en: "Month-long Deepotsav" } },
@@ -85,3 +85,4 @@ export const templeData: TempleData = {
     },
   ],
 };
+
