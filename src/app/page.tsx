@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -19,12 +19,12 @@ export default function HomePage() {
   return (
     <div className="space-y-12 pb-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-temple-maroon via-temple-deepRed to-amber-950 text-white pt-12 pb-20 px-4 sm:px-6 lg:px-8 border-b-4 border-temple-gold overflow-hidden">
+      <section className="relative bg-gradient-to-b from-temple-maroon via-temple-deepRed to-amber-950 text-white pt-16 pb-20 px-4 sm:px-6 lg:px-8 border-b-4 border-temple-gold overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
 
-        <div className="max-w-5xl mx-auto text-center space-y-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
           {/* Sacred Mantra Badge */}
-          <div className="inline-flex items-center space-x-2 bg-amber-500/20 backdrop-blur-md px-5 py-2 rounded-full border border-temple-gold/60 text-amber-200 text-sm font-semibold tracking-wider shadow-inner font-devanagari">
+          <div className="inline-flex items-center space-x-2 bg-amber-500/20 backdrop-blur-md px-6 py-2 rounded-full border border-temple-gold/60 text-amber-200 text-sm font-semibold tracking-wider shadow-inner font-devanagari">
             <Sparkles className="w-4 h-4 text-temple-gold animate-pulse" />
             <span>॥ ॐ नमो भगवते वासुदेवाय ॥</span>
           </div>
@@ -34,60 +34,16 @@ export default function HomePage() {
             {templeData.title[language]}
           </h1>
 
-          {/* Subtitle & Tagline */}
-          <p className="text-xl sm:text-2xl font-bold text-temple-gold font-devanagari max-w-3xl mx-auto">
+          {/* Subtitle & Description */}
+          <p className="text-xl sm:text-2xl font-bold text-temple-gold font-devanagari max-w-2xl mx-auto">
             {templeData.subtitle[language]}
           </p>
 
-          <p className="text-base sm:text-lg text-amber-200/90 font-devanagari max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-amber-200/90 font-devanagari max-w-xl mx-auto leading-relaxed">
             {language === "mr"
-              ? "भोगावती नदीच्या भक्तिमय तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर. मंदिराची भक्तिमय माहिती, इतिहास व दीपोत्सव सोहळा."
-              : "Sacred shrine of Shree Vasudev on the holy banks of Bhogawati river in Wategaon (Sangli)."}
+              ? "भोगावती नदीच्या तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर."
+              : "Sacred shrine of Shree Vasudev on the banks of Bhogawati river in Wategaon (Sangli)."}
           </p>
-
-          {/* Quick Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 max-w-4xl mx-auto">
-            {templeData.quickStats.map((stat, idx) => (
-              <div
-                key={idx}
-                className="bg-amber-950/70 backdrop-blur-sm p-4 rounded-xl border border-amber-500/30 text-center space-y-1 shadow-md"
-              >
-                <div className="text-xs text-amber-300/80 font-medium font-devanagari">
-                  {stat.label[language]}
-                </div>
-                <div className="text-base sm:text-lg font-bold text-amber-100 font-devanagari">
-                  {stat.value[language]}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 pt-4">
-            <Link
-              href="/who-is-vasudev"
-              className="px-6 py-3.5 bg-temple-gold hover:bg-amber-400 text-temple-maroon font-extrabold rounded-xl shadow-xl transition-all flex items-center space-x-2 text-base font-devanagari"
-            >
-              <BookOpen className="w-5 h-5" />
-              <span>{language === "mr" ? "वासुदेव स्वरूप (श्रीकृष्ण)" : "Who is Vasudev?"}</span>
-            </Link>
-
-            <Link
-              href="/history"
-              className="px-6 py-3.5 bg-amber-900/80 hover:bg-amber-900 text-amber-100 font-bold rounded-xl border border-amber-500/50 shadow-lg transition-all flex items-center space-x-2 text-base font-devanagari"
-            >
-              <ScrollText className="w-5 h-5 text-temple-gold" />
-              <span>{language === "mr" ? "मंदिराचा इतिहास" : "Temple History"}</span>
-            </Link>
-
-            <Link
-              href="/deepotsav"
-              className="px-6 py-3.5 bg-temple-saffron hover:bg-temple-darkSaffron text-white font-bold rounded-xl shadow-lg transition-all flex items-center space-x-2 text-base font-devanagari"
-            >
-              <Flame className="w-5 h-5" />
-              <span>{language === "mr" ? "दीपोत्सव सोहळा" : "Deepotsav Festival"}</span>
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -131,7 +87,7 @@ export default function HomePage() {
               </h3>
               <p className="text-xs text-amber-950 font-devanagari leading-relaxed">
                 {language === "mr"
-                  ? "मस्तकी मोरपिसांची टोपी, हाती टाळ-चिपळ्या आणि प्रभात समयी हरिनाम सांगणारा वासुदेव ही महाराष्ट्राची भक्तिमय संत परंपरा आहे."
+                  ? "मस्तकी मोरपिसांची टोपी, हाती टाळ-चिपळ्या आणि प्रभात समयी हरिनाम सांगणारा वासुदेव ही महाराष्ट्राची लोकसंस्कृती परंपरा आहे."
                   : "The traditional Varkari Vasudev carrying peacock plume cap and cymbals spreading divine Harinam."}
               </p>
             </div>
@@ -147,7 +103,7 @@ export default function HomePage() {
           </h2>
           <p className="text-gray-600 font-devanagari max-w-xl mx-auto">
             {language === "mr"
-              ? "भोगावती नदीच्या भक्तिमय तीरावर वसलेल्या या देवस्थानाची प्रमुख वैशिष्ट्ये"
+              ? "भोगावती नदीच्या तीरावर वसलेल्या या देवस्थानाची प्रमुख वैशिष्ट्ये"
               : "Key highlights of the shrine on the banks of Bhogawati river"}
           </p>
         </div>
@@ -245,4 +201,3 @@ export default function HomePage() {
     </div>
   );
 }
-
