@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -27,8 +27,8 @@ export function Footer() {
             </div>
             <p className="text-sm text-amber-200/80 leading-relaxed font-devanagari">
               {language === "mr"
-                ? "भोगावती नदीच्या भक्तिमय तीरावर स्थित श्री वासुदेव देवस्थान. गाभाऱ्यातील पंचधातूची श्रीकृष्ण मूर्ती व सागवानी लाकडी सभामंडप हे वाटेगावचे मुख्य आध्यात्मिक स्थान आहे."
-                : "Sacred shrine of Shree Vasudev on the banks of Bhogawati river. Features a Panchadhatu Krishna idol & teakwood assembly hall."}
+                ? "भोगावती नदी, वाटेगाव येथील श्री वासुदेव देवस्थान. गाभाऱ्यातील पंचधातूची श्रीकृष्ण मूर्ती व सागवानी लाकडी सभामंडप हे वाटेगावचे मुख्य स्थान आहे."
+                : "Shrine of Shree Vasudev along Bhogawati river in Wategaon. Features a Panchadhatu Krishna idol & teakwood assembly hall."}
             </p>
             <div className="inline-flex items-center space-x-2 bg-amber-900/60 px-3 py-1.5 rounded-full text-xs text-amber-300 border border-amber-600/40 font-devanagari">
               <Landmark className="w-4 h-4 text-temple-gold" />
@@ -86,5 +86,3 @@ export function Footer() {
     </footer>
   );
 }
-
-
