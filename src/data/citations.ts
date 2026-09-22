@@ -22,7 +22,7 @@ export const vasudevCitations: CitationSection[] = [
     },
     content: [
       {
-        mr: "महाराष्ट्राच्या समृद्ध सांस्कृतिक आणि आध्यात्मिक वारशात वाटेगाव परिसराला एक वेगळे स्थान आहे. येथील श्री वासुदेव मंदिर हे केवळ एक देवस्थान नसून, परिसरातील सर्व भाविकांचे श्रद्धास्थान आणि आत्मिक शांततेचे केंद्र आहे. पिढ्यानपिढ्या या भक्तिमय भूमीत भक्ती, परमार्थ आणि सामाजिक एकात्मतेचा झरा वाहत आला आहे.",
+        mr: "महाराष्ट्राच्या समृद्ध सांस्कृतिक आणि आध्यात्मिक वारशात वाटेगाव परिसराला एक वेगळे स्थान आहे. येथील श्री वासुदेव मंदिर हे सर्व भाविकांचे श्रद्धास्थान आणि आत्मिक शांततेचे केंद्र आहे. पिढ्यानपिढ्या या भक्तिमय भूमीत भक्ती, परमार्थ आणि सामाजिक एकात्मतेचा झरा वाहत आला आहे.",
         en: "Wategaon holds a unique position in Maharashtra's rich cultural and spiritual heritage. Shree Vasudev Mandir is a sanctuary of faith and spiritual peace for all devotees.",
       },
     ],
@@ -70,24 +70,24 @@ export const vasudevCitations: CitationSection[] = [
     id: "history-and-events",
     title: {
       mr: "मंदिराचा इतिहास व धार्मिक कार्य",
-      en: "Temple Heritage & Religious Gatherings",
+      en: "Temple Heritage & Celebrations",
     },
     subtitle: {
-      mr: "दिवेकर घराण्याचे खाजगी देवस्थान ट्रस्ट व ग्रामस्थांची श्रद्धा",
-      en: "Divekar Family Private Devasthan Trust & Local Faith",
+      mr: "दिवेकर घराण्याचे खाजगी देवस्थान ट्रस्ट",
+      en: "Divekar Family Private Devasthan Trust",
     },
     content: [
       {
-        mr: "हे मंदिर दिवेकर घराण्याचे खाजगी देवस्थान (Private Devasthan Trust) असून, दिवेकर कुटुंबाकडून या मंदिराची पूजा-अर्चा, जतन आणि देखभाल पार पाडली जाते.",
+        mr: "हे मंदिर दिवेकर घराण्याचे खाजगी देवस्थान (Private Devasthan Trust) असून, दिवेकर कुटुंबाकडूनच या मंदिराची पूजा-अर्चा, जतन आणि देखभाल पार पाडली जाते.",
         en: "This shrine is maintained and preserved by the Divekar family as a private devasthan trust.",
       },
       {
-        mr: "जरी हे दिवेकर कुटुंबाचे खाजगी देवस्थान असले, तरी वाटेगाव व परिसरातील सर्व ग्रामस्थांसाठी हे अत्यंत श्रद्धेचे व आत्मिक शांततेचे स्थान आहे. गावात कोणताही शुभप्रसंग असो किंवा संकटाचे निवारण असो, येथील वासुदेवाच्या चरणी नतमस्तक होऊनच प्रत्येक कार्याची सुरुवात होते.",
-        en: "While preserved by the Divekar family, it is revered by all of Wategaon where every auspicious occasion begins with seeking Lord Vasudev's blessings.",
+        mr: "येथील वासुदेवाच्या चरणी नतमस्तक होऊन भाविक प्रत्येक शुभकार्याची सुरुवात करतात.",
+        en: "Devotees seek Lord Vasudev's blessings for auspicious occasions.",
       },
       {
-        mr: "या मंदिरात वर्षभर विविध धार्मिक उत्सव साजरे केले जातात. विशेषतः एकादशी, जन्मोत्सव, आणि पाडव्यासारख्या दिवशी मंदिरात विशेष पूजा, भजन, कीर्तन आणि महाप्रसादाचे आयोजन केले जाते, ज्यामध्ये संपूर्ण वाटेगाव गाव एकसंध होऊन सहभाग घेते.",
-        en: "Various celebrations are organized throughout the year, especially on Ekadashi, Janmashtami, and Padwa with pooja, bhajan, and Mahaprasad.",
+        mr: "या मंदिरात वर्षभर विविध धार्मिक उत्सव अत्यंत आनंदाने साजरे होतात. विशेषतः एकादशी, जन्मोत्सव, आणि पाडव्यासारख्या दिवशी मंदिरात विशेष पूजा, भजन, कीर्तन आणि महाप्रसादाचे आयोजन केले जाते.",
+        en: "Various religious festivals are celebrated with devotion throughout the year, especially Ekadashi, Janmashtami, and Padwa with pooja, bhajan, and Mahaprasad.",
       },
     ],
   },

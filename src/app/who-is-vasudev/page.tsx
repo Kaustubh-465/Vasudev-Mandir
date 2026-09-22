@@ -31,7 +31,7 @@ export default function WhoIsVasudevPage() {
 
         <p className="text-lg text-gray-700 font-devanagari leading-relaxed max-w-3xl">
           {language === "mr"
-            ? "वाटेगाव येथील भक्तिमय श्री वासुदेव मंदिर, दिवेकर खाजगी देवस्थान ट्रस्ट, भगवान वासुदेवांचे सर्वव्यापी चैतन्य व धार्मिक उत्सव."
+            ? "वाटेगाव येथील भक्तिमय श्री वासुदेव मंदिर, दिवेकर खाजगी देवस्थान ट्रस्ट, भगवान वासुदेवांचे सर्वव्यापी चैतन्य व उत्सव."
             : "Devotional sanctuary of Shri Vasudev Mandir Wategaon, Divekar private devasthan trust, divine consciousness, and celebrations."}
         </p>
       </div>
