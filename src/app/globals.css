@@ -1,0 +1,41 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --background: #FAF5EF;
+  --foreground: #1F2937;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mukta), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Print Styles for Temple QR Code Board */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .print-card, .print-card * {
+    visibility: visible;
+  }
+
+  .print-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    width: 90%;
+    box-shadow: none !important;
+    border-width: 6px !important;
+  }
+
+  header, footer, button, .print\:hidden {
+    display: none !important;
+  }
+}
+
