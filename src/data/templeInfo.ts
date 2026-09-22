@@ -15,7 +15,6 @@ export interface TempleData {
   keyHighlights: Array<{
     title: { mr: string; en: string };
     desc: { mr: string; en: string };
-    icon: string;
   }>;
   quickStats: Array<{
     label: { mr: string; en: string };
@@ -29,12 +28,12 @@ export const templeData: TempleData = {
     en: "Shree Vasudev Mandir, Wategaon",
   },
   subtitle: {
-    mr: "भारतातील एकमेव वासुदेव मंदिर | एकनाथी भागवत संप्रदाय स्थान",
-    en: "India's Unique Vasudev Temple | Eknathi Bhagwat Sampradaya Heritage",
+    mr: "वातेगाव (जि. सांगली) • भोगावती नदीतीर",
+    en: "Wategaon (Sangli) • Bhogawati River Bank",
   },
   tagline: {
-    mr: "॥ एका जनार्दनी ॥ - भोगावती नदीच्या पवित्र तीरावर स्थित सुमारे २०० वर्षांचे प्राचीन व ऐतिहासिक देवस्थान",
-    en: "A 200-year-old sacred heritage site situated on the holy banks of Bhogawati river",
+    mr: "॥ ॐ नमो भगवते वासुदेवाय ॥ • भोगावती नदीच्या पवित्र तीरावर स्थित श्री वासुदेव देवस्थान",
+    en: "॥ Om Namo Bhagavate Vasudevaya ॥ • Sacred shrine situated on the banks of Bhogawati river",
   },
   location: {
     village: { mr: "वाटेगाव", en: "Wategaon" },
@@ -50,44 +49,39 @@ export const templeData: TempleData = {
     coordinates: { lat: 17.0784, lng: 74.2718 },
   },
   quickStats: [
-    { label: { mr: "स्थापना", en: "Established" }, value: { mr: "सुमारे २०० वर्षांपूर्वी", en: "~200 Years Ago" } },
-    { label: { mr: "संप्रदाय", en: "Sampradaya" }, value: { mr: "एकनाथी भागवत संप्रदाय", en: "Eknathi Bhagwat" } },
-    { label: { mr: "मूर्ती", en: "Idol" }, value: { mr: "पंचधातू श्रीकृष्ण मूर्ती", en: "Panchadhatu Krishna Idol" } },
-    { label: { mr: "मुख्य उत्सव", en: "Main Festival" }, value: { mr: "महिन्याचा भव्य दीपोत्सव", en: "Month-long Deepotsav" } },
+    { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव (सांगली)", en: "Wategaon (Sangli)" } },
+    { label: { mr: "पवित्र नदी", en: "Holy River" }, value: { mr: "भोगावती नदीकाठ", en: "Bhogawati River Bank" } },
+    { label: { mr: "मुख्य देवता", en: "Main Deity" }, value: { mr: "श्री वासुदेव (श्रीकृष्ण)", en: "Shree Vasudev (Krishna)" } },
+    { label: { mr: "वार्षिक उत्सव", en: "Annual Festival" }, value: { mr: "महिन्याचा दीपोत्सव", en: "Month-long Deepotsav" } },
   ],
   keyHighlights: [
     {
-      title: { mr: "भारतातील एकमेव वासुदेव मंदिर", en: "India's Unique Vasudev Temple" },
+      title: { mr: "पंचधातू श्रीकृष्ण मूर्ती", en: "Panchadhatu Krishna Idol" },
       desc: {
-        mr: "संपूर्ण भारतात वासुदेवाच्या नावाने ओळखले जाणारे व एकनाथी भागवत परंपरेनुसार पूजले जाणारे हे एकमेव व दुर्मिळ मंदिर आहे.",
-        en: "Recognized across India as the unique Vasudev Temple dedicated specifically under Eknathi Bhagwat traditions.",
+        mr: "गाभाऱ्यात शांत, मंदस्मित आणि प्रसन्न भावमुद्रेत असणारी श्री वासुदेवाची (श्रीकृष्णाची) दुर्मीळ पंचधातू मूर्ती.",
+        en: "Rare Panchadhatu idol of Shree Vasudev (Lord Krishna) radiating divine peace and serene smile.",
       },
-      icon: "Landmark",
     },
     {
-      title: { mr: "एकनाथी भागवत संप्रदाय", en: "Eknathi Bhagwat Tradition" },
+      title: { mr: "सागवानी लाकडी स्थापत्य", en: "Teakwood Mandap" },
       desc: {
-        mr: "संत एकनाथ महाराजांच्या ग्रंथ परंपरेनुसार पूजा-अर्चा चालते. गाभाऱ्यातील मूर्तीची ठेवण साक्षात श्रीकृष्ण रूपात आहे.",
-        en: "Daily rituals strictly follow Sant Eknath Maharaj's Eknathi Bhagwat tradition, representing Bhagwan Shri Krishna.",
+        mr: "६० फूट लांब व ३० फूट रुंद भव्य सागवानी लाकडी सभामंडप आणि ५० फूट उंच शिखर.",
+        en: "Majestic 60ft x 30ft teakwood assembly hall with a 50ft high traditional shikhara.",
       },
-      icon: "Scroll",
     },
     {
-      title: { mr: "भव्य सागवानी स्थापत्य", en: "Teakwood Architecture" },
+      title: { mr: "उत्तराभिमुख मंदिर", en: "North-facing Layout" },
       desc: {
-        mr: "६० फूट लांब व ३० फूट रुंद सागवानी लाकडी भव्य मंडप आणि ५० फूट उंच नक्षीदार भव्य शिखर.",
-        en: "Features a majestic 60ft x 30ft pure teakwood mandap and a grand 50ft high decorated shikhara.",
+        mr: "भोगावती नदीच्या पवित्र तीरावर वसलेले उत्तराभिमुख मंदिर आणि शांत आध्यात्मिक परिसर.",
+        en: "North-facing sacred layout situated peacefully on the holy banks of Bhogawati river.",
       },
-      icon: "Crown",
     },
     {
-      title: { mr: "त्रिपुरारी दीपोत्सव", en: "Month-long Deepotsav" },
+      title: { mr: "वार्षिक दीपोत्सव", en: "Annual Deepotsav" },
       desc: {
-        mr: "कोजागिरी पौर्णिमा ते त्रिपुरारी पौर्णिमेपर्यंत महिनाभर हजारो दिव्यांच्या लखलखाटात दीपोत्सव साजरा होतो.",
-        en: "Celebrates a month-long festival of lights with thousands of traditional diyas from Kojagiri to Tripurari Purnima.",
+        mr: "कोजागिरी पौर्णिमा ते त्रिपुरारी पौर्णिमेपर्यंत महिनाभर हजारो दिव्यांच्या लखलखाटातील सोहळा.",
+        en: "Traditional month-long festival of earthen oil lamps from Kojagiri to Tripurari Purnima.",
       },
-      icon: "Flame",
     },
   ],
 };
-

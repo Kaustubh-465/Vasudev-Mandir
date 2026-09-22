@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { templeHistory } from "@/data/history";
-import { ScrollText, ArrowLeft, Clock, Landmark, ShieldCheck, Crown } from "lucide-react";
+import { ScrollText, ArrowLeft, Clock, Landmark } from "lucide-react";
 
 export default function HistoryPage() {
   const { language } = useLanguage();
@@ -15,14 +15,14 @@ export default function HistoryPage() {
       <div className="space-y-4 text-center sm:text-left border-b border-amber-300/60 pb-8">
         <Link
           href="/"
-          className="inline-flex items-center space-x-1.5 text-sm font-semibold text-temple-saffron hover:text-temple-darkSaffron transition-colors"
+          className="inline-flex items-center space-x-1.5 text-sm font-semibold text-temple-saffron hover:text-temple-darkSaffron transition-colors font-devanagari"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>{language === "mr" ? "मुख्य पृष्ठावर परत जा" : "Back to Home"}</span>
         </Link>
 
         <div className="inline-block bg-amber-100 text-temple-maroon px-4 py-1.5 rounded-full text-xs font-bold border border-amber-300 font-devanagari">
-          २०० वर्षांची ऐतिहासिक परंपरा • दिवेकर कुलदैवत
+          ऐतिहासिक परंपरा • दिवेकर कुलदैवत
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-black text-temple-maroon font-devanagari">
@@ -30,11 +30,11 @@ export default function HistoryPage() {
         </h1>
       </div>
 
-      {/* Main Narrative Paragraphs */}
+      {/* Main Narrative */}
       <div className="bg-white p-8 sm:p-10 rounded-3xl shadow-lg border-2 border-amber-200 space-y-6">
         <h2 className="text-2xl font-bold text-temple-maroon font-devanagari border-b border-amber-200 pb-3 flex items-center space-x-2">
           <Landmark className="w-6 h-6 text-temple-saffron" />
-          <span>{language === "mr" ? "मंदिराची स्थापना व पार्श्वभूमी" : "Temple Foundation & Background"}</span>
+          <span>{language === "mr" ? "मंदिराची ऐतिहासिक पार्श्वभूमी" : "Temple History"}</span>
         </h2>
 
         <div className="space-y-4 text-gray-700 font-devanagari leading-relaxed text-base sm:text-lg">
@@ -44,7 +44,7 @@ export default function HistoryPage() {
         </div>
       </div>
 
-      {/* Architectural Features Box */}
+      {/* Features Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-amber-900 text-white p-6 rounded-2xl shadow-md border-2 border-temple-gold space-y-2">
           <div className="text-3xl">🪵</div>
@@ -54,7 +54,7 @@ export default function HistoryPage() {
           <p className="text-sm text-amber-100/80 font-devanagari leading-relaxed">
             {language === "mr"
               ? "मंदिराचा ६० फूट लांब व ३० फूट रुंद सभामंडप हा दुर्मीळ सागवानी लाकडापासून बनवलेला आहे."
-              : "60ft long by 30ft wide spacious assembly hall crafted from pure teakwood."}
+              : "60ft long by 30ft wide assembly hall crafted from pure teakwood."}
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function HistoryPage() {
           </h3>
           <p className="text-sm text-amber-100/80 font-devanagari leading-relaxed">
             {language === "mr"
-              ? "५० फूट उंच भव्य शिखर जे दीपोत्सवाच्या काळात हजारो दिव्यांनी उजळून निघते."
+              ? "५० फूट उंच भव्य शिखर जे दीपोत्सावाच्या काळात दिव्यांनी उजळून निघते."
               : "Imposing 50-foot temple spire illuminated during annual Deepotsav."}
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function HistoryPage() {
           </h3>
           <p className="text-sm text-amber-100/80 font-devanagari leading-relaxed">
             {language === "mr"
-              ? "एकनाथी भागवत परंपरेनुसार घडवलेली शांत, प्रसन्न हास्यमुद्रेतील पंचधातूची मूर्ती."
+              ? "गाभाऱ्यातील शांत, प्रसन्न हास्यमुद्रेतील पंचधातूची श्रीकृष्ण मूर्ती."
               : "Panchadhatu five-metal idol reflecting Lord Krishna's divine smiling posture."}
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function HistoryPage() {
       <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-amber-200 space-y-6">
         <h2 className="text-2xl font-bold text-temple-maroon font-devanagari flex items-center space-x-2">
           <Clock className="w-6 h-6 text-temple-saffron" />
-          <span>{language === "mr" ? "ऐतिहासिक कालखंड (Timeline)" : "Historical Timeline"}</span>
+          <span>{language === "mr" ? "ऐतिहासिक टप्पे" : "Historical Phases"}</span>
         </h2>
 
         <div className="space-y-6 relative before:absolute before:inset-0 before:left-3.5 before:w-0.5 before:bg-amber-300">
@@ -112,4 +112,3 @@ export default function HistoryPage() {
     </div>
   );
 }
-

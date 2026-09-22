@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/context/LanguageContext";
-import { Menu, X, Flame, Landmark, BookOpen, MapPin, QrCode, ScrollText, Music } from "lucide-react";
+import { Menu, X, Flame, Landmark, BookOpen, MapPin, ScrollText, Music } from "lucide-react";
 
 export function Navbar() {
   const { language, toggleLanguage } = useLanguage();
@@ -24,7 +24,7 @@ export function Navbar() {
     },
     {
       href: "/who-is-vasudev",
-      label: { mr: "वासुदेव कोण आहेत?", en: "Who is Vasudev?" },
+      label: { mr: "वासुदेव स्वरूप (श्रीकृष्ण)", en: "Who is Vasudev?" },
       icon: BookOpen,
     },
     {
@@ -42,12 +42,6 @@ export function Navbar() {
       label: { mr: "कसे पोहोचावे", en: "Location" },
       icon: MapPin,
     },
-    {
-      href: "/qr-code",
-      label: { mr: "QR कोड", en: "Temple QR" },
-      icon: QrCode,
-      highlight: true,
-    },
   ];
 
   return (
@@ -64,7 +58,7 @@ export function Navbar() {
                 {language === "mr" ? "श्री वासुदेव मंदिर" : "Shree Vasudev Mandir"}
               </h1>
               <p className="text-xs text-amber-300/90 font-medium">
-                {language === "mr" ? "वाटेगाव (सांगली) • २०० वर्षांची परंपरा" : "Wategaon, Sangli • 200 Year Heritage"}
+                {language === "mr" ? "वातेगाव (सांगली) • श्री वासुदेव देवस्थान" : "Wategaon, Sangli • Shree Vasudev Shrine"}
               </p>
             </div>
           </Link>
@@ -78,15 +72,13 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-3 py-2 rounded-lg text-sm font-medium transition-all flex items-center space-x-1.5 ${
-                    link.highlight
-                      ? "bg-temple-gold text-temple-maroon font-semibold hover:bg-amber-400 shadow-sm"
-                      : isActive
-                      ? "bg-amber-950/60 text-amber-200 border border-amber-500/40"
+                  className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all flex items-center space-x-1.5 ${
+                    isActive
+                      ? "bg-amber-950/80 text-amber-200 border border-amber-500/50 font-bold"
                       : "text-amber-100 hover:bg-amber-900/40 hover:text-white"
                   }`}
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className="w-4 h-4 text-temple-gold" />
                   <span>{link.label[language]}</span>
                 </Link>
               );
@@ -128,14 +120,12 @@ export function Navbar() {
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`flex items-center space-x-3 px-4 py-3 rounded-md text-base font-medium transition-all ${
-                  link.highlight
-                    ? "bg-temple-gold text-temple-maroon font-bold"
-                    : isActive
-                    ? "bg-amber-950/80 text-amber-200 border-l-4 border-temple-gold"
+                  isActive
+                    ? "bg-amber-950/80 text-amber-200 border-l-4 border-temple-gold font-bold"
                     : "text-amber-100 hover:bg-amber-900/50 hover:text-white"
                 }`}
               >
-                <Icon className="w-5 h-5" />
+                <Icon className="w-5 h-5 text-temple-gold" />
                 <span>{link.label[language]}</span>
               </Link>
             );
@@ -145,4 +135,3 @@ export function Navbar() {
     </header>
   );
 }
-
