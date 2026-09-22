@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { locationInfo } from "@/data/location";
-import { MapPin, ArrowLeft, Bus, Train, ExternalLink, Navigation, Landmark } from "lucide-react";
+import { MapPin, ArrowLeft, Bus, Train, ExternalLink, Navigation } from "lucide-react";
 
 export default function LocationPage() {
   const { language } = useLanguage();
@@ -15,15 +15,11 @@ export default function LocationPage() {
       <div className="space-y-4 text-center sm:text-left border-b border-amber-300/60 pb-8">
         <Link
           href="/"
-          className="inline-flex items-center space-x-1.5 text-sm font-semibold text-temple-saffron hover:text-temple-darkSaffron transition-colors"
+          className="inline-flex items-center space-x-1.5 text-sm font-semibold text-temple-saffron hover:text-temple-darkSaffron transition-colors font-devanagari"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>{language === "mr" ? "मुख्य पृष्ठावर परत जा" : "Back to Home"}</span>
         </Link>
-
-        <div className="inline-block bg-amber-100 text-temple-maroon px-4 py-1.5 rounded-full text-xs font-bold border border-amber-300 font-devanagari">
-          स्थान व प्रवास मार्गदर्शन
-        </div>
 
         <h1 className="text-4xl sm:text-5xl font-black text-temple-maroon font-devanagari">
           {language === "mr" ? "वाटेगाव वासुदेव मंदिराकडे कसे पोहोचावे?" : "How to Reach Wategaon Vasudev Mandir"}
@@ -131,4 +127,3 @@ export default function LocationPage() {
     </div>
   );
 }
-

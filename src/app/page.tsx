@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -9,7 +9,6 @@ import {
   ScrollText,
   BookOpen,
   MapPin,
-  Sparkles,
   ChevronRight,
 } from "lucide-react";
 
@@ -23,12 +22,6 @@ export default function HomePage() {
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
 
         <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
-          {/* Sacred Mantra Badge */}
-          <div className="inline-flex items-center space-x-2 bg-amber-500/20 backdrop-blur-md px-6 py-2 rounded-full border border-temple-gold/60 text-amber-200 text-sm font-semibold tracking-wider shadow-inner font-devanagari">
-            <Sparkles className="w-4 h-4 text-temple-gold animate-pulse" />
-            <span>॥ ॐ नमो भगवते वासुदेवाय ॥</span>
-          </div>
-
           {/* Main Title */}
           <h1 className="text-4xl sm:text-6xl font-black text-amber-100 font-devanagari tracking-tight leading-tight drop-shadow-md">
             {templeData.title[language]}
@@ -52,11 +45,6 @@ export default function HomePage() {
         <div className="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border-2 border-temple-gold/40 relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
-              <div className="inline-flex items-center space-x-2 bg-amber-100 text-temple-maroon px-4 py-1.5 rounded-full text-xs font-bold border border-amber-300 font-devanagari">
-                <Sparkles className="w-4 h-4 text-temple-saffron" />
-                <span>{language === "mr" ? "देवता स्वरूप" : "Deity Identity"}</span>
-              </div>
-
               <h2 className="text-3xl font-black text-temple-maroon font-devanagari">
                 {language === "mr"
                   ? "वासुदेव म्हणजेच साक्षात भगवान श्रीकृष्ण!"
@@ -201,4 +189,3 @@ export default function HomePage() {
     </div>
   );
 }
-

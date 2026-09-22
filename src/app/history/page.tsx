@@ -21,10 +21,6 @@ export default function HistoryPage() {
           <span>{language === "mr" ? "मुख्य पृष्ठावर परत जा" : "Back to Home"}</span>
         </Link>
 
-        <div className="inline-block bg-amber-100 text-temple-maroon px-4 py-1.5 rounded-full text-xs font-bold border border-amber-300 font-devanagari">
-          ऐतिहासिक टप्पे • १८१४ ते आजपर्यंत
-        </div>
-
         <h1 className="text-4xl sm:text-5xl font-black text-temple-maroon font-devanagari">
           {templeHistory.title[language]}
         </h1>
@@ -75,10 +71,6 @@ export default function HistoryPage() {
       <div className="bg-gradient-to-br from-amber-900 via-temple-maroon to-amber-950 text-white p-8 sm:p-10 rounded-3xl shadow-xl border-4 border-temple-gold space-y-6 relative overflow-hidden">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-amber-500/40 pb-4 gap-2">
           <div className="space-y-1">
-            <div className="inline-flex items-center space-x-2 text-temple-gold font-bold text-xs uppercase tracking-wider">
-              <Sparkles className="w-4 h-4" />
-              <span>{templeHistory.sthapanaUtsav.subtitle[language]}</span>
-            </div>
             <h2 className="text-2xl sm:text-3xl font-black font-devanagari text-amber-100">
               {templeHistory.sthapanaUtsav.title[language]}
             </h2>

@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { deepotsavInfo } from "@/data/deepotsav";
-import { Flame, ArrowLeft, Calendar, Clock, Sparkles } from "lucide-react";
+import { ArrowLeft, Calendar, Clock } from "lucide-react";
 
 export default function DeepotsavPage() {
   const { language } = useLanguage();
@@ -15,15 +15,11 @@ export default function DeepotsavPage() {
       <div className="space-y-4 text-center sm:text-left border-b border-amber-300/60 pb-8">
         <Link
           href="/"
-          className="inline-flex items-center space-x-1.5 text-sm font-semibold text-temple-saffron hover:text-temple-darkSaffron transition-colors"
+          className="inline-flex items-center space-x-1.5 text-sm font-semibold text-temple-saffron hover:text-temple-darkSaffron transition-colors font-devanagari"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>{language === "mr" ? "मुख्य पृष्ठावर परत जा" : "Back to Home"}</span>
         </Link>
-
-        <div className="inline-block bg-amber-100 text-temple-maroon px-4 py-1.5 rounded-full text-xs font-bold border border-amber-300 font-devanagari">
-          वार्षिक दीपोत्सव सोहळा • १ महिना
-        </div>
 
         <h1 className="text-4xl sm:text-5xl font-black text-temple-maroon font-devanagari">
           {deepotsavInfo.title[language]}
@@ -100,4 +96,3 @@ export default function DeepotsavPage() {
     </div>
   );
 }
-

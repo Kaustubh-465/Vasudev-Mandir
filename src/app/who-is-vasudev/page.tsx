@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { vasudevCitations } from "@/data/citations";
-import { BookOpen, Sparkles, ArrowLeft } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 export default function WhoIsVasudevPage() {
   const { language } = useLanguage();
@@ -21,17 +21,13 @@ export default function WhoIsVasudevPage() {
           <span>{language === "mr" ? "मुख्य पृष्ठावर परत जा" : "Back to Home"}</span>
         </Link>
 
-        <div className="inline-block bg-amber-100 text-temple-maroon px-4 py-1.5 rounded-full text-xs font-bold border border-amber-300 font-devanagari">
-          ॥ ॐ नमो भगवते वासुदेवाय ॥ • स्वरूप व आध्यात्मिक महत्त्व
-        </div>
-
         <h1 className="text-4xl sm:text-5xl font-black text-temple-maroon font-devanagari">
           {language === "mr" ? "श्री वासुदेव स्वरूप व महत्त्व" : "Form & Significance of Shri Vasudev"}
         </h1>
 
         <p className="text-lg text-gray-700 font-devanagari leading-relaxed max-w-3xl">
           {language === "mr"
-            ? "वाटेगाव येथील भक्तिमय श्री वासुदेव मंदिर, दिवेकर खाजगी देवस्थान ट्रस्ट, भगवान वासुदेवांचे सर्वव्यापी चैतन्य व उत्सव."
+            ? "वाटेगाव येथील श्री वासुदेव मंदिर, दिवेकर खाजगी देवस्थान ट्रस्ट, भगवान वासुदेवांचे सर्वव्यापी चैतन्य व उत्सव."
             : "Devotional sanctuary of Shri Vasudev Mandir Wategaon, Divekar private devasthan trust, divine consciousness, and celebrations."}
         </p>
       </div>
@@ -45,10 +41,6 @@ export default function WhoIsVasudevPage() {
             className="bg-white p-8 sm:p-10 rounded-3xl shadow-lg border-2 border-amber-200 hover:border-temple-gold transition-all space-y-6"
           >
             <div className="border-b border-amber-200 pb-4 space-y-1">
-              <div className="flex items-center space-x-2 text-temple-saffron font-bold text-xs font-mono uppercase tracking-wider">
-                <Sparkles className="w-4 h-4" />
-                <span>{section.subtitle[language]}</span>
-              </div>
               <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
                 {section.title[language]}
               </h2>
