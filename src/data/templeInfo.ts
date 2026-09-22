@@ -32,7 +32,7 @@ export const templeData: TempleData = {
     en: "Wategaon (Sangli) • Bhogawati River Bank",
   },
   tagline: {
-    mr: "॥ ॐ नमो भगवते वासुदेवाय ॥ • भोगावती नदीच्या पवित्र तीरावर स्थित श्री वासुदेव देवस्थान",
+    mr: "॥ ॐ नमो भगवते वासुदेवाय ॥ • भोगावती नदीच्या भक्तिमय तीरावर स्थित श्री वासुदेव देवस्थान",
     en: "॥ Om Namo Bhagavate Vasudevaya ॥ • Sacred shrine situated on the banks of Bhogawati river",
   },
   location: {
@@ -50,7 +50,7 @@ export const templeData: TempleData = {
   },
   quickStats: [
     { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव (सांगली)", en: "Wategaon (Sangli)" } },
-    { label: { mr: "पवित्र नदी", en: "Holy River" }, value: { mr: "भोगावती नदीकाठ", en: "Bhogawati River Bank" } },
+    { label: { mr: "भक्तिमय नदी", en: "Holy River" }, value: { mr: "भोगावती नदीकाठ", en: "Bhogawati River Bank" } },
     { label: { mr: "मुख्य देवता", en: "Main Deity" }, value: { mr: "श्री वासुदेव (श्रीकृष्ण)", en: "Shree Vasudev (Krishna)" } },
     { label: { mr: "वार्षिक उत्सव", en: "Annual Festival" }, value: { mr: "महिन्याचा दीपोत्सव", en: "Month-long Deepotsav" } },
   ],
@@ -72,7 +72,7 @@ export const templeData: TempleData = {
     {
       title: { mr: "उत्तराभिमुख मंदिर", en: "North-facing Layout" },
       desc: {
-        mr: "भोगावती नदीच्या पवित्र तीरावर वसलेले उत्तराभिमुख मंदिर आणि शांत आध्यात्मिक परिसर.",
+        mr: "भोगावती नदीच्या भक्तिमय तीरावर वसलेले उत्तराभिमुख मंदिर आणि शांत आध्यात्मिक परिसर.",
         en: "North-facing sacred layout situated peacefully on the holy banks of Bhogawati river.",
       },
     },
@@ -85,4 +85,5 @@ export const templeData: TempleData = {
     },
   ],
 };
+
 

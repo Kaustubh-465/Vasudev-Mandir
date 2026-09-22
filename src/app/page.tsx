@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -41,7 +41,7 @@ export default function HomePage() {
 
           <p className="text-base sm:text-lg text-amber-200/90 font-devanagari max-w-2xl mx-auto leading-relaxed">
             {language === "mr"
-              ? "भोगावती नदीच्या पवित्र तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर. मंदिराची पवित्र माहिती, इतिहास व दीपोत्सव सोहळा."
+              ? "भोगावती नदीच्या भक्तिमय तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर. मंदिराची भक्तिमय माहिती, इतिहास व दीपोत्सव सोहळा."
               : "Sacred shrine of Shree Vasudev on the holy banks of Bhogawati river in Wategaon (Sangli)."}
           </p>
 
@@ -131,7 +131,7 @@ export default function HomePage() {
               </h3>
               <p className="text-xs text-amber-950 font-devanagari leading-relaxed">
                 {language === "mr"
-                  ? "मस्तकी मोरपिसांची टोपी, हाती टाळ-चिपळ्या आणि प्रभात समयी हरिनाम सांगणारा वासुदेव ही महाराष्ट्राची पवित्र संत परंपरा आहे."
+                  ? "मस्तकी मोरपिसांची टोपी, हाती टाळ-चिपळ्या आणि प्रभात समयी हरिनाम सांगणारा वासुदेव ही महाराष्ट्राची भक्तिमय संत परंपरा आहे."
                   : "The traditional Varkari Vasudev carrying peacock plume cap and cymbals spreading divine Harinam."}
               </p>
             </div>
@@ -147,7 +147,7 @@ export default function HomePage() {
           </h2>
           <p className="text-gray-600 font-devanagari max-w-xl mx-auto">
             {language === "mr"
-              ? "भोगावती नदीच्या पवित्र तीरावर वसलेल्या या देवस्थानाची प्रमुख वैशिष्ट्ये"
+              ? "भोगावती नदीच्या भक्तिमय तीरावर वसलेल्या या देवस्थानाची प्रमुख वैशिष्ट्ये"
               : "Key highlights of the shrine on the banks of Bhogawati river"}
           </p>
         </div>
@@ -245,3 +245,4 @@ export default function HomePage() {
     </div>
   );
 }
+

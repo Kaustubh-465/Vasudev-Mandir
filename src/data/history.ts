@@ -1,4 +1,4 @@
-export interface HistorySection {
+﻿export interface HistorySection {
   title: { mr: string; en: string };
   paragraphs: Array<{ mr: string; en: string }>;
   timeline: Array<{
@@ -15,7 +15,7 @@ export const templeHistory: HistorySection = {
   },
   paragraphs: [
     {
-      mr: "सांगली जिल्ह्यातील वाळवा तालुक्यात वसलेले **वाटेगाव** हे ऐतिहासिक व सांस्कृतिकदृष्ट्या समृद्ध गाव आहे. या गावामध्ये भोगावती नदीच्या पवित्र तीरावर **श्री वासुदेव मंदिर** उभारण्यात आले आहे.",
+      mr: "सांगली जिल्ह्यातील वाळवा तालुक्यात वसलेले **वाटेगाव** हे ऐतिहासिक व सांस्कृतिकदृष्ट्या समृद्ध गाव आहे. या गावामध्ये भोगावती नदीच्या भक्तिमय तीरावर **श्री वासुदेव मंदिर** उभारण्यात आले आहे.",
       en: "Nestled in Walwa taluka of Sangli district, **Wategaon** is a village rich in historical and cultural heritage. On the holy banks of Bhogawati river stands **Shree Vasudev Mandir**.",
     },
     {
@@ -54,3 +54,4 @@ export const templeHistory: HistorySection = {
     },
   ],
 };
+
