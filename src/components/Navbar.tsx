@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -58,7 +58,7 @@ export function Navbar() {
                 {language === "mr" ? "श्री वासुदेव मंदिर" : "Shree Vasudev Mandir"}
               </h1>
               <p className="text-xs text-amber-300/90 font-medium">
-                {language === "mr" ? "वातेगाव (सांगली) • श्री वासुदेव देवस्थान" : "Wategaon, Sangli • Shree Vasudev Shrine"}
+                {language === "mr" ? "वाटेगाव (सांगली) • श्री वासुदेव देवस्थान" : "Wategaon, Sangli • Shree Vasudev Shrine"}
               </p>
             </div>
           </Link>
@@ -135,3 +135,4 @@ export function Navbar() {
     </header>
   );
 }
+

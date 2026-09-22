@@ -1,4 +1,4 @@
-export interface CitationSection {
+﻿export interface CitationSection {
   id: string;
   title: { mr: string; en: string };
   subtitle: { mr: string; en: string };
@@ -22,7 +22,7 @@ export const vasudevCitations: CitationSection[] = [
     },
     content: [
       {
-        mr: "वातेगाव येथील श्री वासुदेव मंदिरातील देवता म्हणजेच साक्षात भगवान श्रीकृष्ण! वसुदेव व देवकीचा पुत्र म्हणून भगवंताला 'वासुदेव' हे नाव प्राप्त झाले.",
+        mr: "वाटेगाव येथील श्री वासुदेव मंदिरातील देवता म्हणजेच साक्षात भगवान श्रीकृष्ण! वसुदेव व देवकीचा पुत्र म्हणून भगवंताला 'वासुदेव' हे नाव प्राप्त झाले.",
         en: "The deity at Shree Vasudev Mandir Wategaon is Bhagwan Shri Krishna Himself, named 'Vasudev' as the divine son of Vasudeva & Devaki.",
       },
       {
@@ -80,7 +80,7 @@ export const vasudevCitations: CitationSection[] = [
   {
     id: "divekar-heritage",
     title: {
-      mr: "वातेगावचे दिवेकर कुलदैवत स्थान",
+      mr: "वाटेगावचे दिवेकर कुलदैवत स्थान",
       en: "Wategaon's Divekar Kuldaivat Heritage",
     },
     subtitle: {
@@ -89,13 +89,14 @@ export const vasudevCitations: CitationSection[] = [
     },
     content: [
       {
-        mr: "वातेगाव येथील वासुदेव मंदिर हे गावातील 'दिवेकर' कुटुंबाचे कुलदैवत आहे. भोगावती नदीच्या पवित्र तीरावर हे मंदिर स्थित असून दिवेकर घराण्याकडून नित्य पूजा-अर्चा पार पाडली जाते.",
+        mr: "वाटेगाव येथील वासुदेव मंदिर हे गावातील 'दिवेकर' कुटुंबाचे कुलदैवत आहे. भोगावती नदीच्या पवित्र तीरावर हे मंदिर स्थित असून दिवेकर घराण्याकडून नित्य पूजा-अर्चा पार पाडली जाते.",
         en: "The Vasudev Mandir at Wategaon serves as the revered Kuldaivat of the local Divekar family on the banks of Bhogawati river.",
       },
       {
-        mr: "संपूर्ण वातेगाव व परिसरातील भाविकांसाठी हे एक अत्यंत पवित्र व शांत श्रद्धास्थान आहे. दरवर्षी कोजागिरी ते त्रिपुरारी पौर्णिमेदरम्यान येथे भव्य दीपोत्सव साजरा होतो.",
+        mr: "संपूर्ण वाटेगाव व परिसरातील भाविकांसाठी हे एक अत्यंत पवित्र व शांत श्रद्धास्थान आहे. दरवर्षी कोजागिरी ते त्रिपुरारी पौर्णिमेदरम्यान येथे भव्य दीपोत्सव साजरा होतो.",
         en: "A peaceful sanctuary of faith for all of Wategaon, celebrating an annual month-long festival of lights.",
       },
     ],
   },
 ];
+

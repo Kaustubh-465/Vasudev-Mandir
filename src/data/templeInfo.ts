@@ -1,4 +1,4 @@
-export interface TempleData {
+﻿export interface TempleData {
   title: { mr: string; en: string };
   subtitle: { mr: string; en: string };
   tagline: { mr: string; en: string };
@@ -28,7 +28,7 @@ export const templeData: TempleData = {
     en: "Shree Vasudev Mandir, Wategaon",
   },
   subtitle: {
-    mr: "वातेगाव (जि. सांगली) • भोगावती नदीतीर",
+    mr: "वाटेगाव (जि. सांगली) • भोगावती नदीतीर",
     en: "Wategaon (Sangli) • Bhogawati River Bank",
   },
   tagline: {
@@ -85,3 +85,4 @@ export const templeData: TempleData = {
     },
   ],
 };
+

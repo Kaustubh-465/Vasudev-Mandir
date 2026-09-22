@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -42,7 +42,7 @@ export default function HomePage() {
 
           <p className="text-base sm:text-lg text-amber-200/90 font-devanagari max-w-2xl mx-auto leading-relaxed">
             {language === "mr"
-              ? "भोगावती नदीच्या पवित्र तीरावर स्थित वातेगावचे श्री वासुदेव मंदिर. मंदिराची पवित्र माहिती, इतिहास, दीपोत्सव सोहळा व आरती साहित्य."
+              ? "भोगावती नदीच्या पवित्र तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर. मंदिराची पवित्र माहिती, इतिहास, दीपोत्सव सोहळा व आरती साहित्य."
               : "Sacred shrine of Shree Vasudev on the holy banks of Bhogawati river in Wategaon (Sangli)."}
           </p>
 
@@ -237,7 +237,7 @@ export default function HomePage() {
             </h3>
             <p className="text-xs text-gray-700 font-devanagari leading-relaxed">
               {language === "mr"
-                ? "वातेगाव (ता. वाळवा, जि. सांगली) मंदिराचा सविस्तर पत्ता व नकाशे."
+                ? "वाटेगाव (ता. वाळवा, जि. सांगली) मंदिराचा सविस्तर पत्ता व नकाशे."
                 : "Detailed address, road/bus routes, and Google Maps location pin."}
             </p>
           </Link>
@@ -246,3 +246,4 @@ export default function HomePage() {
     </div>
   );
 }
+

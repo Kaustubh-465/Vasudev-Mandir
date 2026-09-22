@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -31,7 +31,7 @@ export default function WhoIsVasudevPage() {
 
         <p className="text-lg text-gray-700 font-devanagari leading-relaxed max-w-3xl">
           {language === "mr"
-            ? "वातेगाव येथील श्री वासुदेव मंदिरातील वासुदेवाची संकल्पना, साक्षात श्रीकृष्ण स्वरूप व महाराष्ट्रातील वासुदेव परंपरेचा सविस्तर परिचय."
+            ? "वाटेगाव येथील श्री वासुदेव मंदिरातील वासुदेवाची संकल्पना, साक्षात श्रीकृष्ण स्वरूप व महाराष्ट्रातील वासुदेव परंपरेचा सविस्तर परिचय."
             : "Detailed introduction to Shree Vasudev at Wategaon, explaining Lord Shri Krishna's divine form."}
         </p>
       </div>
@@ -48,7 +48,7 @@ export default function WhoIsVasudevPage() {
         <div className="space-y-4 text-amber-100 font-devanagari text-base sm:text-lg leading-relaxed">
           <p>
             {language === "mr"
-              ? "वातेगाव येथील श्री वासुदेव मंदिरातील देवता म्हणजेच वसुदेव व देवकीचा पुत्र साक्षात भगवान श्रीकृष्ण! भागवत परंपरेत वासुदेव हे श्रीकृष्णाचेच नाव आहे."
+              ? "वाटेगाव येथील श्री वासुदेव मंदिरातील देवता म्हणजेच वसुदेव व देवकीचा पुत्र साक्षात भगवान श्रीकृष्ण! भागवत परंपरेत वासुदेव हे श्रीकृष्णाचेच नाव आहे."
               : "The deity at Shree Vasudev Mandir Wategaon is Bhagwan Shri Krishna Himself, named 'Vasudev' as the divine son of Vasudeva & Devaki."}
           </p>
 
@@ -110,3 +110,4 @@ export default function WhoIsVasudevPage() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
@@ -82,10 +82,11 @@ export default function AartiAbhangPage() {
         </div>
 
         <div className="text-xs text-amber-800 font-devanagari">
-          ॥ श्री वासुदेव प्रसन्न ॥ • वातेगाव (सांगली)
+          ॥ श्री वासुदेव प्रसन्न ॥ • वाटेगाव (सांगली)
         </div>
       </div>
     </div>
   );
 }
+
 
