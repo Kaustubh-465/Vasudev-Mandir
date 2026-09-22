@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { vasudevCitations } from "@/data/citations";
-import { BookOpen, Sparkles, ArrowLeft, Heart, Sun, Calendar, Landmark } from "lucide-react";
+import { BookOpen, Sparkles, ArrowLeft } from "lucide-react";
 
 export default function WhoIsVasudevPage() {
   const { language } = useLanguage();
@@ -31,14 +31,14 @@ export default function WhoIsVasudevPage() {
 
         <p className="text-lg text-gray-700 font-devanagari leading-relaxed max-w-3xl">
           {language === "mr"
-            ? "वाटेगाव येथील भक्तिमय श्री वासुदेव मंदिर, भगवान वासुदेवांचे सर्वव्यापी चैतन्य, भक्ती परंपरा आणि मंदिराचे धार्मिक महत्त्व."
-            : "Devotional sanctuary of Shri Vasudev Mandir Wategaon, all-pervading divine consciousness, and cultural traditions."}
+            ? "वाटेगाव येथील भक्तिमय श्री वासुदेव मंदिर, दिवेकर खाजगी देवस्थान ट्रस्ट, भगवान वासुदेवांचे सर्वव्यापी चैतन्य व धार्मिक उत्सव."
+            : "Devotional sanctuary of Shri Vasudev Mandir Wategaon, Divekar private devasthan trust, divine consciousness, and celebrations."}
         </p>
       </div>
 
-      {/* Main Highlights Sections */}
+      {/* Main Content Sections */}
       <div className="space-y-10">
-        {vasudevCitations.map((section, idx) => (
+        {vasudevCitations.map((section) => (
           <div
             key={section.id}
             id={section.id}
