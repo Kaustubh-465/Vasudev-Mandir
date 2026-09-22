@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -11,7 +11,6 @@ import {
   MapPin,
   Sparkles,
   ChevronRight,
-  Music,
 } from "lucide-react";
 
 export default function HomePage() {
@@ -42,7 +41,7 @@ export default function HomePage() {
 
           <p className="text-base sm:text-lg text-amber-200/90 font-devanagari max-w-2xl mx-auto leading-relaxed">
             {language === "mr"
-              ? "भोगावती नदीच्या पवित्र तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर. मंदिराची पवित्र माहिती, इतिहास, दीपोत्सव सोहळा व आरती साहित्य."
+              ? "भोगावती नदीच्या पवित्र तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर. मंदिराची पवित्र माहिती, इतिहास व दीपोत्सव सोहळा."
               : "Sacred shrine of Shree Vasudev on the holy banks of Bhogawati river in Wategaon (Sangli)."}
           </p>
 
@@ -198,6 +197,21 @@ export default function HomePage() {
           </Link>
 
           <Link
+            href="/who-is-vasudev"
+            className="group bg-gradient-to-br from-amber-800 to-amber-950 text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all space-y-3 border border-amber-500/40"
+          >
+            <BookOpen className="w-7 h-7 text-temple-gold" />
+            <h3 className="text-xl font-bold font-devanagari group-hover:text-temple-gold transition-colors">
+              {language === "mr" ? "वासुदेव स्वरूप (श्रीकृष्ण)" : "Who is Vasudev?"}
+            </h3>
+            <p className="text-xs text-amber-200/80 font-devanagari leading-relaxed">
+              {language === "mr"
+                ? "साक्षात भगवान श्रीकृष्ण स्वरूप व वासुदेव परंपरेची माहिती."
+                : "Bhagwan Shri Krishna's divine form and Vasudev traditions."}
+            </p>
+          </Link>
+
+          <Link
             href="/deepotsav"
             className="group bg-gradient-to-br from-amber-600 to-temple-saffron text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all space-y-3 border border-amber-400/40"
           >
@@ -207,23 +221,8 @@ export default function HomePage() {
             </h3>
             <p className="text-xs text-amber-100/90 font-devanagari leading-relaxed">
               {language === "mr"
-                ? "कोजागिरी ते त्रिपुरारी पौर्णिमा दरम्यान हजारो पणत्यांचा सोहळा व काकड आरती."
-                : "Month-long festival of traditional oil lamps and evening Aarti programs."}
-            </p>
-          </Link>
-
-          <Link
-            href="/aarti-abhang"
-            className="group bg-gradient-to-br from-amber-950 to-amber-900 text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all space-y-3 border border-amber-500/40"
-          >
-            <Music className="w-7 h-7 text-temple-gold" />
-            <h3 className="text-xl font-bold font-devanagari group-hover:text-temple-gold transition-colors">
-              {language === "mr" ? "आरती व अभंग" : "Aarti & Hymns"}
-            </h3>
-            <p className="text-xs text-amber-200/80 font-devanagari leading-relaxed">
-              {language === "mr"
-                ? "वासुदेवाची पारंपरिक आरती, संत एकनाथ महाराजांचे अभंग व महामंत्र."
-                : "Traditional Vasudev Aarti, Sant Eknath Abhangs, and Vasudev Mahamantra."}
+                ? "कोजागिरी ते त्रिपुरारी पौर्णिमा दरम्यान हजारो पणत्यांचा सोहळा."
+                : "Month-long festival of traditional oil lamps."}
             </p>
           </Link>
 
@@ -246,4 +245,3 @@ export default function HomePage() {
     </div>
   );
 }
-

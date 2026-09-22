@@ -1,10 +1,10 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/context/LanguageContext";
-import { Menu, X, Flame, Landmark, BookOpen, MapPin, ScrollText, Music } from "lucide-react";
+import { Menu, X, Flame, Landmark, BookOpen, MapPin, ScrollText } from "lucide-react";
 
 export function Navbar() {
   const { language, toggleLanguage } = useLanguage();
@@ -33,11 +33,6 @@ export function Navbar() {
       icon: Flame,
     },
     {
-      href: "/aarti-abhang",
-      label: { mr: "आरती व अभंग", en: "Aarti & Hymns" },
-      icon: Music,
-    },
-    {
       href: "/location",
       label: { mr: "कसे पोहोचावे", en: "Location" },
       icon: MapPin,
@@ -57,7 +52,7 @@ export function Navbar() {
               <h1 className="text-xl sm:text-2xl font-bold tracking-wide text-amber-100 font-devanagari">
                 {language === "mr" ? "श्री वासुदेव मंदिर" : "Shree Vasudev Mandir"}
               </h1>
-              <p className="text-xs text-amber-300/90 font-medium">
+              <p className="text-xs text-amber-300/90 font-medium font-devanagari">
                 {language === "mr" ? "वाटेगाव (सांगली) • श्री वासुदेव देवस्थान" : "Wategaon, Sangli • Shree Vasudev Shrine"}
               </p>
             </div>
@@ -135,4 +130,3 @@ export function Navbar() {
     </header>
   );
 }
-

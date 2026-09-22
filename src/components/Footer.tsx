@@ -1,9 +1,9 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import { Landmark, MapPin } from "lucide-react";
+import { Landmark } from "lucide-react";
 
 export function Footer() {
   const { language } = useLanguage();
@@ -17,7 +17,7 @@ export function Footer() {
             <div className="flex items-center space-x-3">
               <span className="text-3xl">🛕</span>
               <div>
-                <h2 className="text-xl font-bold text-amber-200">
+                <h2 className="text-xl font-bold text-amber-200 font-devanagari">
                   {language === "mr" ? "श्री वासुदेव मंदिर, वाटेगाव" : "Shree Vasudev Mandir, Wategaon"}
                 </h2>
                 <p className="text-xs text-amber-400 font-devanagari">
@@ -38,7 +38,7 @@ export function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="text-lg font-bold text-amber-200 mb-4 border-b border-amber-700/50 pb-2">
+            <h3 className="text-lg font-bold text-amber-200 mb-4 border-b border-amber-700/50 pb-2 font-devanagari">
               {language === "mr" ? "महत्त्वाची दालने" : "Quick Links"}
             </h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm font-devanagari">
@@ -58,12 +58,6 @@ export function Footer() {
                 <Link href="/deepotsav" className="hover:text-temple-gold transition-colors flex items-center space-x-2">
                   <span>▸</span>
                   <span>{language === "mr" ? "भव्य दीपोत्सव सोहळा" : "Deepotsav Festival"}</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/aarti-abhang" className="hover:text-temple-gold transition-colors flex items-center space-x-2">
-                  <span>▸</span>
-                  <span>{language === "mr" ? "आरती व अभंग" : "Aarti & Hymns"}</span>
                 </Link>
               </li>
               <li>
@@ -92,4 +86,3 @@ export function Footer() {
     </footer>
   );
 }
-
