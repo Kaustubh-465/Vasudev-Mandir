@@ -1,16 +1,98 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { deepotsavInfo } from "@/data/deepotsav";
-import { ArrowLeft, Calendar, Clock } from "lucide-react";
+import ImageLightboxModal from "@/components/ImageLightboxModal";
+import { ArrowLeft, Calendar, Clock, Camera, Maximize2, Flame } from "lucide-react";
 
 export default function DeepotsavPage() {
   const { language } = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string;
+    alt: string;
+    caption: string;
+  } | null>(null);
+
+  const deepotsavGallery = [
+    {
+      src: "/images/IMG-20241107-WA0001.jpg",
+      alt: "दीपोत्सव मंदिर परिसर पणत्यांची रांगोळी",
+      caption:
+        language === "mr"
+          ? "दीपोत्सवात हजारो पणत्यांच्या लखलखाटाने उजळून निघणारा मंदिर परिसर"
+          : "Temple Courtyard Illuminated with Thousands of Oil Lamps",
+    },
+    {
+      src: "/images/IMG_20241016_222228.jpg",
+      alt: "मंदिर प्रवेशद्वार रोषणाई",
+      caption:
+        language === "mr"
+          ? "दीपोत्सवातील मुख्य मंदिर प्रवेशद्वाराची नयनरम्य रोषणाई"
+          : "Illuminated Temple Entrance Gate during Deepotsav",
+    },
+    {
+      src: "/images/IMG-20241106-WA0009.jpg",
+      alt: "लाकडी पायऱ्यांवर तेल दीप",
+      caption:
+        language === "mr"
+          ? "सागवानी लाकडी पायऱ्यांवर प्रज्वलित करण्यात आलेले पारंपरिक दीप"
+          : "Traditional Brass & Clay Diyas on Teakwood Steps",
+    },
+    {
+      src: "/images/IMG-20241106-WA0011.jpg",
+      alt: "प्रज्वलित पणती प्रकाश दीप",
+      caption:
+        language === "mr"
+          ? "प्रज्वलित पणती व समईचा मंगलमय प्रकाश"
+          : "Glowing Warmth of Traditional Oil Lamps",
+    },
+    {
+      src: "/images/IMG_20241016_222505-1.jpg",
+      alt: "दीपोत्सव रात्रीचे शिखर व मंडप दृश्य",
+      caption:
+        language === "mr"
+          ? "रातच्या वेळी ५० फूट उंच शिखर व लाकडी मंडपाची दिव्य रोषणाई"
+          : "Night Illumination of 50ft Temple Tower & Wooden Mandap",
+    },
+    {
+      src: "/images/IMG_20241109_223537.jpg",
+      alt: "त्रिपुरारी पौर्णिमा दीपोत्सव",
+      caption:
+        language === "mr"
+          ? "त्रिपुरारी पौर्णिमेच्या सांगता सोहळ्यातील दीपप्रज्वलन"
+          : "Tripurari Purnima Concluding Deepotsav Ceremony",
+    },
+    {
+      src: "/images/IMG_20241016_221218.jpg",
+      alt: "पितळी समया व दीपमाळ",
+      caption:
+        language === "mr"
+          ? "गाभाऱ्यातील भव्य पितळी समया व दीप प्रकाश"
+          : "Glowing Brass Samai Lamps inside Temple Altar",
+    },
+    {
+      src: "/images/IMG_20241016_221143.jpg",
+      alt: "दीपोत्सवातील परिसर दृश्य",
+      caption:
+        language === "mr"
+          ? "दीपोत्सव काळात रात्रीचे मंदिर विलोभनीय रूप"
+          : "Vibrant Night Atmosphere of Temple Deepotsav",
+    },
+  ];
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      {/* Lightbox Modal */}
+      <ImageLightboxModal
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+        imageSrc={selectedImage?.src || ""}
+        altText={selectedImage?.alt || ""}
+        caption={selectedImage?.caption}
+      />
+
       {/* Header */}
       <div className="space-y-4 text-center sm:text-left border-b border-amber-300/60 pb-8">
         <Link
@@ -31,7 +113,7 @@ export default function DeepotsavPage() {
       </div>
 
       {/* Period Banner */}
-      <div className="bg-gradient-to-r from-amber-600 via-temple-saffron to-amber-700 text-white p-6 rounded-3xl shadow-xl flex items-center space-x-4 border-2 border-temple-gold">
+      <div className="bg-gradient-to-r from-amber-700 via-temple-saffron to-amber-800 text-white p-6 rounded-3xl shadow-xl flex items-center space-x-4 border-2 border-temple-gold">
         <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center shrink-0">
           <Calendar className="w-8 h-8 text-amber-100" />
         </div>
@@ -63,6 +145,47 @@ export default function DeepotsavPage() {
             </p>
           </div>
         ))}
+      </div>
+
+      {/* Deepotsav Photo Gallery */}
+      <div className="bg-gradient-to-br from-amber-950 via-temple-maroon to-amber-900 text-white p-6 sm:p-10 rounded-3xl shadow-xl border-4 border-temple-gold space-y-6">
+        <div className="flex items-center justify-between border-b border-amber-500/40 pb-4">
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center text-temple-gold">
+              <Flame className="w-6 h-6" />
+            </div>
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-black font-devanagari text-amber-100">
+                {language === "mr" ? "दीपोत्सव छायाचित्र दालन" : "Deepotsav Photo Gallery"}
+              </h2>
+              <p className="text-xs text-amber-200/80 font-devanagari">
+                {language === "mr" ? "पाहण्यासाठी कोणत्याही फोटोवर टॅप करा 🔍" : "Tap any photo for full view 🔍"}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {deepotsavGallery.map((item, idx) => (
+            <div
+              key={idx}
+              onClick={() => setSelectedImage(item)}
+              className="group relative cursor-pointer overflow-hidden rounded-2xl border border-amber-500/50 bg-amber-950 shadow-md hover:shadow-2xl transition-all"
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-3 text-amber-100">
+                <div className="flex items-center justify-between text-xs font-bold font-devanagari">
+                  <span className="line-clamp-1">{item.alt}</span>
+                  <Maximize2 className="w-3.5 h-3.5 text-temple-gold shrink-0 ml-1" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Daily Ritual Timetable */}

@@ -1,16 +1,58 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { vasudevCitations } from "@/data/citations";
-import { ArrowLeft } from "lucide-react";
+import ImageLightboxModal from "@/components/ImageLightboxModal";
+import { ArrowLeft, Sparkles, Maximize2, Camera } from "lucide-react";
 
 export default function WhoIsVasudevPage() {
   const { language } = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string;
+    alt: string;
+    caption: string;
+  } | null>(null);
+
+  const idolPhotos = [
+    {
+      src: "/images/PXL_20260904_121625931.PORTRAIT.jpg",
+      alt: "श्री वासुदेव पंचधातू मूर्ती (मुकुट व पुष्पहार)",
+      caption:
+        language === "mr"
+          ? "श्री वासुदेव (श्रीकृष्ण) पंचधातू मूर्ती - वाटेगाव"
+          : "Shree Vasudev (Shri Krishna) Panchadhatu Idol - Wategaon",
+    },
+    {
+      src: "/images/IMG-20240617-WA0005.jpg",
+      alt: "श्री वासुदेव प्रसन्न मुखकमल",
+      caption:
+        language === "mr"
+          ? "श्री वासुदेवांचे प्रसन्न हास्यमुद्रा मुखकमल"
+          : "Serene Divine Facial Expression of Lord Shree Vasudev",
+    },
+    {
+      src: "/images/IMG-20241012-WA0028.jpg",
+      alt: "श्री वासुदेव शृंगार रूप",
+      caption:
+        language === "mr"
+          ? "श्री वासुदेव मूर्तीचा रेशमी वस्त्र व सुवर्ण शृंगार"
+          : "Divine Silk Robes & Crown Adornment of Shree Vasudev Idol",
+    },
+  ];
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      {/* Lightbox Modal */}
+      <ImageLightboxModal
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+        imageSrc={selectedImage?.src || ""}
+        altText={selectedImage?.alt || ""}
+        caption={selectedImage?.caption}
+      />
+
       {/* Page Header */}
       <div className="space-y-4 text-center sm:text-left border-b border-amber-300/60 pb-8">
         <Link
@@ -30,6 +72,43 @@ export default function WhoIsVasudevPage() {
             ? "वाटेगाव येथील श्री वासुदेव मंदिर, दिवेकर खाजगी देवस्थान ट्रस्ट, भगवान वासुदेवांचे सर्वव्यापी चैतन्य व उत्सव."
             : "Devotional sanctuary of Shri Vasudev Mandir Wategaon, Divekar private devasthan trust, divine consciousness, and celebrations."}
         </p>
+      </div>
+
+      {/* Idol Photo Gallery Showcase */}
+      <div className="bg-gradient-to-br from-amber-950 via-temple-maroon to-amber-900 text-white p-6 sm:p-8 rounded-3xl shadow-xl border-4 border-temple-gold space-y-6">
+        <div className="flex items-center justify-between border-b border-amber-500/40 pb-3">
+          <div className="flex items-center space-x-2">
+            <Camera className="w-5 h-5 text-temple-gold" />
+            <h2 className="text-xl sm:text-2xl font-black font-devanagari text-amber-100">
+              {language === "mr" ? "श्री वासुदेव पंचधातू मूर्ती स्वरूप" : "Panchadhatu Idol Photographs"}
+            </h2>
+          </div>
+          <span className="text-xs font-bold text-amber-300 font-devanagari">
+            {language === "mr" ? "मूर्ती दर्शन 🪔" : "Deity View 🪔"}
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {idolPhotos.map((item, idx) => (
+            <div
+              key={idx}
+              onClick={() => setSelectedImage(item)}
+              className="group relative cursor-pointer overflow-hidden rounded-2xl border-2 border-amber-400/60 bg-amber-950 shadow-md hover:shadow-2xl transition-all"
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3 text-amber-100">
+                <div className="flex items-center justify-between text-xs font-bold font-devanagari">
+                  <span className="line-clamp-1">{item.alt}</span>
+                  <Maximize2 className="w-3.5 h-3.5 text-temple-gold shrink-0 ml-1" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Main Content Sections */}

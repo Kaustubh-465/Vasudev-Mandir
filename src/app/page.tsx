@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { templeData } from "@/data/templeInfo";
+import ImageLightboxModal from "@/components/ImageLightboxModal";
 import {
   Flame,
   ScrollText,
@@ -11,25 +12,64 @@ import {
   MapPin,
   ChevronRight,
   Sparkles,
+  Maximize2,
+  Camera,
 } from "lucide-react";
 
 export default function HomePage() {
   const { language } = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string;
+    alt: string;
+    caption: string;
+  } | null>(null);
+
+  const galleryPreview = [
+    {
+      src: "/images/PXL_20260904_121625931.PORTRAIT.jpg",
+      alt: "श्री वासुदेव पंचधातू मूर्ती",
+      caption: language === "mr" ? "श्री वासुदेव (श्रीकृष्ण) प्रसन्न पंचधातू मूर्ती" : "Shree Vasudev (Shri Krishna) Divine Panchadhatu Idol",
+    },
+    {
+      src: "/images/1000183951.jpg",
+      alt: "मंदिर गाभारा व समई प्रकाश",
+      caption: language === "mr" ? "मंदिर गाभारा आणि उजळलेला समई प्रकाश" : "Temple Sanctum Altar illuminated with lamps",
+    },
+    {
+      src: "/images/1000183552.jpg",
+      alt: "६०×३० फूट सागवानी लाकडी मंडप",
+      caption: language === "mr" ? "१८१४ मधील ऐतिहासिक सागवानी लाकडी मंडप" : "Historic 1814 Teakwood Mandap Architecture",
+    },
+    {
+      src: "/images/IMG-20241107-WA0001.jpg",
+      alt: "दीपोत्सव सोहळा रोषणाई",
+      caption: language === "mr" ? "कोजागिरी ते त्रिपुरारी पौर्णिमा दरम्यानचा भव्य दीपोत्सव सोहळा" : "Grand Deepotsav Festival Oil Lamps Lighting",
+    },
+  ];
 
   return (
     <div className="space-y-8 sm:space-y-12 pb-12 sm:pb-16">
-      {/* Hero Banner Section */}
-      <section className="relative bg-gradient-to-b from-temple-maroon via-temple-deepRed to-amber-950 text-white pt-10 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 border-b-4 border-temple-gold overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+      {/* Lightbox Modal */}
+      <ImageLightboxModal
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+        imageSrc={selectedImage?.src || ""}
+        altText={selectedImage?.alt || ""}
+        caption={selectedImage?.caption}
+      />
 
-        <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6 relative z-10">
+      {/* Hero Banner Section */}
+      <section className="relative bg-gradient-to-b from-temple-maroon via-temple-deepMaroon to-amber-950 text-white pt-10 sm:pt-16 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-8 border-b-4 border-temple-gold overflow-hidden">
+        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+
+        <div className="max-w-5xl mx-auto text-center space-y-4 sm:space-y-6 relative z-10">
           {/* Main Title */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-amber-100 font-devanagari tracking-tight leading-tight drop-shadow-md">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-amber-100 font-devanagari tracking-tight leading-tight drop-shadow-lg">
             {templeData.title[language]}
           </h1>
 
           {/* Subtitle & Description */}
-          <p className="text-lg sm:text-2xl font-bold text-temple-gold font-devanagari max-w-2xl mx-auto">
+          <p className="text-lg sm:text-2xl font-bold text-temple-gold font-devanagari max-w-2xl mx-auto drop-shadow">
             {templeData.subtitle[language]}
           </p>
 
@@ -41,11 +81,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Feature Section: Vasudev Identity (Bhagwan Shri Krishna) */}
+      {/* Feature Section with Idol Photo & Vasudev Identity */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-xl border-2 border-temple-gold/40 relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
-            <div className="lg:col-span-8 space-y-3 sm:space-y-4">
+            {/* Idol Photo Preview */}
+            <div className="lg:col-span-4 flex flex-col items-center">
+              <div
+                onClick={() =>
+                  setSelectedImage({
+                    src: "/images/PXL_20260904_121625931.PORTRAIT.jpg",
+                    alt: "श्री वासुदेव पंचधातू मूर्ती",
+                    caption:
+                      language === "mr"
+                        ? "श्री वासुदेव (भगवान श्रीकृष्ण) पंचधातू मूर्ती - वाटेगाव"
+                        : "Shree Vasudev (Bhagwan Shri Krishna) Panchadhatu Idol - Wategaon",
+                  })
+                }
+                className="group relative cursor-pointer overflow-hidden rounded-2xl border-4 border-amber-300 shadow-xl transition-all hover:scale-102 hover:shadow-2xl max-w-xs sm:max-w-sm w-full"
+              >
+                <img
+                  src="/images/PXL_20260904_121625931.PORTRAIT.jpg"
+                  alt="श्री वासुदेव प्रसन्न पंचधातू मूर्ती"
+                  className="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity flex flex-col justify-end p-4 text-white">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-amber-200 font-devanagari">
+                      {language === "mr" ? "पहाण्यासाठी टॅप करा 🔍" : "Tap to expand 🔍"}
+                    </span>
+                    <Maximize2 className="w-4 h-4 text-temple-gold" />
+                  </div>
+                  <p className="text-sm font-bold text-amber-100 font-devanagari">
+                    {language === "mr" ? "श्री वासुदेव (श्रीकृष्ण) पंचधातू मूर्ती" : "Shree Vasudev Panchadhatu Idol"}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Content Details */}
+            <div className="lg:col-span-8 space-y-4">
+              <div className="inline-block bg-amber-100 text-temple-maroon px-3.5 py-1 rounded-full text-xs font-bold border border-amber-300 font-devanagari">
+                {language === "mr" ? "॥ ॐ नमो भगवते वासुदेवाय ॥" : "Om Namo Bhagavate Vasudevaya"}
+              </div>
+
               <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
                 {language === "mr"
                   ? "वासुदेव म्हणजेच साक्षात भगवान श्रीकृष्ण!"
@@ -68,19 +147,49 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-
-            <div className="lg:col-span-4 bg-gradient-to-br from-amber-50 to-amber-100 p-5 sm:p-6 rounded-2xl border-2 border-amber-300/80 text-center space-y-2.5">
-              <div className="text-3xl sm:text-4xl">🪈</div>
-              <h3 className="text-lg sm:text-xl font-bold text-temple-maroon font-devanagari">
-                {language === "mr" ? "॥ ॐ नमो भगवते वासुदेवाय ॥" : "Om Namo Bhagavate Vasudevaya"}
-              </h3>
-              <p className="text-xs text-amber-950 font-devanagari leading-relaxed">
-                {language === "mr"
-                  ? "मस्तकी मोरपिसांची टोपी, हाती टाळ-चिपळ्या आणि प्रभात समयी हरिनाम सांगणारा वासुदेव ही महाराष्ट्राची लोकसंस्कृती परंपरा आहे."
-                  : "The traditional Varkari Vasudev carrying peacock plume cap and cymbals spreading divine Harinam."}
-              </p>
-            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Photo Showcase Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <div className="text-center space-y-2">
+          <div className="inline-flex items-center space-x-2 text-temple-saffron font-bold text-sm">
+            <Camera className="w-4 h-4" />
+            <span>{language === "mr" ? "छायाचित्रे" : "Photo Gallery"}</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
+            {language === "mr" ? "श्री वासुदेव मंदिर छायाचित्र झलक" : "Temple Photo Showcase"}
+          </h2>
+          <p className="text-xs sm:text-sm text-gray-600 font-devanagari max-w-xl mx-auto">
+            {language === "mr"
+              ? "मूर्ती, सागवानी लाकडी स्थापत्य व दीपोत्सव सोहळ्याची अस्सल छायाचित्रे"
+              : "Authentic photographs of the deity, teakwood architecture, and Deepotsav"}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {galleryPreview.map((item, idx) => (
+            <div
+              key={idx}
+              onClick={() => setSelectedImage(item)}
+              className="group relative cursor-pointer overflow-hidden rounded-2xl bg-white border-2 border-amber-200 shadow-md hover:shadow-xl transition-all hover:-translate-y-1"
+            >
+              <div className="h-56 overflow-hidden">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-3 bg-amber-50/80 border-t border-amber-200 flex items-center justify-between">
+                <p className="text-xs font-bold text-temple-maroon font-devanagari line-clamp-1">
+                  {item.alt}
+                </p>
+                <Maximize2 className="w-3.5 h-3.5 text-temple-saffron shrink-0 ml-1" />
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -128,7 +237,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           <Link
             href="/history"
-            className="group bg-gradient-to-br from-amber-900 to-temple-maroon text-white p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl active:scale-98 transition-all space-y-2.5 border border-amber-600/40 touch-manipulation"
+            className="group bg-gradient-to-br from-amber-900 via-temple-maroon to-amber-950 text-white p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl active:scale-98 transition-all space-y-2.5 border border-amber-600/40 touch-manipulation"
           >
             <ScrollText className="w-6 h-6 sm:w-7 sm:h-7 text-temple-gold" />
             <h3 className="text-lg sm:text-xl font-bold font-devanagari group-hover:text-temple-gold transition-colors">

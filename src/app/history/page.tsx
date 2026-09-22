@@ -1,16 +1,83 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { templeHistory } from "@/data/history";
-import { ScrollText, ArrowLeft, Clock, Calendar, Sparkles, Image as ImageIcon } from "lucide-react";
+import ImageLightboxModal from "@/components/ImageLightboxModal";
+import {
+  ScrollText,
+  ArrowLeft,
+  Clock,
+  Camera,
+  Maximize2,
+} from "lucide-react";
 
 export default function HistoryPage() {
   const { language } = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string;
+    alt: string;
+    caption: string;
+  } | null>(null);
+
+  const architecturePhotos = [
+    {
+      src: "/images/1000183552.jpg",
+      alt: "६०×३० फूट सागवानी लाकडी मंडप",
+      caption:
+        language === "mr"
+          ? "सुमारे २०० वर्षांपूर्वी उभारलेला ६० फूट लांब व ३० फूट रुंद ऐतिहासिक सागवानी लाकडी मंडप"
+          : "Historic 200-year-old Teakwood Mandap Architecture (60ft x 30ft)",
+    },
+    {
+      src: "/images/IMG-20241103-WA0002.jpg",
+      alt: "मंदिर लाकडी नक्षीकाम प्रवेशद्वार",
+      caption:
+        language === "mr"
+          ? "मंदिराचे सुबक लाकडी नक्षीकाम प्रवेशद्वार व कमानी"
+          : "Ornate Hand-Carved Teakwood Arches & Temple Entrance",
+    },
+    {
+      src: "/images/IMG-20241103-WA0021.jpg",
+      alt: "दीपोत्सवातील लाकडी मंडप रोषणाई",
+      caption:
+        language === "mr"
+          ? "दीपोत्सवात दिव्यांच्या रोषणाईने उजळणारा सागवानी मंडप"
+          : "Teakwood Mandap Illuminated during Deepotsav Festival",
+    },
+  ];
+
+  const utsavPhotos = [
+    {
+      src: "/images/IMG-20241107-WA0001.jpg",
+      alt: "स्थापना उत्सव रोषणाई",
+      caption:
+        language === "mr"
+          ? "मंदिर स्थापना उत्सवातील दिव्यांचा लखलखाट व रांगोळी"
+          : "Temple Sthapana Utsav Illumination & Rangoli",
+    },
+    {
+      src: "/images/IMG_20241016_222202.jpg",
+      alt: "उत्सव भव्य रोषणाई दृश्य",
+      caption:
+        language === "mr"
+          ? "वार्षिक उत्सवातील मंदिर परिसराचे भव्य दृश्य"
+          : "Grand Illumination View during Temple Annual Utsav",
+    },
+  ];
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      {/* Lightbox Modal */}
+      <ImageLightboxModal
+        isOpen={!!selectedImage}
+        onClose={() => setSelectedImage(null)}
+        imageSrc={selectedImage?.src || ""}
+        altText={selectedImage?.alt || ""}
+        caption={selectedImage?.caption}
+      />
+
       {/* Header */}
       <div className="space-y-4 text-center sm:text-left border-b border-amber-300/60 pb-8">
         <Link
@@ -36,6 +103,43 @@ export default function HistoryPage() {
         <div className="space-y-4 text-gray-700 font-devanagari leading-relaxed text-base sm:text-lg">
           {templeHistory.paragraphs.map((para, idx) => (
             <p key={idx} dangerouslySetInnerHTML={{ __html: para[language] }} />
+          ))}
+        </div>
+      </div>
+
+      {/* Architecture Photos Showcase */}
+      <div className="bg-gradient-to-br from-amber-50 to-amber-100/90 p-6 sm:p-8 rounded-3xl border-2 border-amber-300 space-y-6">
+        <div className="flex items-center justify-between border-b border-amber-300 pb-3">
+          <div className="flex items-center space-x-2 text-temple-maroon">
+            <Camera className="w-5 h-5 text-temple-saffron" />
+            <h3 className="text-xl font-bold font-devanagari">
+              {language === "mr" ? "सागवानी लाकडी स्थापत्य कला छायाचित्रे" : "Teakwood Architecture Showcase"}
+            </h3>
+          </div>
+          <span className="text-xs font-bold text-temple-saffron font-devanagari">
+            {language === "mr" ? "१८१४ ची वास्तू 🏛️" : "1814 Architecture 🏛️"}
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {architecturePhotos.map((item, idx) => (
+            <div
+              key={idx}
+              onClick={() => setSelectedImage(item)}
+              className="group relative cursor-pointer overflow-hidden rounded-2xl border-2 border-amber-300 bg-white shadow-md hover:shadow-xl transition-all"
+            >
+              <img
+                src={item.src}
+                alt={item.alt}
+                className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="p-3 bg-white border-t border-amber-200 flex items-center justify-between">
+                <p className="text-xs font-bold text-temple-maroon font-devanagari line-clamp-1">
+                  {item.alt}
+                </p>
+                <Maximize2 className="w-3.5 h-3.5 text-temple-saffron shrink-0 ml-1" />
+              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -68,7 +172,7 @@ export default function HistoryPage() {
       </div>
 
       {/* Dedicated Section: Mandir Sthapana Utsav */}
-      <div className="bg-gradient-to-br from-amber-900 via-temple-maroon to-amber-950 text-white p-8 sm:p-10 rounded-3xl shadow-xl border-4 border-temple-gold space-y-6 relative overflow-hidden">
+      <div className="bg-gradient-to-br from-amber-950 via-temple-maroon to-amber-900 text-white p-8 sm:p-10 rounded-3xl shadow-xl border-4 border-temple-gold space-y-6 relative overflow-hidden">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-amber-500/40 pb-4 gap-2">
           <div className="space-y-1">
             <h2 className="text-2xl sm:text-3xl font-black font-devanagari text-amber-100">
@@ -108,12 +212,35 @@ export default function HistoryPage() {
           ))}
         </div>
 
-        {/* Photo Placeholder Note */}
-        <div className="pt-4 border-t border-amber-800/60 flex items-center justify-between text-xs text-amber-300/80 font-devanagari">
-          <div className="flex items-center space-x-2">
-            <ImageIcon className="w-4 h-4 text-temple-gold" />
-            <span>{language === "mr" ? "उत्सवातील छायाचित्रे (Photos Coming Soon)" : "Festival photos coming soon"}</span>
+        {/* Utsav Photos Showcase */}
+        <div className="pt-4 border-t border-amber-800/80 space-y-4">
+          <div className="flex items-center space-x-2 text-amber-200 text-sm font-bold font-devanagari">
+            <Camera className="w-4 h-4 text-temple-gold" />
+            <span>{language === "mr" ? "स्थापना उत्सवातील विलोभनीय छायाचित्रे" : "Sthapana Utsav Celebration Photos"}</span>
           </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {utsavPhotos.map((item, idx) => (
+              <div
+                key={idx}
+                onClick={() => setSelectedImage(item)}
+                className="group relative cursor-pointer overflow-hidden rounded-2xl border border-amber-500/50 bg-amber-950 shadow-md hover:shadow-xl transition-all"
+              >
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3 text-amber-100 text-xs font-bold font-devanagari justify-between">
+                  <span>{item.alt}</span>
+                  <Maximize2 className="w-3.5 h-3.5 text-temple-gold shrink-0 ml-1" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="pt-2 flex items-center justify-between text-xs text-amber-300/80 font-devanagari">
           <span>॥ श्री वासुदेव प्रसन्न ॥</span>
         </div>
       </div>
