@@ -16,12 +16,12 @@ export interface DeepotsavData {
 
 export const deepotsavInfo: DeepotsavData = {
   title: {
-    mr: "वाटेगाव वासुदेव मंदिरातील दीपोत्सव",
+    mr: "वाटेगाव वासुदेव मंदिरातील दीपोत्सव सोहळा",
     en: "Deepotsav Festival at Wategaon Vasudev Mandir",
   },
   subtitle: {
-    mr: "कोजागिरी पौर्णिमा ते त्रिपुरारी पौर्णिमा दरम्यान महिनाभर साजरा होणारा पारंपरिक दीपप्रज्वलन सोहळा",
-    en: "Traditional month-long lighting of lamps from Kojagiri Purnima to Tripurari Purnima",
+    mr: "कोजागिरी पौर्णिमा ते त्रिपुरारी पौर्णिमा दरम्यान साजरा होणारा पारंपरिक दीपोत्सव सोहळा",
+    en: "Traditional lamp lighting festival from Kojagiri Purnima to Tripurari Purnima",
   },
   period: {
     mr: "कोजागिरी पौर्णिमा ते त्रिपुरारी पौर्णिमा (अश्विन शु. १५ ते कार्तिक शु. १५)",

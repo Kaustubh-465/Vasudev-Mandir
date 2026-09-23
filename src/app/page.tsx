@@ -260,7 +260,7 @@ export default function HomePage() {
           >
             <Flame className="w-6 h-6 sm:w-7 sm:h-7 text-amber-200" />
             <h3 className="text-lg sm:text-xl font-bold font-devanagari group-hover:text-amber-100 transition-colors">
-              {language === "mr" ? "महिन्याचा दीपोत्सव" : "Deepotsav Festival"}
+              {language === "mr" ? "दीपोत्सव सोहळा" : "Deepotsav Festival"}
             </h3>
             <p className="text-xs text-amber-100/90 font-devanagari leading-relaxed">
               {language === "mr"
