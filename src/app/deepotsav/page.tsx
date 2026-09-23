@@ -18,67 +18,67 @@ export default function DeepotsavPage() {
   const deepotsavGallery = [
     {
       src: "/images/IMG-20241107-WA0001.jpg",
-      alt: "दीपोत्सव मंदिर परिसर पणत्यांची रांगोळी",
+      alt: "दीपोत्सव मंदिर परिसर",
       caption:
         language === "mr"
-          ? "दीपोत्सवात हजारो पणत्यांच्या लखलखाटाने उजळून निघणारा मंदिर परिसर"
-          : "Temple Courtyard Illuminated with Thousands of Oil Lamps",
+          ? "दीपोत्सव काळातील मंदिर परिसर"
+          : "Temple Courtyard during Deepotsav",
     },
     {
       src: "/images/IMG_20241016_222228.jpg",
-      alt: "मंदिर प्रवेशद्वार रोषणाई",
+      alt: "मंदिर प्रवेशद्वार दीपप्रज्वलन",
       caption:
         language === "mr"
-          ? "दीपोत्सवातील मुख्य मंदिर प्रवेशद्वाराची नयनरम्य रोषणाई"
-          : "Illuminated Temple Entrance Gate during Deepotsav",
+          ? "दीपोत्सवातील मंदिर प्रवेशद्वार"
+          : "Temple Entrance Gate during Deepotsav",
     },
     {
       src: "/images/IMG-20241106-WA0009.jpg",
-      alt: "लाकडी पायऱ्यांवर तेल दीप",
+      alt: "लाकडी पायऱ्यांवर दीप",
       caption:
         language === "mr"
-          ? "सागवानी लाकडी पायऱ्यांवर प्रज्वलित करण्यात आलेले पारंपरिक दीप"
-          : "Traditional Brass & Clay Diyas on Teakwood Steps",
+          ? "सागवानी लाकडी पायऱ्यांवरील दीप"
+          : "Traditional Brass & Clay Lamps on Teakwood Steps",
     },
     {
       src: "/images/IMG-20241106-WA0011.jpg",
-      alt: "प्रज्वलित पणती प्रकाश दीप",
+      alt: "प्रज्वलित पणती व समई",
       caption:
         language === "mr"
-          ? "प्रज्वलित पणती व समईचा मंगलमय प्रकाश"
-          : "Glowing Warmth of Traditional Oil Lamps",
+          ? "प्रज्वलित पणती व समई"
+          : "Traditional Earthen Oil Lamps & Samai",
     },
     {
       src: "/images/IMG_20241016_222505-1.jpg",
-      alt: "दीपोत्सव रात्रीचे शिखर व मंडप दृश्य",
+      alt: "रात्रीचे मंदिर शिखर व मंडप",
       caption:
         language === "mr"
-          ? "रातच्या वेळी ५० फूट उंच शिखर व लाकडी मंडपाची दिव्य रोषणाई"
-          : "Night Illumination of 50ft Temple Tower & Wooden Mandap",
+          ? "रात्रीचे मंदिर शिखर व लाकडी मंडप"
+          : "Night View of Temple Tower & Wooden Mandap",
     },
     {
       src: "/images/IMG_20241109_223537.jpg",
-      alt: "त्रिपुरारी पौर्णिमा दीपोत्सव",
+      alt: "त्रिपुरारी पौर्णिमा दीपप्रज्वलन",
       caption:
         language === "mr"
-          ? "त्रिपुरारी पौर्णिमेच्या सांगता सोहळ्यातील दीपप्रज्वलन"
-          : "Tripurari Purnima Concluding Deepotsav Ceremony",
+          ? "त्रिपुरारी पौर्णिमा दीपप्रज्वलन"
+          : "Tripurari Purnima Deepotsav",
     },
     {
       src: "/images/IMG_20241016_221218.jpg",
-      alt: "पितळी समया व दीपमाळ",
+      alt: "गाभाऱ्यातील समई प्रकाश",
       caption:
         language === "mr"
-          ? "गाभाऱ्यातील भव्य पितळी समया व दीप प्रकाश"
-          : "Glowing Brass Samai Lamps inside Temple Altar",
+          ? "गाभाऱ्यातील समई प्रकाश"
+          : "Brass Samai Lamps inside Altar",
     },
     {
       src: "/images/IMG_20241016_221143.jpg",
-      alt: "दीपोत्सवातील परिसर दृश्य",
+      alt: "दीपोत्सव रात्रीचे मंदिर",
       caption:
         language === "mr"
-          ? "दीपोत्सव काळात रात्रीचे मंदिर विलोभनीय रूप"
-          : "Vibrant Night Atmosphere of Temple Deepotsav",
+          ? "दीपोत्सव काळातील रात्रीचे मंदिर"
+          : "Temple View during Deepotsav Night",
     },
   ];
 
@@ -156,7 +156,7 @@ export default function DeepotsavPage() {
             </div>
             <div>
               <h2 className="text-2xl sm:text-3xl font-black font-devanagari text-amber-100">
-                {language === "mr" ? "दीपोत्सव छायाचित्र दालन" : "Deepotsav Photo Gallery"}
+                {language === "mr" ? "दीपोत्सव छायाचित्रे" : "Deepotsav Photo Gallery"}
               </h2>
               <p className="text-xs text-amber-200/80 font-devanagari">
                 {language === "mr" ? "पाहण्यासाठी कोणत्याही फोटोवर टॅप करा 🔍" : "Tap any photo for full view 🔍"}
