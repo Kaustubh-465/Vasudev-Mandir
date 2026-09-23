@@ -74,8 +74,8 @@ export default function HomePage() {
 
           <p className="text-sm sm:text-lg text-amber-200/90 font-devanagari max-w-2xl mx-auto leading-relaxed">
             {language === "mr"
-              ? "सांगली जिल्ह्यातील वाटेगाव येथे भोगावती नदीच्या काठी वसलेले श्री वासुदेव मंदिर हे दिवेकर घराण्याचे खाजगी मंदिर आहे."
-              : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon is a private temple of the Divekar family."}
+              ? "सांगली जिल्ह्यातील वाटेगाव येथे भोगावती नदीच्या काठी स्थित श्री वासुदेव मंदिर."
+              : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon (Sangli)."}
           </p>
         </div>
       </section>
@@ -234,8 +234,8 @@ export default function HomePage() {
             </h3>
             <p className="text-xs text-amber-200/80 font-devanagari leading-relaxed">
               {language === "mr"
-                ? "वासुदेवस्वामी स्थापना, दिवेकर कौटुंबिक इतिहास व १९१२ लाकडी मंडप."
-                : "Vasudevswami foundation, Divekar family heritage, and 1912 teakwood mandap."}
+                ? "वासुदेवस्वामी स्थापना, ऐतिहासिक पार्श्वभूमी व १९१२ मधील लाकडी मंडप."
+                : "Vasudevswami foundation, historical background, and 1912 teakwood mandap."}
             </p>
           </Link>
 

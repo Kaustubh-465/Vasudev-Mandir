@@ -27,12 +27,12 @@ export function Footer() {
             </div>
             <p className="text-sm text-amber-200/80 leading-relaxed font-devanagari">
               {language === "mr"
-                ? "भोगावती नदीच्या तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर. हे मंदिर दिवेकर घराण्याचे खाजगी मंदिर आहे."
-                : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon. A private temple of the Divekar family."}
+                ? "सांगली जिल्ह्यातील वाटेगाव येथे भोगावती नदीच्या तीरावर स्थित श्री वासुदेव मंदिर."
+                : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon (Sangli)."}
             </p>
             <div className="inline-flex items-center space-x-2 bg-amber-900/60 px-3 py-1.5 rounded-full text-xs text-amber-300 border border-amber-600/40 font-devanagari">
               <Landmark className="w-4 h-4 text-temple-gold" />
-              <span>{language === "mr" ? "दिवेकर घराण्याचे खाजगी मंदिर" : "Private Temple of Divekar Family"}</span>
+              <span>{language === "mr" ? "ऐतिहासिक मंदिर व स्थान" : "Historic Mandir & Heritage"}</span>
             </div>
           </div>
 

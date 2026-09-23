@@ -28,8 +28,8 @@ export const templeData: TempleData = {
     en: "Shree Vasudev Mandir, Wategaon",
   },
   subtitle: {
-    mr: "वाटेगाव (जि. सांगली) • भोगावती नदीच्या तीरावर स्थित दिवेकर घराण्याचे खाजगी मंदिर",
-    en: "Wategaon (Sangli) • Private Temple of Divekar Family on Bhogawati River",
+    mr: "वाटेगाव (जि. सांगली) • भोगावती नदीच्या तीरावर स्थित ऐतिहासिक मंदिर",
+    en: "Wategaon (Sangli) • Historic Temple on the banks of Bhogawati River",
   },
   tagline: {
     mr: "॥ ॐ नमो भगवते वासुदेवाय ॥ • वाटेगाव येथील ऐतिहासिक श्री वासुदेव मंदिर",
@@ -52,7 +52,7 @@ export const templeData: TempleData = {
     { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव, ता. वाळवा (सांगली)", en: "Wategaon, Walwa (Sangli)" } },
     { label: { mr: "नदी", en: "River" }, value: { mr: "भोगावती नदी", en: "Bhogawati River" } },
     { label: { mr: "स्वरूप", en: "Deity Form" }, value: { mr: "श्री वासुदेव (पंचधातू मूर्ती)", en: "Shree Vasudev (Panchadhatu Idol)" } },
-    { label: { mr: "परंपरा", en: "Heritage" }, value: { mr: "दिवेकर घराण्याचे खाजगी मंदिर", en: "Divekar Family Private Temple" } },
+    { label: { mr: "उत्सव", en: "Festival" }, value: { mr: "दीपोत्सव व स्थापना उत्सव", en: "Deepotsav & Sthapana Utsav" } },
   ],
   keyHighlights: [
     {
@@ -70,10 +70,10 @@ export const templeData: TempleData = {
       },
     },
     {
-      title: { mr: "दिवेकर कौटुंबिक परंपरा", en: "Divekar Family Lineage" },
+      title: { mr: "ऐतिहासिक पार्श्वभूमी", en: "Historical Background" },
       desc: {
-        mr: "वासुदेवस्वामी दिवेकर यांनी स्थापन केलेले व पिढ्यानपिढ्या दिवेकर कुटुंबाने प्रपंच व नोकरी सांभाळून जतन केलेले मंदिर.",
-        en: "Established by Vasudevswami Divekar and preserved across generations by the Divekar family.",
+        mr: "वासुदेवस्वामी दिवेकर यांनी स्थापन केलेले व पिढ्यानपिढ्या कौटुंबिक निष्ठेने जतन केलेले मंदिर.",
+        en: "Established by Vasudevswami Divekar and preserved across generations.",
       },
     },
     {
