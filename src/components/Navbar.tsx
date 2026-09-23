@@ -58,7 +58,7 @@ export function Navbar() {
                 {language === "mr" ? "श्री वासुदेव मंदिर" : "Shree Vasudev Mandir"}
               </h1>
               <p className="text-[10px] sm:text-xs text-amber-300/90 font-medium font-devanagari">
-                {language === "mr" ? "वाटेगाव (सांगली) • श्री वासुदेव देवस्थान" : "Wategaon, Sangli • Shree Vasudev Shrine"}
+                {language === "mr" ? "वाटेगाव (सांगली) • दिवेकर घराण्याचे मंदिर" : "Wategaon, Sangli • Divekar Family Temple"}
               </p>
             </div>
           </Link>

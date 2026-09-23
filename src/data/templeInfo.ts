@@ -1,4 +1,4 @@
-﻿export interface TempleData {
+export interface TempleData {
   title: { mr: string; en: string };
   subtitle: { mr: string; en: string };
   tagline: { mr: string; en: string };
@@ -28,12 +28,12 @@ export const templeData: TempleData = {
     en: "Shree Vasudev Mandir, Wategaon",
   },
   subtitle: {
-    mr: "वाटेगाव (जि. सांगली) • भोगावती नदीच्या तीरावर",
-    en: "Wategaon (Sangli) • On the banks of Bhogawati river",
+    mr: "वाटेगाव (जि. सांगली) • भोगावती नदीच्या तीरावर स्थित दिवेकर घराण्याचे पिढीजात मंदिर",
+    en: "Wategaon (Sangli) • Private Generational Temple of Divekar Family on Bhogawati River",
   },
   tagline: {
-    mr: "॥ ॐ नमो भगवते वासुदेवाय ॥ • भोगावती नदीच्या तीरावर स्थित श्री वासुदेव मंदिर",
-    en: "॥ Om Namo Bhagavate Vasudevaya ॥ • Shree Vasudev Mandir situated on the banks of Bhogawati river",
+    mr: "॥ ॐ नमो भगवते वासुदेवाय ॥ • वाटेगाव येथील ऐतिहासिक श्री वासुदेव मंदिर",
+    en: "॥ Om Namo Bhagavate Vasudevaya ॥ • Historic Shree Vasudev Mandir at Wategaon",
   },
   location: {
     village: { mr: "वाटेगाव", en: "Wategaon" },
@@ -49,40 +49,39 @@ export const templeData: TempleData = {
     coordinates: { lat: 17.0784, lng: 74.2718 },
   },
   quickStats: [
-    { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव (सांगली)", en: "Wategaon (Sangli)" } },
+    { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव, ता. वाळवा (सांगली)", en: "Wategaon, Walwa (Sangli)" } },
     { label: { mr: "नदी", en: "River" }, value: { mr: "भोगावती नदी", en: "Bhogawati River" } },
-    { label: { mr: "मुख्य देवता", en: "Main Deity" }, value: { mr: "श्री वासुदेव (श्रीकृष्ण)", en: "Shree Vasudev (Krishna)" } },
-    { label: { mr: "वार्षिक उत्सव", en: "Annual Festival" }, value: { mr: "महिन्याचा दीपोत्सव", en: "Month-long Deepotsav" } },
+    { label: { mr: "स्वरूप", en: "Deity Form" }, value: { mr: "श्री वासुदेव (पंचधातू मूर्ती)", en: "Shree Vasudev (Panchadhatu Idol)" } },
+    { label: { mr: "परंपरा", en: "Heritage" }, value: { mr: "दिवेकर घराण्याचे खाजगी मंदिर", en: "Divekar Family Private Temple" } },
   ],
   keyHighlights: [
     {
-      title: { mr: "पंचधातू श्रीकृष्ण मूर्ती", en: "Panchadhatu Krishna Idol" },
+      title: { mr: "पंचधातू वासुदेव मूर्ती", en: "Panchadhatu Vasudev Idol" },
       desc: {
-        mr: "गाभाऱ्यात शांत, मंदस्मित आणि प्रसन्न भावमुद्रेत असणारी श्री वासुदेवाची (श्रीकृष्णाची) दुर्मीळ पंचधातू मूर्ती.",
-        en: "Rare Panchadhatu idol of Shree Vasudev (Lord Krishna) radiating divine peace and serene smile.",
+        mr: "श्रीमद्भागवत एकादश स्कंध १४ व्या अध्यायातील वर्णनानुसार व भक्त ध्रुवाला दर्शन दिलेल्या श्री वासुदेवांच्या प्रसन्न स्वरूपाची पंचधातू उभी मूर्ती.",
+        en: "Standing Panchadhatu idol of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14.",
       },
     },
     {
-      title: { mr: "सागवानी लाकडी स्थापत्य", en: "Teakwood Mandap" },
+      title: { mr: "सागवानी लाकडी मंडप", en: "Teakwood Mandap" },
       desc: {
-        mr: "६० फूट लांब व ३० फूट रुंद भव्य सागवानी लाकडी सभामंडप आणि ५० फूट उंच शिखर.",
-        en: "Majestic 60ft x 30ft teakwood assembly hall with a 50ft high traditional shikhara.",
+        mr: "सन १९१२ मध्ये श्रीसद्गुरु गोविंद हरी दिवेकर यांनी उभारलेला सुशोभित लाकडी मंडप व १९१४ ची संगमरवरी फरशी.",
+        en: "Ornate teakwood mandap built in 1912 by Govind Hari Divekar with marble flooring added in 1914.",
       },
     },
     {
-      title: { mr: "उत्तराभिमुख मंदिर", en: "North-facing Layout" },
+      title: { mr: "दिवेकर पिढीजात परंपरा", en: "Divekar Generational Lineage" },
       desc: {
-        mr: "भोगावती नदीच्या तीरावर वसलेले उत्तराभिमुख मंदिर आणि शांत परिसर.",
-        en: "North-facing layout situated along the banks of Bhogawati river.",
+        mr: "वासुदेवस्वामी दिवेकर यांनी स्थापन केलेले व पिढ्यानपिढ्या दिवेकर कुटुंबाने प्रपंच व नोकरी सांभाळून जतन केलेले मंदिर.",
+        en: "Established by Vasudevswami Divekar and preserved across generations by the Divekar family.",
       },
     },
     {
-      title: { mr: "वार्षिक दीपोत्सव", en: "Annual Deepotsav" },
+      title: { mr: "वार्षिक दीपोत्सव व उत्सव", en: "Deepotsav & Annual Utsav" },
       desc: {
-        mr: "कोजागिरी पौर्णिमा ते त्रिपुरारी पौर्णिमेपर्यंत महिनाभर हजारो दिव्यांच्या लखलखाटातील सोहळा.",
-        en: "Traditional month-long festival of earthen oil lamps from Kojagiri to Tripurari Purnima.",
+        mr: "कोजागिरी ते त्रिपुरारी पौर्णिमा दरम्यानचा पारंपरिक दीपोत्सव आणि फाल्गुन महिन्यात साजरा होणारा स्थापना उत्सव.",
+        en: "Traditional month-long Deepotsav from Kojagiri to Tripurari Purnima and Phalgun Mandir Sthapana Utsav.",
       },
     },
   ],
 };
-

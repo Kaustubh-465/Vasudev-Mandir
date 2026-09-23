@@ -13,81 +13,60 @@ export const vasudevCitations: CitationSection[] = [
   {
     id: "wategaon-shrine",
     title: {
-      mr: "श्री वासुदेव मंदिराबद्दल",
-      en: "About Shri Vasudev Mandir",
+      mr: "वाटेगाव येथील श्री वासुदेव मंदिर",
+      en: "Shree Vasudev Mandir at Wategaon",
     },
     subtitle: {
-      mr: "भक्तिमय स्थान वाटेगाव",
-      en: "Devotional Sanctuary Wategaon",
+      mr: "दिवेकर घराण्याचे पिढीजात खाजगी मंदिर",
+      en: "Divekar Family Private Generational Temple",
     },
     content: [
       {
-        mr: "महाराष्ट्राच्या समृद्ध सांस्कृतिक आणि आध्यात्मिक वारशात वाटेगाव परिसराला एक वेगळे स्थान आहे. येथील श्री वासुदेव मंदिर हे सर्व भाविकांचे श्रद्धास्थान आणि आत्मिक शांततेचे केंद्र आहे. पिढ्यानपिढ्या या भक्तिमय भूमीत भक्ती, परमार्थ आणि सामाजिक एकात्मतेचा झरा वाहत आला आहे.",
-        en: "Wategaon holds a unique position in Maharashtra's rich cultural and spiritual heritage. Shree Vasudev Mandir is a sanctuary of faith and spiritual peace for all devotees.",
+        mr: "वाटेगाव (जि. सांगली) येथे भोगावती नदीच्या तीरावर हे मंदिर वसलेले आहे. हे दिवेकर कुटुंबाचे पिढीजात खाजगी मंदिर असून, कोणत्याही पब्लिक ट्रस्टशिवाय सुमारे दोनशे वर्षांपासून दिवेकर घराण्याने स्वतःच्या जबाबदारीवर हे मंदिर व पूजा-अर्चा जतन केली आहे.",
+        en: "Located on the banks of Bhogawati river in Wategaon (Sangli), this is a private generational temple maintained by the Divekar family for around two centuries without any public trust.",
       },
     ],
   },
   {
     id: "vasudev-significance",
     title: {
-      mr: "भगवान श्री वासुदेवांचे स्वरूप व आध्यात्मिक महत्त्व",
-      en: "Divine Form & Spiritual Significance of Shree Vasudev",
+      mr: "श्री वासुदेवांचे स्वरूप व भागवत संदर्भ",
+      en: "Form & Significance of Lord Vasudev",
     },
     subtitle: {
-      mr: "सर्वव्यापी चैतन्य व लोकसंस्कृतीतील स्थान",
-      en: "All-pervading Consciousness & Cultural Traditions",
+      mr: "श्रीमद्भागवत एकादश स्कंध १४ वा अध्याय संदर्भ",
+      en: "Reference from Srimad Bhagavat 11th Canto Chapter 14",
     },
     content: [
       {
-        mr: "सनातन संस्कृती आणि भागवत संप्रदायात भगवान वासुदेव (श्रीकृष्ण/विष्णू) हे संपूर्ण सृष्टीचे पालनपोषण करणारे आणि अष्टपैलू शक्तीचे प्रतीक मानले जातात.",
-        en: "In Sanatan tradition, Lord Vasudev (Shri Krishna/Vishnu) is revered as the preserver of the universe and symbol of cosmic energy.",
+        mr: "मंदिरातील वासुदेवाची मूर्ती ही श्रीमद्भागवत ग्रंथाच्या एकादश स्कंधातील १४ व्या अध्यायात ध्यानासाठी वर्णन केलेल्या रूपावर आधारित आहे. हे तेच चतुर्भुज प्रसन्न स्वरूप आहे ज्या रूपाचे दर्शन भक्त ध्रुवाला झाले होते.",
+        en: "The idol of Lord Vasudev is sculpted based on the meditative form described in Srimad Bhagavat 11th Canto Chapter 14, which is the same 4-armed form that granted darshan to Bhakta Dhruva.",
+      },
+      {
+        mr: "निर्गुण आणि अगाध असलेल्या ईश्वराच्या विश्वरूपाची प्रचिती साध्या डोळ्यांनी घेता यावी, यासाठी सगुण रूपात या पंचधातू मूर्तीची स्थापना करण्यात आली आहे. चार हातांत शंख, चक्र, गदा आणि पद्म धारण केलेली, पितळी पत्र्यांनी मढवलेल्या सिंहासनावर प्रस्थापित असलेली ही उभी मूर्ती अत्यंत प्रसन्न हास्यमुद्रेत आहे.",
+        en: "To perceive the infinite unmanifest divine consciousness through human sight, the idol was sculpted in 4-armed standing posture with Shankha, Chakra, Gada, Padma, reflecting a serene smile.",
       },
     ],
     bullets: [
       {
         heading: {
-          mr: "सर्वव्यापी चैतन्य",
-          en: "All-pervading Cosmic Consciousness",
+          mr: "श्रीमद्भागवत एकादश स्कंध संदर्भ",
+          en: "Srimad Bhagavat 11th Canto Reference",
         },
         detail: {
-          mr: "'वासुदेव' या शब्दाचा अर्थ आहे — \"ज्यांच्यामध्ये संपूर्ण विश्व सामावले आहे आणि जे सर्व घटकांत अंतर्भूत आहेत.\" हे केवळ एका आराध्यदैवताचे नाव नसून समस्त चराचरात वसलेल्या ईश्वरी चैतन्याचे प्रतीक आहे.",
-          en: "'Vasudev' signifies the Supreme divine consciousness in which the entire universe abides and which dwells within all creation.",
+          mr: "भागवतातील ध्यानासाठी योग्य अशा चतुर्भुज प्रसन्न रूपाच्या वर्णनाशी हुबेहुब जुळणारी मूर्ती, जी साधकांना शांतता व चित्तशुद्धीचा मार्ग दाखवते.",
+          en: "The idol matches the meditative 4-armed form described in Srimad Bhagavat, guiding seekers toward inner peace and clarity.",
         },
       },
       {
         heading: {
-          mr: "भक्ती आणि समर्पणाची परंपरा",
-          en: "Tradition of Devotion & Surrender",
+          mr: "प्रपंच आणि परमार्थाचा मेळ",
+          en: "Balancing Duty & Practice",
         },
         detail: {
-          mr: "महाराष्ट्राच्या लोकसंस्कृतीत 'वासुदेव' ही एक अत्यंत पूजनीय परंपरा आहे. सकाळी पहाटे दारावर येऊन टाळ-मृदंगाच्या गजरात, मोरपिसाची टोपी घालून भगवंताचे नामस्मरण करणारे वासुदेव हे आपल्या संस्कृतीचे जिवंत प्रतीक आहेत. याच लोकपरंपरेचा आणि भक्तीचा वारसा या मंदिराशी जोडलेला आहे.",
-          en: "In Maharashtrian folk heritage, Vasudev represents a revered tradition of morning Harinam chanting adorned with peacock plume caps.",
+          mr: "ग्रंथातील नोंदीनुसार, श्रीसद्गुरु गोविंद हरी दिवेकर यांनी नोकरी आणि कौटुंबिक प्रपंच सांभाळत, कोणतीही कसर न सोडता मंदिराची सेवा आणि १९१२ मधील लाकडी मंडपाचे काम पूर्ण केले. प्रपंच व कर्तव्य बजावत साधना करणे हेच या परंपरेचे गमक आहे.",
+          en: "Govind Hari Divekar managed household duties and employment while quietly maintaining temple rituals and executing the 1912 teakwood mandap construction.",
         },
-      },
-    ],
-  },
-  {
-    id: "history-and-events",
-    title: {
-      mr: "मंदिराचा इतिहास व धार्मिक कार्य",
-      en: "Temple Heritage & Celebrations",
-    },
-    subtitle: {
-      mr: "दिवेकर घराण्याचे खाजगी देवस्थान ट्रस्ट",
-      en: "Divekar Family Private Devasthan Trust",
-    },
-    content: [
-      {
-        mr: "हे मंदिर दिवेकर घराण्याचे खाजगी देवस्थान (Private Devasthan Trust) असून, दिवेकर कुटुंबाकडूनच या मंदिराची पूजा-अर्चा, जतन आणि देखभाल पार पाडली जाते.",
-        en: "This shrine is maintained and preserved by the Divekar family as a private devasthan trust.",
-      },
-      {
-        mr: "येथील वासुदेवाच्या चरणी नतमस्तक होऊन भाविक प्रत्येक शुभकार्याची सुरुवात करतात.",
-        en: "Devotees seek Lord Vasudev's blessings for auspicious occasions.",
-      },
-      {
-        mr: "या मंदिरात वर्षभर विविध धार्मिक उत्सव अत्यंत आनंदाने साजरे होतात. विशेषतः एकादशी, जन्मोत्सव, आणि पाडव्यासारख्या दिवशी मंदिरात विशेष पूजा, भजन, कीर्तन आणि महाप्रसादाचे आयोजन केले जाते.",
-        en: "Various religious festivals are celebrated with devotion throughout the year, especially Ekadashi, Janmashtami, and Padwa with pooja, bhajan, and Mahaprasad.",
       },
     ],
   },

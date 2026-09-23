@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { vasudevCitations } from "@/data/citations";
 import ImageLightboxModal from "@/components/ImageLightboxModal";
-import { ArrowLeft, Sparkles, Maximize2, Camera } from "lucide-react";
+import { ArrowLeft, Maximize2, Camera } from "lucide-react";
 
 export default function WhoIsVasudevPage() {
   const { language } = useLanguage();
@@ -18,27 +18,27 @@ export default function WhoIsVasudevPage() {
   const idolPhotos = [
     {
       src: "/images/PXL_20260904_121625931.PORTRAIT.jpg",
-      alt: "श्री वासुदेव पंचधातू मूर्ती (मुकुट व पुष्पहार)",
+      alt: "श्री वासुदेव पंचधातू मूर्ती",
       caption:
         language === "mr"
-          ? "श्री वासुदेव (श्रीकृष्ण) पंचधातू मूर्ती - वाटेगाव"
-          : "Shree Vasudev (Shri Krishna) Panchadhatu Idol - Wategaon",
+          ? "श्री वासुदेव पंचधातू मूर्ती - वाटेगाव"
+          : "Shree Vasudev Panchadhatu Idol - Wategaon",
     },
     {
       src: "/images/IMG-20240617-WA0005.jpg",
-      alt: "श्री वासुदेव प्रसन्न मुखकमल",
+      alt: "श्री वासुदेव मुखकमल",
       caption:
         language === "mr"
-          ? "श्री वासुदेवांचे प्रसन्न हास्यमुद्रा मुखकमल"
-          : "Serene Divine Facial Expression of Lord Shree Vasudev",
+          ? "श्री वासुदेवांचे सुहास्यवदन मुखकमल"
+          : "Serene Facial Expression of Lord Shree Vasudev",
     },
     {
       src: "/images/IMG-20241012-WA0028.jpg",
       alt: "श्री वासुदेव शृंगार रूप",
       caption:
         language === "mr"
-          ? "श्री वासुदेव मूर्तीचा रेशमी वस्त्र व सुवर्ण शृंगार"
-          : "Divine Silk Robes & Crown Adornment of Shree Vasudev Idol",
+          ? "श्री वासुदेव मूर्तीचा वस्त्र व अलंकृत शृंगार"
+          : "Adornment of Shree Vasudev Idol",
     },
   ];
 
@@ -69,8 +69,8 @@ export default function WhoIsVasudevPage() {
 
         <p className="text-lg text-gray-700 font-devanagari leading-relaxed max-w-3xl">
           {language === "mr"
-            ? "वाटेगाव येथील श्री वासुदेव मंदिर, दिवेकर खाजगी देवस्थान ट्रस्ट, भगवान वासुदेवांचे सर्वव्यापी चैतन्य व उत्सव."
-            : "Devotional sanctuary of Shri Vasudev Mandir Wategaon, Divekar private devasthan trust, divine consciousness, and celebrations."}
+            ? "श्रीमद्भागवत एकादश स्कंध १४ अध्यायानुसार वासुदेवांचे ध्यानरूप व भक्त ध्रुवाला मिळालेले प्रसन्न दर्शन."
+            : "Form of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14."}
         </p>
       </div>
 

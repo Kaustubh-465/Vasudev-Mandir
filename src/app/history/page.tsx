@@ -24,19 +24,19 @@ export default function HistoryPage() {
   const architecturePhotos = [
     {
       src: "/images/1000183552.jpg",
-      alt: "६०×३० फूट सागवानी लाकडी मंडप",
+      alt: "सागवानी लाकडी मंडप",
       caption:
         language === "mr"
-          ? "सुमारे २०० वर्षांपूर्वी उभारलेला ६० फूट लांब व ३० फूट रुंद ऐतिहासिक सागवानी लाकडी मंडप"
-          : "Historic 200-year-old Teakwood Mandap Architecture (60ft x 30ft)",
+          ? "सन १९१२ मध्ये उभारलेला सुशोभित ऐतिहासिक लाकडी मंडप"
+          : "Historic Teakwood Mandap Architecture built in 1912",
     },
     {
       src: "/images/IMG-20241103-WA0002.jpg",
       alt: "मंदिर लाकडी नक्षीकाम प्रवेशद्वार",
       caption:
         language === "mr"
-          ? "मंदिराचे सुबक लाकडी नक्षीकाम प्रवेशद्वार व कमानी"
-          : "Ornate Hand-Carved Teakwood Arches & Temple Entrance",
+          ? "मंदिराचे लाकडी नक्षीकाम व कमानी"
+          : "Hand-Carved Teakwood Arches & Temple Entrance",
     },
     {
       src: "/images/IMG-20241103-WA0021.jpg",
@@ -44,7 +44,7 @@ export default function HistoryPage() {
       caption:
         language === "mr"
           ? "दीपोत्सवात दिव्यांच्या रोषणाईने उजळणारा सागवानी मंडप"
-          : "Teakwood Mandap Illuminated during Deepotsav Festival",
+          : "Teakwood Mandap Illuminated during Deepotsav",
     },
   ];
 
@@ -59,11 +59,11 @@ export default function HistoryPage() {
     },
     {
       src: "/images/IMG_20241016_222202.jpg",
-      alt: "उत्सव भव्य रोषणाई दृश्य",
+      alt: "उत्सव रोषणाई दृश्य",
       caption:
         language === "mr"
-          ? "वार्षिक उत्सवातील मंदिर परिसराचे भव्य दृश्य"
-          : "Grand Illumination View during Temple Annual Utsav",
+          ? "वार्षिक उत्सवातील मंदिर परिसराचे दृश्य"
+          : "Illumination View during Annual Utsav",
     },
   ];
 
@@ -113,11 +113,11 @@ export default function HistoryPage() {
           <div className="flex items-center space-x-2 text-temple-maroon">
             <Camera className="w-5 h-5 text-temple-saffron" />
             <h3 className="text-xl font-bold font-devanagari">
-              {language === "mr" ? "सागवानी लाकडी स्थापत्य कला छायाचित्रे" : "Teakwood Architecture Showcase"}
+              {language === "mr" ? "सागवानी लाकडी स्थापत्य छायाचित्रे" : "Teakwood Architecture Showcase"}
             </h3>
           </div>
           <span className="text-xs font-bold text-temple-saffron font-devanagari">
-            {language === "mr" ? "१८१४ ची वास्तू 🏛️" : "1814 Architecture 🏛️"}
+            {language === "mr" ? "१९१२ चे लाकडी काम 🏛️" : "1912 Mandap 🏛️"}
           </span>
         </div>
 
@@ -186,8 +186,8 @@ export default function HistoryPage() {
 
         <p className="text-amber-100 font-devanagari text-base sm:text-lg leading-relaxed">
           {language === "mr"
-            ? "दरवर्षी फेब्रुवारी - मार्च दरम्यान मंदिरात ४ दिवसांचा भव्य मंदिर स्थापना उत्सव साजरा केला जातो. या काळात रात्री कीर्तन, रथोत्सव आणि भजनांचे आयोजन केले जाते."
-            : "Every year in February - March, a 4-day Mandir Sthapana Utsav is organized featuring night Kirtan, Rathotsav, and Bhajans."}
+            ? "फाल्गुन महिन्यात ४ दिवसांचा मंदिर स्थापना उत्सव साजरा केला जातो. या काळात रात्री कीर्तन, रथोत्सव आणि भजनांचे आयोजन केले जाते."
+            : "A 4-day Mandir Sthapana Utsav is organized during Phalgun featuring night Kirtan, Rathotsav, and Bhajans."}
         </p>
 
         {/* Events Grid */}
@@ -216,7 +216,7 @@ export default function HistoryPage() {
         <div className="pt-4 border-t border-amber-800/80 space-y-4">
           <div className="flex items-center space-x-2 text-amber-200 text-sm font-bold font-devanagari">
             <Camera className="w-4 h-4 text-temple-gold" />
-            <span>{language === "mr" ? "स्थापना उत्सवातील विलोभनीय छायाचित्रे" : "Sthapana Utsav Celebration Photos"}</span>
+            <span>{language === "mr" ? "स्थापना उत्सवातील छायाचित्रे" : "Sthapana Utsav Celebration Photos"}</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

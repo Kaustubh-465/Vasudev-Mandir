@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -27,12 +27,12 @@ export function Footer() {
             </div>
             <p className="text-sm text-amber-200/80 leading-relaxed font-devanagari">
               {language === "mr"
-                ? "भोगावती नदीच्या तीरावर स्थित श्री वासुदेव मंदिर, वाटेगाव. गाभाऱ्यातील पंचधातूची श्रीकृष्ण मूर्ती व सागवानी लाकडी सभामंडप हे वाटेगावचे मुख्य स्थान आहे."
-                : "Shrine of Shree Vasudev situated on the banks of Bhogawati river in Wategaon. Features a Panchadhatu Krishna idol & teakwood assembly hall."}
+                ? "भोगावती नदीच्या तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर. हे मंदिर दिवेकर घराण्याचे पिढीजात खाजगी मंदिर आहे."
+                : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon. A private generational temple of the Divekar family."}
             </p>
             <div className="inline-flex items-center space-x-2 bg-amber-900/60 px-3 py-1.5 rounded-full text-xs text-amber-300 border border-amber-600/40 font-devanagari">
               <Landmark className="w-4 h-4 text-temple-gold" />
-              <span>{language === "mr" ? "दिवेकर घराण्याचे कुलदैवत" : "Kuldaivat of Divekar Family"}</span>
+              <span>{language === "mr" ? "दिवेकर घराण्याचे पिढीजात मंदिर" : "Generational Temple of Divekar Family"}</span>
             </div>
           </div>
 
@@ -51,13 +51,13 @@ export function Footer() {
               <li>
                 <Link href="/who-is-vasudev" className="hover:text-temple-gold transition-colors flex items-center space-x-2">
                   <span>▸</span>
-                  <span>{language === "mr" ? "वासुदेव स्वरूप (श्रीकृष्ण)" : "Who is Vasudev?"}</span>
+                  <span>{language === "mr" ? "वासुदेव स्वरूप" : "Who is Vasudev?"}</span>
                 </Link>
               </li>
               <li>
                 <Link href="/deepotsav" className="hover:text-temple-gold transition-colors flex items-center space-x-2">
                   <span>▸</span>
-                  <span>{language === "mr" ? "भव्य दीपोत्सव सोहळा" : "Deepotsav Festival"}</span>
+                  <span>{language === "mr" ? "दीपोत्सव" : "Deepotsav"}</span>
                 </Link>
               </li>
               <li>
@@ -75,8 +75,8 @@ export function Footer() {
           <p className="font-devanagari">
             © {new Date().getFullYear()}{" "}
             {language === "mr"
-              ? "श्री वासुदेव मंदिर देवस्थान, वाटेगाव (जि. सांगली). सर्व हक्क राखीव."
-              : "Shree Vasudev Mandir Devasthan, Wategaon (Sangli). All rights reserved."}
+              ? "श्री वासुदेव मंदिर, वाटेगाव (जि. सांगली). सर्व हक्क राखीव."
+              : "Shree Vasudev Mandir, Wategaon (Sangli). All rights reserved."}
           </p>
           <div className="flex items-center space-x-2 font-devanagari">
             <span>॥ ॐ नमो भगवते वासुदेवाय ॥</span>
@@ -86,4 +86,3 @@ export function Footer() {
     </footer>
   );
 }
-

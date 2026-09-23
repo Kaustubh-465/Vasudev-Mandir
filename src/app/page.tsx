@@ -11,7 +11,6 @@ import {
   BookOpen,
   MapPin,
   ChevronRight,
-  Sparkles,
   Maximize2,
   Camera,
 } from "lucide-react";
@@ -28,22 +27,22 @@ export default function HomePage() {
     {
       src: "/images/PXL_20260904_121625931.PORTRAIT.jpg",
       alt: "श्री वासुदेव पंचधातू मूर्ती",
-      caption: language === "mr" ? "श्री वासुदेव (श्रीकृष्ण) प्रसन्न पंचधातू मूर्ती" : "Shree Vasudev (Shri Krishna) Divine Panchadhatu Idol",
+      caption: language === "mr" ? "श्री वासुदेव पंचधातू मूर्ती (वाटेगाव)" : "Shree Vasudev Panchadhatu Idol (Wategaon)",
     },
     {
       src: "/images/1000183951.jpg",
       alt: "मंदिर गाभारा व समई प्रकाश",
-      caption: language === "mr" ? "मंदिर गाभारा आणि उजळलेला समई प्रकाश" : "Temple Sanctum Altar illuminated with lamps",
+      caption: language === "mr" ? "मंदिर गाभारा आणि प्रज्वलित समया" : "Temple Altar illuminated with samai lamps",
     },
     {
       src: "/images/1000183552.jpg",
-      alt: "६०×३० फूट सागवानी लाकडी मंडप",
-      caption: language === "mr" ? "१८१४ मधील ऐतिहासिक सागवानी लाकडी मंडप" : "Historic 1814 Teakwood Mandap Architecture",
+      alt: "सागवानी लाकडी मंडप",
+      caption: language === "mr" ? "सन १९१२ मधील ऐतिहासिक लाकडी मंडप" : "Historic 1912 Teakwood Mandap Architecture",
     },
     {
       src: "/images/IMG-20241107-WA0001.jpg",
-      alt: "दीपोत्सव सोहळा रोषणाई",
-      caption: language === "mr" ? "कोजागिरी ते त्रिपुरारी पौर्णिमा दरम्यानचा भव्य दीपोत्सव सोहळा" : "Grand Deepotsav Festival Oil Lamps Lighting",
+      alt: "दीपोत्सव रोषणाई",
+      caption: language === "mr" ? "दीपोत्सव काळातील मंदिर रोषणाई" : "Temple Illumination during Deepotsav",
     },
   ];
 
@@ -69,19 +68,19 @@ export default function HomePage() {
           </h1>
 
           {/* Subtitle & Description */}
-          <p className="text-lg sm:text-2xl font-bold text-temple-gold font-devanagari max-w-2xl mx-auto drop-shadow">
+          <p className="text-lg sm:text-2xl font-bold text-temple-gold font-devanagari max-w-3xl mx-auto drop-shadow">
             {templeData.subtitle[language]}
           </p>
 
-          <p className="text-sm sm:text-lg text-amber-200/90 font-devanagari max-w-xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-lg text-amber-200/90 font-devanagari max-w-2xl mx-auto leading-relaxed">
             {language === "mr"
-              ? "भोगावती नदीच्या तीरावर स्थित वाटेगावचे श्री वासुदेव मंदिर."
-              : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon (Sangli)."}
+              ? "सांगली जिल्ह्यातील वाटेगाव येथे भोगावती नदीच्या काठी वसलेले श्री वासुदेव मंदिर हे दिवेकर घराण्याचे पिढीजात खाजगी मंदिर आहे."
+              : "Shree Vasudev Mandir situated on the banks of Bhogawati river in Wategaon is a private generational temple of the Divekar family."}
           </p>
         </div>
       </section>
 
-      {/* Feature Section with Idol Photo & Vasudev Identity */}
+      {/* Feature Section: Vasudev Identity */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 shadow-xl border-2 border-temple-gold/40 relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
@@ -94,26 +93,26 @@ export default function HomePage() {
                     alt: "श्री वासुदेव पंचधातू मूर्ती",
                     caption:
                       language === "mr"
-                        ? "श्री वासुदेव (भगवान श्रीकृष्ण) पंचधातू मूर्ती - वाटेगाव"
-                        : "Shree Vasudev (Bhagwan Shri Krishna) Panchadhatu Idol - Wategaon",
+                        ? "श्री वासुदेव पंचधातू मूर्ती - वाटेगाव"
+                        : "Shree Vasudev Panchadhatu Idol - Wategaon",
                   })
                 }
                 className="group relative cursor-pointer overflow-hidden rounded-2xl border-4 border-amber-300 shadow-xl transition-all hover:scale-102 hover:shadow-2xl max-w-xs sm:max-w-sm w-full"
               >
                 <img
                   src="/images/PXL_20260904_121625931.PORTRAIT.jpg"
-                  alt="श्री वासुदेव प्रसन्न पंचधातू मूर्ती"
+                  alt="श्री वासुदेव पंचधातू मूर्ती"
                   className="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity flex flex-col justify-end p-4 text-white">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold text-amber-200 font-devanagari">
-                      {language === "mr" ? "पहाण्यासाठी टॅप करा 🔍" : "Tap to expand 🔍"}
+                      {language === "mr" ? "पाहण्यासाठी टॅप करा 🔍" : "Tap to expand 🔍"}
                     </span>
                     <Maximize2 className="w-4 h-4 text-temple-gold" />
                   </div>
                   <p className="text-sm font-bold text-amber-100 font-devanagari">
-                    {language === "mr" ? "श्री वासुदेव (श्रीकृष्ण) पंचधातू मूर्ती" : "Shree Vasudev Panchadhatu Idol"}
+                    {language === "mr" ? "श्री वासुदेव पंचधातू मूर्ती" : "Shree Vasudev Panchadhatu Idol"}
                   </p>
                 </div>
               </div>
@@ -127,14 +126,14 @@ export default function HomePage() {
 
               <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
                 {language === "mr"
-                  ? "वासुदेव म्हणजेच साक्षात भगवान श्रीकृष्ण!"
-                  : "Vasudev is Bhagwan Shri Krishna Himself"}
+                  ? "श्री वासुदेव स्वरूप व मंदिर परिचय"
+                  : "Shree Vasudev Form & Temple Overview"}
               </h2>
 
               <p className="text-gray-700 leading-relaxed font-devanagari text-base sm:text-lg">
                 {language === "mr"
-                  ? "वासुदेव म्हणजेच वसुदेव व देवकीचा पुत्र साक्षात भगवान श्रीकृष्ण! श्रीमद्भगवद्गीतेमध्ये भगवंतांनी 'वासुदेवः सर्वमिति' (सर्व जग वासुदेवमय आहे) हा विचार मांडला आहे. मंदिराच्या गाभाऱ्यातील पंचधातूची मूर्ती ही श्रीकृष्णाच्या शांत, मंदस्मित आणि प्रसन्न भावमुद्रेत प्रस्थापित आहे."
-                  : "The deity at Shree Vasudev Mandir is Lord Shri Krishna Himself, named 'Vasudev' as the divine son of Vasudeva & Devaki. The Panchadhatu idol reflects Krishna's serene divine smile."}
+                  ? "गाभाऱ्यातील पंचधातूची मूर्ती ही श्रीमद्भागवत एकादश स्कंध १४ व्या अध्यायात ध्यानासाठी वर्णन केलेल्या आणि भक्त ध्रुवाला दर्शन दिलेल्या भगवान वासुदेवांच्या चतुर्भुज प्रसन्न स्वरूपावर आधारित आहे. ईश्वराच्या अगाध विश्वरूपाची प्रचिती साध्या डोळ्यांनी घेता यावी यासाठी वासुदेवस्वामी दिवेकर यांनी या सगुण मूर्तीची वाटेगाव येथे स्थापना केली."
+                  : "The Panchadhatu idol represents the 4-armed form of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14. It was established by Vasudevswami Divekar as a tangible expression of the unmanifest divine."}
               </p>
 
               <div className="pt-2">
@@ -142,7 +141,7 @@ export default function HomePage() {
                   href="/who-is-vasudev"
                   className="inline-flex items-center space-x-2 text-temple-saffron hover:text-temple-darkSaffron font-bold text-sm sm:text-base group font-devanagari active:scale-95 transition-transform"
                 >
-                  <span>{language === "mr" ? "सविस्तर माहिती व संदर्भ वाचा" : "Read Complete Details"}</span>
+                  <span>{language === "mr" ? "सविस्तर माहिती वाचा" : "Read Complete Details"}</span>
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -159,13 +158,8 @@ export default function HomePage() {
             <span>{language === "mr" ? "छायाचित्रे" : "Photo Gallery"}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
-            {language === "mr" ? "श्री वासुदेव मंदिर छायाचित्र झलक" : "Temple Photo Showcase"}
+            {language === "mr" ? "श्री वासुदेव मंदिर छायाचित्रे" : "Temple Photo Showcase"}
           </h2>
-          <p className="text-xs sm:text-sm text-gray-600 font-devanagari max-w-xl mx-auto">
-            {language === "mr"
-              ? "मूर्ती, सागवानी लाकडी स्थापत्य व दीपोत्सव सोहळ्याची अस्सल छायाचित्रे"
-              : "Authentic photographs of the deity, teakwood architecture, and Deepotsav"}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -199,11 +193,6 @@ export default function HomePage() {
           <h2 className="text-2xl sm:text-3xl font-black text-temple-maroon font-devanagari">
             {language === "mr" ? "मंदिराची प्रमुख वैशिष्ट्ये" : "Temple Highlights"}
           </h2>
-          <p className="text-sm sm:text-base text-gray-600 font-devanagari max-w-xl mx-auto">
-            {language === "mr"
-              ? "भोगावती नदीच्या तीरावर वसलेल्या या देवस्थानाची प्रमुख वैशिष्ट्ये"
-              : "Key highlights of the shrine situated on the banks of Bhogawati river"}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -245,8 +234,8 @@ export default function HomePage() {
             </h3>
             <p className="text-xs text-amber-200/80 font-devanagari leading-relaxed">
               {language === "mr"
-                ? "भोगावती नदीच्या तीरावर मंदिर स्थापना, सागवानी लाकडी स्थापत्य."
-                : "Historical background, teakwood mandap construction, and Divekar heritage."}
+                ? "वासुदेवस्वामी स्थापना, दिवेकर पिढीजात वारसा व १९१२ लाकडी मंडप."
+                : "Vasudevswami foundation, Divekar family heritage, and 1912 teakwood mandap."}
             </p>
           </Link>
 
@@ -256,12 +245,12 @@ export default function HomePage() {
           >
             <BookOpen className="w-6 h-6 sm:w-7 sm:h-7 text-temple-gold" />
             <h3 className="text-lg sm:text-xl font-bold font-devanagari group-hover:text-temple-gold transition-colors">
-              {language === "mr" ? "वासुदेव स्वरूप (श्रीकृष्ण)" : "Who is Vasudev?"}
+              {language === "mr" ? "वासुदेव स्वरूप" : "Who is Vasudev?"}
             </h3>
             <p className="text-xs text-amber-200/80 font-devanagari leading-relaxed">
               {language === "mr"
-                ? "साक्षात भगवान श्रीकृष्ण स्वरूप व वासुदेव परंपरेची माहिती."
-                : "Bhagwan Shri Krishna's divine form and Vasudev traditions."}
+                ? "श्रीमद्भागवत एकादश स्कंध १४ वा अध्याय ध्यानाधारित वासुदेव स्वरूप."
+                : "Form of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14."}
             </p>
           </Link>
 
@@ -275,8 +264,8 @@ export default function HomePage() {
             </h3>
             <p className="text-xs text-amber-100/90 font-devanagari leading-relaxed">
               {language === "mr"
-                ? "कोजागिरी ते त्रिपुरारी पौर्णिमा दरम्यान हजारो पणत्यांचा सोहळा."
-                : "Month-long festival of traditional oil lamps."}
+                ? "कोजागिरी ते त्रिपुरारी पौर्णिमा दरम्यानचा पारंपरिक दीपप्रज्वलन सोहळा."
+                : "Month-long traditional lamp lighting festival."}
             </p>
           </Link>
 
