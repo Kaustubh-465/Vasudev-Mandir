@@ -17,13 +17,13 @@ export const vasudevCitations: CitationSection[] = [
       en: "Shree Vasudev Mandir at Wategaon",
     },
     subtitle: {
-      mr: "दिवेकर घराण्याचे पिढीजात खाजगी मंदिर",
-      en: "Divekar Family Private Generational Temple",
+      mr: "दिवेकर घराण्याचे खाजगी मंदिर",
+      en: "Divekar Family Private Temple",
     },
     content: [
       {
-        mr: "वाटेगाव (जि. सांगली) येथे भोगावती नदीच्या तीरावर हे मंदिर वसलेले आहे. हे दिवेकर कुटुंबाचे पिढीजात खाजगी मंदिर असून, कोणत्याही पब्लिक ट्रस्टशिवाय सुमारे दोनशे वर्षांपासून दिवेकर घराण्याने स्वतःच्या जबाबदारीवर हे मंदिर व पूजा-अर्चा जतन केली आहे.",
-        en: "Located on the banks of Bhogawati river in Wategaon (Sangli), this is a private generational temple maintained by the Divekar family for around two centuries without any public trust.",
+        mr: "वाटेगाव (जि. सांगली) येथे भोगावती नदीच्या तीरावर हे मंदिर वसलेले आहे. हे दिवेकर कुटुंबाचे खाजगी मंदिर असून, कोणत्याही पब्लिक ट्रस्टशिवाय सुमारे दोनशे वर्षांपासून दिवेकर घराण्याने स्वतःच्या जबाबदारीवर हे मंदिर व पूजा-अर्चा जतन केली आहे.",
+        en: "Located on the banks of Bhogawati river in Wategaon (Sangli), this is a private temple maintained by the Divekar family for around two centuries without any public trust.",
       },
     ],
   },

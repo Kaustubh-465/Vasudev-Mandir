@@ -30,8 +30,8 @@ export const templeHistory: HistorySection = {
   },
   paragraphs: [
     {
-      mr: "सांगली जिल्ह्यातील वाळवा तालुक्यात असलेल्या वाटेगाव येथे भोगावती नदीच्या तीरावर **श्री वासुदेव मंदिर** वसलेले आहे. हे मंदिर **दिवेकर घराण्याचे पिढीजात खाजगी मंदिर** आहे.",
-      en: "Shree Vasudev Mandir is located on the banks of Bhogawati river in Wategaon, Walwa taluka of Sangli district. This is a **privately owned generational temple of the Divekar family**.",
+      mr: "सांगली जिल्ह्यातील वाळवा तालुक्यात असलेल्या वाटेगाव येथे भोगावती नदीच्या तीरावर **श्री वासुदेव मंदिर** वसलेले आहे. हे मंदिर **दिवेकर घराण्याचे खाजगी मंदिर** आहे.",
+      en: "Shree Vasudev Mandir is located on the banks of Bhogawati river in Wategaon, Walwa taluka of Sangli district. This is a **private temple of the Divekar family**.",
     },
     {
       mr: "सुमारे शंभर वर्षांपूर्वी लिहिलेल्या ऐतिहासिक ग्रंथातील नोंदीनुसार, **वासुदेवस्वामी दिवेकर** यांनी स्वतःच्या श्रमाने वाटेगाव येथे मंदिराची व पंचधातू मूर्तीची स्थापना केली. त्यांनी वासुदेव उपासना व भजन-पूजनाची परंपरा सुरू केली.",
@@ -63,7 +63,7 @@ export const templeHistory: HistorySection = {
       year: "सन १९१२",
       title: { mr: "सुशोभित लाकडी मंडप बांधकाम", en: "Teakwood Mandap Construction" },
       description: {
-        mr: "जुना लहान मंडप जीर्ण झाल्यामुळे श्रीसद्गुरु गोविंद हरी दिवेकर यांनी ५,००० रुपये खर्च करून भव्य व सुशोभित लाकडी मंडप बांधला.",
+        mr: "जुना लहान मंडप जीर्ण झाल्यामुळे श्रीसद्गुरु गोविंद हरी दिवेकर यांनी ५,००० रुपये खर्च करून सुशोभित लाकडी मंडप बांधला.",
         en: "Govind Hari Divekar constructed a new ornate wooden mandap spending ₹5,000 to replace the old dilapidated structure.",
       },
     },
@@ -76,8 +76,8 @@ export const templeHistory: HistorySection = {
       },
     },
     {
-      year: "पिढीजात जतन",
-      title: { mr: "दिवेकर घराण्याचा वारसा", en: "Divekar Generational Heritage" },
+      year: "कौटुंबिक जतन",
+      title: { mr: "दिवेकर घराण्याचा वारसा", en: "Divekar Family Heritage" },
       description: {
         mr: "कोणत्याही पब्लिक ट्रस्टशिवाय, दिवेकर कुटुंबाने पिढ्यानपिढ्या स्वतःच्या श्रमाने व जबाबदारीने मंदिराचे जतन व दैनंदिन व्यवस्था सांभाळली आहे.",
         en: "Maintained generation after generation as a private family heritage by the Divekar family with utter simplicity and devotion.",
