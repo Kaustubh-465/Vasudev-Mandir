@@ -31,7 +31,7 @@ export default function HomePage() {
     },
     {
       src: "/images/1000183951.jpg",
-      alt: "मंदिर गाभारा व समई प्रकाश",
+      alt: "दीपोत्सव रोषणाई",
       caption: language === "mr" ? "मंदिर गाभारा आणि प्रज्वलित समया" : "Temple Altar illuminated with samai lamps",
     },
     {
@@ -41,7 +41,7 @@ export default function HomePage() {
     },
     {
       src: "/images/IMG-20241107-WA0001.jpg",
-      alt: "दीपोत्सव रोषणाई",
+      alt: "मंदिर गाभारा व समई प्रकाश",
       caption: language === "mr" ? "दीपोत्सव काळातील मंदिर रोषणाई" : "Temple Illumination during Deepotsav",
     },
   ];
