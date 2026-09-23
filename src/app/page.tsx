@@ -26,23 +26,18 @@ export default function HomePage() {
   const galleryPreview = [
     {
       src: "/images/PXL_20260904_121625931.PORTRAIT.jpg",
-      alt: "श्री वासुदेव पंचधातू मूर्ती",
-      caption: language === "mr" ? "श्री वासुदेव पंचधातू मूर्ती (वाटेगाव)" : "Shree Vasudev Panchadhatu Idol (Wategaon)",
+      alt: "श्री वासुदेव मूर्ती",
+      caption: language === "mr" ? "श्री वासुदेव मूर्ती (वाटेगाव)" : "Shree Vasudev Idol (Wategaon)",
     },
     {
       src: "/images/1000183951.jpg",
       alt: "दीपोत्सव रोषणाई",
-      caption: language === "mr" ? "मंदिर गाभारा आणि प्रज्वलित समया" : "Temple Altar illuminated with samai lamps",
-    },
-    {
-      src: "/images/1000183552.jpg",
-      alt: "सागवानी लाकडी मंडप",
-      caption: language === "mr" ? "सन १९१२ मधील ऐतिहासिक लाकडी मंडप" : "Historic 1912 Teakwood Mandap Architecture",
+      caption: language === "mr" ? "दीपोत्सव काळातील मंदिर रोषणाई" : "Temple Altar illuminated with samai lamps",
     },
     {
       src: "/images/IMG-20241107-WA0001.jpg",
       alt: "मंदिर गाभारा व समई प्रकाश",
-      caption: language === "mr" ? "दीपोत्सव काळातील मंदिर रोषणाई" : "Temple Illumination during Deepotsav",
+      caption: language === "mr" ? "मंदिर गाभारा आणि प्रज्वलित समया" : "Temple Illumination during Deepotsav",
     },
   ];
 
@@ -90,18 +85,18 @@ export default function HomePage() {
                 onClick={() =>
                   setSelectedImage({
                     src: "/images/PXL_20260904_121625931.PORTRAIT.jpg",
-                    alt: "श्री वासुदेव पंचधातू मूर्ती",
+                    alt: "श्री वासुदेव मूर्ती",
                     caption:
                       language === "mr"
-                        ? "श्री वासुदेव पंचधातू मूर्ती - वाटेगाव"
-                        : "Shree Vasudev Panchadhatu Idol - Wategaon",
+                        ? "श्री वासुदेव मूर्ती - वाटेगाव"
+                        : "Shree Vasudev Idol - Wategaon",
                   })
                 }
                 className="group relative cursor-pointer overflow-hidden rounded-2xl border-4 border-amber-300 shadow-xl transition-all hover:scale-102 hover:shadow-2xl max-w-xs sm:max-w-sm w-full"
               >
                 <img
                   src="/images/PXL_20260904_121625931.PORTRAIT.jpg"
-                  alt="श्री वासुदेव पंचधातू मूर्ती"
+                  alt="श्री वासुदेव मूर्ती"
                   className="w-full h-80 sm:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity flex flex-col justify-end p-4 text-white">
@@ -112,7 +107,7 @@ export default function HomePage() {
                     <Maximize2 className="w-4 h-4 text-temple-gold" />
                   </div>
                   <p className="text-sm font-bold text-amber-100 font-devanagari">
-                    {language === "mr" ? "श्री वासुदेव पंचधातू मूर्ती" : "Shree Vasudev Panchadhatu Idol"}
+                    {language === "mr" ? "श्री वासुदेव मूर्ती" : "Shree Vasudev Idol"}
                   </p>
                 </div>
               </div>
@@ -132,8 +127,8 @@ export default function HomePage() {
 
               <p className="text-gray-700 leading-relaxed font-devanagari text-base sm:text-lg">
                 {language === "mr"
-                  ? "गाभाऱ्यातील पंचधातूची मूर्ती ही श्रीमद्भागवत एकादश स्कंध १४ व्या अध्यायात ध्यानासाठी वर्णन केलेल्या आणि भक्त ध्रुवाला दर्शन दिलेल्या भगवान वासुदेवांच्या चतुर्भुज प्रसन्न स्वरूपावर आधारित आहे. ईश्वराच्या अगाध विश्वरूपाची प्रचिती साध्या डोळ्यांनी घेता यावी यासाठी वासुदेवस्वामी दिवेकर यांनी या सगुण मूर्तीची वाटेगाव येथे स्थापना केली."
-                  : "The Panchadhatu idol represents the 4-armed form of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14. It was established by Vasudevswami Divekar as a tangible expression of the unmanifest divine."}
+                  ? "गाभाऱ्यातील श्री वासुदेव मूर्ती ही श्रीमद्भागवतातील एकादश स्कंधातील १४ व्या अध्यायात ध्यानासाठी वर्णन केलेल्या आणि भक्त ध्रुवाला दर्शन दिलेल्या भगवान वासुदेवांच्या चतुर्भुज प्रसन्न स्वरूपावर आधारित आहे. ईश्वराच्या अगाध विश्वरूपाची प्रचिती साध्या डोळ्यांनी घेता यावी यासाठी वासुदेवस्वामी दिवेकर यांनी या सगुण मूर्तीची वाटेगाव येथे स्थापना केली."
+                  : "The idol represents the 4-armed form of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14. It was established by Vasudevswami Divekar as a tangible expression of the unmanifest divine."}
               </p>
 
               <div className="pt-2">
@@ -162,7 +157,7 @@ export default function HomePage() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
           {galleryPreview.map((item, idx) => (
             <div
               key={idx}

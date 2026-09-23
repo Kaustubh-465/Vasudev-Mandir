@@ -18,11 +18,11 @@ export default function WhoIsVasudevPage() {
   const idolPhotos = [
     {
       src: "/images/PXL_20260904_121625931.PORTRAIT.jpg",
-      alt: "श्री वासुदेव पंचधातू मूर्ती",
+      alt: "श्री वासुदेव मूर्ती",
       caption:
         language === "mr"
-          ? "श्री वासुदेव पंचधातू मूर्ती - वाटेगाव"
-          : "Shree Vasudev Panchadhatu Idol - Wategaon",
+          ? "श्री वासुदेव मूर्ती - वाटेगाव"
+          : "Shree Vasudev Idol - Wategaon",
     },
     {
       src: "/images/IMG-20240617-WA0005.jpg",
@@ -69,7 +69,7 @@ export default function WhoIsVasudevPage() {
 
         <p className="text-lg text-gray-700 font-devanagari leading-relaxed max-w-3xl">
           {language === "mr"
-            ? "श्रीमद्भागवत एकादश स्कंध १४ अध्यायानुसार वासुदेवांचे ध्यानरूप व भक्त ध्रुवाला मिळालेले प्रसन्न दर्शन."
+            ? "श्रीमद्भागवतातील एकादश स्कंधातील १४ व्या अध्यायानुसार वासुदेवांचे ध्यानरूप व भक्त ध्रुवाला मिळालेले प्रसन्न दर्शन."
             : "Form of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14."}
         </p>
       </div>
@@ -80,7 +80,7 @@ export default function WhoIsVasudevPage() {
           <div className="flex items-center space-x-2">
             <Camera className="w-5 h-5 text-temple-gold" />
             <h2 className="text-xl sm:text-2xl font-black font-devanagari text-amber-100">
-              {language === "mr" ? "श्री वासुदेव पंचधातू मूर्ती स्वरूप" : "Panchadhatu Idol Photographs"}
+              {language === "mr" ? "श्री वासुदेव मूर्ती स्वरूप" : "Shree Vasudev Idol Photographs"}
             </h2>
           </div>
           <span className="text-xs font-bold text-amber-300 font-devanagari">

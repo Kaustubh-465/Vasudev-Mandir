@@ -34,23 +34,23 @@ export const vasudevCitations: CitationSection[] = [
       en: "Form & Significance of Lord Vasudev",
     },
     subtitle: {
-      mr: "श्रीमद्भागवत एकादश स्कंध १४ वा अध्याय संदर्भ",
+      mr: "श्रीमद्भागवतातील एकादश स्कंधातील १४ वा अध्याय संदर्भ",
       en: "Reference from Srimad Bhagavat 11th Canto Chapter 14",
     },
     content: [
       {
-        mr: "मंदिरातील वासुदेवाची मूर्ती ही श्रीमद्भागवत ग्रंथाच्या एकादश स्कंधातील १४ व्या अध्यायात ध्यानासाठी वर्णन केलेल्या रूपावर आधारित आहे. हे तेच चतुर्भुज प्रसन्न स्वरूप आहे ज्या रूपाचे दर्शन भक्त ध्रुवाला झाले होते.",
+        mr: "मंदिरातील वासुदेवाची मूर्ती ही श्रीमद्भागवतातील एकादश स्कंधातील १४ व्या अध्यायात ध्यानासाठी वर्णन केलेल्या रूपावर आधारित आहे. हे तेच चतुर्भुज प्रसन्न स्वरूप आहे ज्या रूपाचे दर्शन भक्त ध्रुवाला झाले होते.",
         en: "The idol of Lord Vasudev is sculpted based on the meditative form described in Srimad Bhagavat 11th Canto Chapter 14, which is the same 4-armed form that granted darshan to Bhakta Dhruva.",
       },
       {
-        mr: "निर्गुण आणि अगाध असलेल्या ईश्वराच्या विश्वरूपाची प्रचिती साध्या डोळ्यांनी घेता यावी, यासाठी सगुण रूपात या पंचधातू मूर्तीची स्थापना करण्यात आली आहे. चार हातांत शंख, चक्र, गदा आणि पद्म धारण केलेली, पितळी पत्र्यांनी मढवलेल्या सिंहासनावर प्रस्थापित असलेली ही उभी मूर्ती अत्यंत प्रसन्न हास्यमुद्रेत आहे.",
+        mr: "निर्गुण आणि अगाध असलेल्या ईश्वराच्या विश्वरूपाची प्रचिती साध्या डोळ्यांनी घेता यावी, यासाठी सगुण रूपात या श्री वासुदेव मूर्तीची स्थापना करण्यात आली आहे. चार हातांत शंख, चक्र, गदा आणि पद्म धारण केलेली, पितळी पत्र्यांनी मढवलेल्या सिंहासनावर प्रस्थापित असलेली ही उभी मूर्ती अत्यंत प्रसन्न हास्यमुद्रेत आहे.",
         en: "To perceive the infinite unmanifest divine consciousness through human sight, the idol was sculpted in 4-armed standing posture with Shankha, Chakra, Gada, Padma, reflecting a serene smile.",
       },
     ],
     bullets: [
       {
         heading: {
-          mr: "श्रीमद्भागवत एकादश स्कंध संदर्भ",
+          mr: "श्रीमद्भागवतातील एकादश स्कंध संदर्भ",
           en: "Srimad Bhagavat 11th Canto Reference",
         },
         detail: {
@@ -64,8 +64,8 @@ export const vasudevCitations: CitationSection[] = [
           en: "Balancing Duty & Practice",
         },
         detail: {
-          mr: "ग्रंथातील नोंदीनुसार, श्रीसद्गुरु गोविंद हरी दिवेकर यांनी नोकरी आणि कौटुंबिक प्रपंच सांभाळत, कोणतीही कसर न सोडता मंदिराची सेवा आणि १९१२ मधील लाकडी मंडपाचे काम पूर्ण केले. प्रपंच व कर्तव्य बजावत साधना करणे हेच या परंपरेचे गमक आहे.",
-          en: "Govind Hari Divekar managed household duties and employment while quietly maintaining temple rituals and executing the 1912 teakwood mandap construction.",
+          mr: "ग्रंथातील नोंदीनुसार, श्रीसद्गुरु गोविंद हरी दिवेकर यांनी नोकरी आणि कौटुंबिक प्रपंच सांभाळत, कोणतीही कसर न सोडता मंदिराची सेवा केली. सन १९१२ मध्ये त्यांनी मंडप उभारून घेतला व १९१४ साली त्यांनी संगमरवरी फरशी बसवून घेतली. प्रपंच व कर्तव्य बजावत साधना करणे हेच या परंपरेचे गमक आहे.",
+          en: "Govind Hari Divekar managed household duties and employment while quietly maintaining temple rituals, building the mandap in 1912 and laying marble flooring in 1914.",
         },
       },
     ],

@@ -34,8 +34,8 @@ export const templeHistory: HistorySection = {
       en: "Shree Vasudev Mandir is located on the banks of Bhogawati river in Wategaon, Walwa taluka of Sangli district. This is a **private temple of the Divekar family**.",
     },
     {
-      mr: "सुमारे शंभर वर्षांपूर्वी लिहिलेल्या ऐतिहासिक ग्रंथातील नोंदीनुसार, **वासुदेवस्वामी दिवेकर** यांनी स्वतःच्या श्रमाने वाटेगाव येथे मंदिराची व पंचधातू मूर्तीची स्थापना केली. त्यांनी वासुदेव उपासना व भजन-पूजनाची परंपरा सुरू केली.",
-      en: "According to historical records, **Vasudevswami Divekar** established the temple and Panchadhatu idol at Wategaon by his own labor, initiating the family tradition of worship.",
+      mr: "सुमारे शंभर वर्षांपूर्वी लिहिलेल्या ऐतिहासिक ग्रंथातील नोंदीनुसार, **वासुदेवस्वामी दिवेकर** यांनी स्वतःच्या श्रमाने वाटेगाव येथे मंदिराची व श्री वासुदेव मूर्तीची स्थापना केली. त्यांनी वासुदेव उपासना व भजन-पूजनाची परंपरा सुरू केली.",
+      en: "According to historical records, **Vasudevswami Divekar** established the temple and Shree Vasudev idol at Wategaon by his own labor, initiating the family tradition of worship.",
     },
     {
       mr: "त्यांच्यानंतर वै. विश्वनाथ दादा पाटणकर आणि वै. वाटेश्वरबुवा दिवेकर यांनी ही परंपरा पुढे चालवली. पुढे श्रीसद्गुरु गोविंद हरी दिवेकर यांनी नोकरी आणि प्रपंचाची कठीण जबाबदारी सांभाळत मंदिराची व्यवस्था, नित्यक्रम आणि जिर्णोद्धार अत्यंत निष्ठेने पूर्ण केला.",
@@ -47,8 +47,8 @@ export const templeHistory: HistorySection = {
       year: "स्थापना व समाधी (शके १७६७)",
       title: { mr: "वासुदेवस्वामी दिवेकर", en: "Vasudevswami Divekar" },
       description: {
-        mr: "वासुदेवस्वामी दिवेकर यांनी वाटेगाव येथे मंदिराची व पंचधातू मूर्तीची स्थापना केली. (समाधी: शके १७६७ श्रावण शुद्ध ३).",
-        en: "Vasudevswami Divekar established the temple and Panchadhatu idol at Wategaon. (Samadhi: Shake 1767 Shravan Shuddha 3).",
+        mr: "वासुदेवस्वामी दिवेकर यांनी वाटेगाव येथे मंदिराची व श्री वासुदेव मूर्तीची स्थापना केली. (समाधी: शके १७६७ श्रावण शुद्ध ३).",
+        en: "Vasudevswami Divekar established the temple and Shree Vasudev idol at Wategaon. (Samadhi: Shake 1767 Shravan Shuddha 3).",
       },
     },
     {
@@ -60,19 +60,11 @@ export const templeHistory: HistorySection = {
       },
     },
     {
-      year: "सन १९१२",
-      title: { mr: "सुशोभित लाकडी मंडप बांधकाम", en: "Teakwood Mandap Construction" },
+      year: "सन १९१२ ते १९१४",
+      title: { mr: "लाकडी मंडप व संगमरवरी फरशी", en: "Mandap & Marble Flooring" },
       description: {
-        mr: "जुना लहान मंडप जीर्ण झाल्यामुळे श्रीसद्गुरु गोविंद हरी दिवेकर यांनी ५,००० रुपये खर्च करून सुशोभित लाकडी मंडप बांधला.",
-        en: "Govind Hari Divekar constructed a new ornate wooden mandap spending ₹5,000 to replace the old dilapidated structure.",
-      },
-    },
-    {
-      year: "सन १९१४",
-      title: { mr: "संगमरवरी फरशीकाम", en: "Marble Flooring Work" },
-      description: {
-        mr: "गोविंद हरी दिवेकर यांनी स्वतः जवळ बसून १,००० रुपये खर्च करून लाकडी मंडपामध्ये संगमरवरी फरशीचे काम पूर्ण करून घेतले.",
-        en: "Govind Hari Divekar personally supervised artisans and laid marble flooring in the mandap spending ₹1,000.",
+        mr: "सन १९१२ मध्ये श्रीसद्गुरु गोविंद हरी दिवेकर यांनी मंडप उभारून घेतला व १९१४ साली त्यांनी संगमरवरी फरशी बसवून घेतली.",
+        en: "Govind Hari Divekar constructed the teakwood mandap in 1912 and laid marble flooring in 1914.",
       },
     },
     {

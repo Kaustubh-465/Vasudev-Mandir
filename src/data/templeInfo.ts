@@ -51,22 +51,22 @@ export const templeData: TempleData = {
   quickStats: [
     { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव, ता. वाळवा (सांगली)", en: "Wategaon, Walwa (Sangli)" } },
     { label: { mr: "नदी", en: "River" }, value: { mr: "भोगावती नदी", en: "Bhogawati River" } },
-    { label: { mr: "स्वरूप", en: "Deity Form" }, value: { mr: "श्री वासुदेव (पंचधातू मूर्ती)", en: "Shree Vasudev (Panchadhatu Idol)" } },
+    { label: { mr: "स्वरूप", en: "Deity Form" }, value: { mr: "श्री वासुदेव मूर्ती", en: "Shree Vasudev Idol" } },
     { label: { mr: "उत्सव", en: "Festival" }, value: { mr: "दीपोत्सव व स्थापना उत्सव", en: "Deepotsav & Sthapana Utsav" } },
   ],
   keyHighlights: [
     {
-      title: { mr: "पंचधातू वासुदेव मूर्ती", en: "Panchadhatu Vasudev Idol" },
+      title: { mr: "श्री वासुदेव मूर्ती", en: "Shree Vasudev Idol" },
       desc: {
-        mr: "श्रीमद्भागवत एकादश स्कंध १४ व्या अध्यायातील वर्णनानुसार व भक्त ध्रुवाला दर्शन दिलेल्या श्री वासुदेवांच्या प्रसन्न स्वरूपाची पंचधातू उभी मूर्ती.",
-        en: "Standing Panchadhatu idol of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14.",
+        mr: "श्रीमद्भागवतातील एकादश स्कंधातील १४ व्या अध्यायातील वर्णनानुसार व भक्त ध्रुवाला दर्शन दिलेल्या श्री वासुदेवांच्या प्रसन्न स्वरूपाची उभी मूर्ती.",
+        en: "Standing idol of Lord Vasudev as described in Srimad Bhagavat 11th Canto Chapter 14.",
       },
     },
     {
       title: { mr: "सागवानी लाकडी मंडप", en: "Teakwood Mandap" },
       desc: {
-        mr: "सन १९१२ मध्ये श्रीसद्गुरु गोविंद हरी दिवेकर यांनी उभारलेला सुशोभित लाकडी मंडप व १९१४ ची संगमरवरी फरशी.",
-        en: "Ornate teakwood mandap built in 1912 by Govind Hari Divekar with marble flooring added in 1914.",
+        mr: "सन १९१२ मध्ये श्रीसद्गुरु गोविंद हरी दिवेकर यांनी मंडप उभारून घेतला व १९१४ साली त्यांनी संगमरवरी फरशी बसवून घेतली.",
+        en: "Teakwood mandap built in 1912 by Govind Hari Divekar and marble flooring installed in 1914.",
       },
     },
     {
