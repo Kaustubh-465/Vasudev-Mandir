@@ -4,13 +4,13 @@ import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { locationInfo } from "@/data/location";
-import { MapPin, ArrowLeft, Bus, Train, ExternalLink, Navigation } from "lucide-react";
+import { MapPin, ArrowLeft, ExternalLink, Navigation } from "lucide-react";
 
 export default function LocationPage() {
   const { language } = useLanguage();
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
       {/* Header */}
       <div className="space-y-4 text-center sm:text-left border-b border-amber-300/60 pb-8">
         <Link
@@ -24,20 +24,14 @@ export default function LocationPage() {
         <h1 className="text-4xl sm:text-5xl font-black text-temple-maroon font-devanagari">
           {language === "mr" ? "वाटेगाव वासुदेव मंदिराकडे कसे पोहोचावे?" : "How to Reach Wategaon Vasudev Mandir"}
         </h1>
-
-        <p className="text-lg text-gray-700 font-devanagari leading-relaxed max-w-3xl">
-          {language === "mr"
-            ? "वाटेगाव (ता. वाळवा, जि. सांगली) येथील मंदिराचा सविस्तर पत्ता, बस व रेल्वे मार्ग आणि नकाशे."
-            : "Detailed address, road, bus and train routes to visit Wategaon Vasudev Mandir."}
-        </p>
       </div>
 
       {/* Address & Google Maps Banner */}
-      <div className="bg-white p-8 rounded-3xl shadow-xl border-2 border-temple-gold grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        <div className="lg:col-span-7 space-y-4">
+      <div className="bg-white p-8 rounded-3xl shadow-xl border-2 border-temple-gold space-y-6">
+        <div className="space-y-3">
           <div className="inline-flex items-center space-x-2 text-temple-saffron font-bold text-sm">
             <MapPin className="w-5 h-5" />
-            <span>{language === "mr" ? "संपूर्ण पत्ता" : "Complete Address"}</span>
+            <span>{language === "mr" ? "गूगल मॅप्स लोकेशन व पत्ता" : "Google Maps Location & Address"}</span>
           </div>
 
           <h2 className="text-2xl font-bold text-temple-maroon font-devanagari">
@@ -56,73 +50,44 @@ export default function LocationPage() {
               href={locationInfo.address.directMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 bg-temple-saffron hover:bg-temple-darkSaffron text-white font-bold px-6 py-3 rounded-xl shadow-md transition-all text-sm"
+              className="inline-flex items-center space-x-2 bg-temple-saffron hover:bg-temple-darkSaffron text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition-all text-base font-devanagari active:scale-95"
             >
-              <Navigation className="w-4 h-4" />
+              <Navigation className="w-5 h-5" />
               <span>{language === "mr" ? "गूगल मॅप्सवर नेव्हिगेट करा" : "Open in Google Maps"}</span>
               <ExternalLink className="w-4 h-4 ml-1" />
             </a>
           </div>
         </div>
+      </div>
 
-        <div className="lg:col-span-5 bg-amber-100 p-6 rounded-2xl text-center space-y-3 border border-amber-300">
-          <div className="text-4xl">📍</div>
-          <h3 className="text-lg font-bold text-temple-maroon font-devanagari">
-            {language === "mr" ? "महत्त्वाची अंतरे" : "Key Distances"}
-          </h3>
-          <ul className="text-xs sm:text-sm text-gray-800 font-devanagari space-y-1.5 text-left">
-            <li className="flex justify-between border-b border-amber-200 pb-1">
-              <span>पेठ नाका (NH48 Highway):</span>
-              <span className="font-bold font-mono">१२ किमी</span>
+      {/* Simple Directions Card */}
+      <div className="bg-amber-50/90 p-8 rounded-3xl shadow-md border-2 border-amber-300 space-y-4">
+        <h2 className="text-xl sm:text-2xl font-bold text-temple-maroon font-devanagari flex items-center space-x-2">
+          <span>📍</span>
+          <span>{language === "mr" ? "मार्ग दर्शन" : "Directions"}</span>
+        </h2>
+
+        <div className="space-y-3 text-gray-800 font-devanagari leading-relaxed text-base sm:text-lg">
+          <p className="font-semibold text-temple-saffron">
+            {language === "mr"
+              ? "वाटेगाव हे कासेगावपासून सुमारे ५ किमी अंतरावर आहे."
+              : "Wategaon is located about 5 km from Kasegaon."}
+          </p>
+          <ul className="list-disc list-inside space-y-2 text-gray-700">
+            <li>
+              <strong>{language === "mr" ? "कराडकडून येताना:" : "Coming from Karad:"}</strong>{" "}
+              {language === "mr"
+                ? "कराडवरून कासेगाव येथे येऊन, तेथून उपलब्ध वाहतूक साधनाने वाटेगावला यावे."
+                : "Travel from Karad to Kasegaon, and take local available transport from Kasegaon to Wategaon."}
             </li>
-            <li className="flex justify-between border-b border-amber-200 pb-1">
-              <span>कराड (Karad):</span>
-              <span className="font-bold font-mono">२५ किमी</span>
-            </li>
-            <li className="flex justify-between border-b border-amber-200 pb-1">
-              <span>इस्लामपूर (Islampur):</span>
-              <span className="font-bold font-mono">१५ किमी</span>
-            </li>
-            <li className="flex justify-between">
-              <span>सांगली (Sangli):</span>
-              <span className="font-bold font-mono">४५ किमी</span>
+            <li>
+              <strong>{language === "mr" ? "कोल्हापूरकडून येताना:" : "Coming from Kolhapur:"}</strong>{" "}
+              {language === "mr"
+                ? "कोल्हापूरवरून कासेगाव येथे येऊन, तेथून उपलब्ध वाहतूक साधनाने वाटेगावला यावे."
+                : "Travel from Kolhapur to Kasegaon, and proceed from Kasegaon to Wategaon via local transport."}
             </li>
           </ul>
         </div>
-      </div>
-
-      {/* Transport Options Grid */}
-      <div className="space-y-8">
-        {locationInfo.routes.map((cat, cIdx) => (
-          <div
-            key={cIdx}
-            className="bg-white p-8 rounded-3xl shadow-lg border-2 border-amber-200 space-y-6"
-          >
-            <h2 className="text-2xl font-bold text-temple-maroon font-devanagari flex items-center space-x-3">
-              {cIdx === 0 ? <Bus className="w-6 h-6 text-temple-saffron" /> : <Train className="w-6 h-6 text-temple-saffron" />}
-              <span>{cat.mode[language]}</span>
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {cat.details.map((item, dIdx) => (
-                <div
-                  key={dIdx}
-                  className="bg-amber-50/70 p-5 rounded-2xl border border-amber-200 space-y-2"
-                >
-                  <div className="text-xs font-bold text-temple-saffron font-mono">
-                    {item.distance[language]}
-                  </div>
-                  <h3 className="text-lg font-bold text-temple-maroon font-devanagari">
-                    {item.route[language]}
-                  </h3>
-                  <p className="text-xs text-gray-600 font-devanagari leading-relaxed">
-                    {item.description[language]}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   );

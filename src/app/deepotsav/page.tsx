@@ -16,70 +16,14 @@ export default function DeepotsavPage() {
   } | null>(null);
 
   const deepotsavGallery = [
-    {
-      src: "/images/IMG-20241107-WA0001.jpg",
-      alt: "दीपोत्सव मंदिर परिसर",
-      caption:
-        language === "mr"
-          ? "दीपोत्सव काळातील मंदिर परिसर"
-          : "Temple Courtyard during Deepotsav",
-    },
-    {
-      src: "/images/IMG_20241016_222228.jpg",
-      alt: "मंदिर प्रवेशद्वार दीपप्रज्वलन",
-      caption:
-        language === "mr"
-          ? "दीपोत्सवातील मंदिर प्रवेशद्वार"
-          : "Temple Entrance Gate during Deepotsav",
-    },
-    {
-      src: "/images/IMG-20241106-WA0009.jpg",
-      alt: "लाकडी पायऱ्यांवर दीप",
-      caption:
-        language === "mr"
-          ? "सागवानी लाकडी पायऱ्यांवरील दीप"
-          : "Traditional Brass & Clay Lamps on Teakwood Steps",
-    },
-    {
-      src: "/images/IMG-20241106-WA0011.jpg",
-      alt: "प्रज्वलित पणती व समई",
-      caption:
-        language === "mr"
-          ? "प्रज्वलित पणती व समई"
-          : "Traditional Earthen Oil Lamps & Samai",
-    },
-    {
-      src: "/images/IMG_20241016_222505-1.jpg",
-      alt: "रात्रीचे मंदिर शिखर व मंडप",
-      caption:
-        language === "mr"
-          ? "रात्रीचे मंदिर शिखर व लाकडी मंडप"
-          : "Night View of Temple Tower & Wooden Mandap",
-    },
-    {
-      src: "/images/IMG_20241109_223537.jpg",
-      alt: "त्रिपुरारी पौर्णिमा दीपप्रज्वलन",
-      caption:
-        language === "mr"
-          ? "त्रिपुरारी पौर्णिमा दीपप्रज्वलन"
-          : "Tripurari Purnima Deepotsav",
-    },
-    {
-      src: "/images/IMG_20241016_221218.jpg",
-      alt: "गाभाऱ्यातील समई प्रकाश",
-      caption:
-        language === "mr"
-          ? "गाभाऱ्यातील समई प्रकाश"
-          : "Brass Samai Lamps inside Altar",
-    },
-    {
-      src: "/images/IMG_20241016_221143.jpg",
-      alt: "दीपोत्सव रात्रीचे मंदिर",
-      caption:
-        language === "mr"
-          ? "दीपोत्सव काळातील रात्रीचे मंदिर"
-          : "Temple View during Deepotsav Night",
-    },
+    { src: "/images/IMG-20241107-WA0001.jpg" },
+    { src: "/images/IMG_20241016_222228.jpg" },
+    { src: "/images/IMG-20241106-WA0009.jpg" },
+    { src: "/images/IMG-20241106-WA0011.jpg" },
+    { src: "/images/IMG_20241016_222505-1.jpg" },
+    { src: "/images/IMG_20241109_223537.jpg" },
+    { src: "/images/IMG_20241016_221218.jpg" },
+    { src: "/images/IMG_20241016_221143.jpg" },
   ];
 
   return (
@@ -89,8 +33,8 @@ export default function DeepotsavPage() {
         isOpen={!!selectedImage}
         onClose={() => setSelectedImage(null)}
         imageSrc={selectedImage?.src || ""}
-        altText={selectedImage?.alt || ""}
-        caption={selectedImage?.caption}
+        altText=""
+        caption=""
       />
 
       {/* Header */}
@@ -169,19 +113,16 @@ export default function DeepotsavPage() {
           {deepotsavGallery.map((item, idx) => (
             <div
               key={idx}
-              onClick={() => setSelectedImage(item)}
+              onClick={() => setSelectedImage({ src: item.src, alt: "", caption: "" })}
               className="group relative cursor-pointer overflow-hidden rounded-2xl border border-amber-500/50 bg-amber-950 shadow-md hover:shadow-2xl transition-all"
             >
               <img
                 src={item.src}
-                alt={item.alt}
+                alt=""
                 className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-3 text-amber-100">
-                <div className="flex items-center justify-between text-xs font-bold font-devanagari">
-                  <span className="line-clamp-1">{item.alt}</span>
-                  <Maximize2 className="w-3.5 h-3.5 text-temple-gold shrink-0 ml-1" />
-                </div>
+              <div className="absolute top-3 right-3 p-1.5 bg-black/50 backdrop-blur-sm rounded-full text-amber-100 opacity-80 group-hover:opacity-100 transition-opacity">
+                <Maximize2 className="w-4 h-4 text-temple-gold" />
               </div>
             </div>
           ))}
