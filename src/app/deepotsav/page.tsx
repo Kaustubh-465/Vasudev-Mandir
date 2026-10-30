@@ -21,7 +21,7 @@ export default function DeepotsavPage() {
     { src: "/images/IMG-20241106-WA0009.jpg" },
     { src: "/images/IMG-20241106-WA0011.jpg" },
     { src: "/images/IMG_20261025_215620.jpg" },
-    { src: "/images/IMG_20241109_223537.jpg" },
+    { src: "/images/IMG_20261025_215635.jpg" },
     { src: "/images/IMG_20241016_221218.jpg" },
     { src: "/images/IMG_20241016_221143.jpg" },
   ];
