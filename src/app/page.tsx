@@ -30,7 +30,7 @@ export default function HomePage() {
       caption: language === "mr" ? "श्री वासुदेव मूर्ती (वाटेगाव)" : "Shree Vasudev Idol (Wategaon)",
     },
     {
-      src: "/images/1000183951.jpg",
+      src: "/images/IMG_20261025_215622.jpg",
       alt: "दीपोत्सव रोषणाई",
       caption: language === "mr" ? "दीपोत्सव काळातील मंदिर रोषणाई" : "Temple Altar illuminated with samai lamps",
     },

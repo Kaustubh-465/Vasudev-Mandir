@@ -17,7 +17,7 @@ export default function DeepotsavPage() {
 
   const deepotsavGallery = [
     { src: "/images/IMG-20241107-WA0001.jpg" },
-    { src: "/images/IMG_20241016_222228.jpg" },
+    { src: "/images/IMG_20261025_215622.jpg" },
     { src: "/images/IMG-20241106-WA0009.jpg" },
     { src: "/images/IMG-20241106-WA0011.jpg" },
     { src: "/images/IMG_20241016_222505-1.jpg" },
