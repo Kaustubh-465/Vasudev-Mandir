@@ -45,8 +45,8 @@ export const templeData: TempleData = {
       en: "Bhogawati River Bank, Wategaon, Taluka Walwa, District Sangli - 415410, Maharashtra",
     },
     river: { mr: "भोगावती नदी", en: "Bhogawati River" },
-    googleMapsUrl: "https://maps.google.com/?q=Wategaon+Sangli+Maharashtra",
-    coordinates: { lat: 17.0784, lng: 74.2718 },
+    googleMapsUrl: "https://www.google.com/maps/place/Vasudev+Mandir+Wategaon/@17.101584,74.1587301,17z/data=!4m6!3m5!1s0x3bc19eec3fffffff:0x8ae9bfd88088409c!8m2!3d17.101584!4d74.1587301!16s%2Fg%2F11g6wfs282",
+    coordinates: { lat: 17.101584, lng: 74.1587301 },
   },
   quickStats: [
     { label: { mr: "स्थान", en: "Location" }, value: { mr: "वाटेगाव, ता. वाळवा (सांगली)", en: "Wategaon, Walwa (Sangli)" } },

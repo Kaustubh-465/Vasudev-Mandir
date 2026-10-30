@@ -1,4 +1,4 @@
-﻿export interface RouteOption {
+export interface RouteOption {
   mode: { mr: string; en: string };
   icon: string;
   details: Array<{
@@ -17,8 +17,8 @@ export const locationInfo = {
     district: { mr: "सांगली", en: "Sangli" },
     pincode: "415410",
     state: { mr: "महाराष्ट्र", en: "Maharashtra" },
-    googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30560.1234567!2d74.2718!3d17.0784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc107e123456789%3A0x123456789abcdef!2sWategaon%2C+Maharashtra+415410!5e0!3m2!1sen!2sin!4v1700000000000",
-    directMapsUrl: "https://maps.google.com/?q=Wategaon+Sangli+Maharashtra",
+    googleMapsEmbedUrl: "https://maps.google.com/maps?q=17.101584,74.1587301&hl=mr&z=17&output=embed",
+    directMapsUrl: "https://www.google.com/maps/place/Vasudev+Mandir+Wategaon/@17.101584,74.1587301,17z/data=!4m6!3m5!1s0x3bc19eec3fffffff:0x8ae9bfd88088409c!8m2!3d17.101584!4d74.1587301!16s%2Fg%2F11g6wfs282",
   },
   routes: [
     {

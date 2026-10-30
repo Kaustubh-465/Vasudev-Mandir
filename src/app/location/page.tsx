@@ -58,6 +58,18 @@ export default function LocationPage() {
             </a>
           </div>
         </div>
+
+        {/* Embedded Interactive Map */}
+        <div className="overflow-hidden rounded-2xl border-2 border-amber-200 shadow-md h-72 sm:h-96 w-full">
+          <iframe
+            title="Vasudev Mandir Wategaon Map"
+            src={locationInfo.address.googleMapsEmbedUrl}
+            className="w-full h-full border-0"
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
 
       {/* Simple Directions Card */}
