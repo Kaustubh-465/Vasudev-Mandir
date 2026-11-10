@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { locationInfo } from "@/data/location";
-import { MapPin, ArrowLeft, ExternalLink, Navigation } from "lucide-react";
+import { MapPin, ArrowLeft, ExternalLink, Navigation, Phone } from "lucide-react";
 
 export default function LocationPage() {
   const { language } = useLanguage();
@@ -56,6 +56,32 @@ export default function LocationPage() {
               <span>{language === "mr" ? "गूगल मॅप्सवर नेव्हिगेट करा" : "Open in Google Maps"}</span>
               <ExternalLink className="w-4 h-4 ml-1" />
             </a>
+          </div>
+        </div>
+
+        {/* Contact Numbers Section */}
+        <div className="pt-4 border-t border-amber-200/80 space-y-3">
+          <div className="inline-flex items-center space-x-2 text-temple-saffron font-bold text-sm">
+            <Phone className="w-4 h-4" />
+            <span>{language === "mr" ? "मार्गदर्शन व संपर्कासाठी" : "Contact Numbers for Guidance"}</span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {locationInfo.contacts.map((contact, idx) => (
+              <a
+                key={idx}
+                href={`tel:${contact.phone}`}
+                className="group flex flex-col justify-between p-3.5 bg-amber-50/70 hover:bg-amber-100/90 rounded-2xl border border-amber-300 transition-all hover:shadow-md hover:border-amber-400"
+              >
+                <div className="font-bold text-temple-maroon text-sm font-devanagari">
+                  {contact.name[language]}
+                </div>
+                <div className="mt-2 flex items-center space-x-1.5 text-temple-saffron group-hover:text-temple-darkSaffron font-mono text-sm font-semibold">
+                  <Phone className="w-3.5 h-3.5" />
+                  <span>{contact.phone}</span>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
 

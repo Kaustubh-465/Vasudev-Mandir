@@ -8,6 +8,11 @@ export interface RouteOption {
   }>;
 }
 
+export interface ContactPerson {
+  name: { mr: string; en: string };
+  phone: string;
+}
+
 export const locationInfo = {
   address: {
     name: { mr: "श्री वासुदेव मंदिर", en: "Shree Vasudev Mandir" },
@@ -20,6 +25,20 @@ export const locationInfo = {
     googleMapsEmbedUrl: "https://maps.google.com/maps?q=17.101584,74.1587301&hl=mr&z=17&output=embed",
     directMapsUrl: "https://www.google.com/maps/place/Vasudev+Mandir+Wategaon/@17.101584,74.1587301,17z/data=!4m6!3m5!1s0x3bc19eec3fffffff:0x8ae9bfd88088409c!8m2!3d17.101584!4d74.1587301!16s%2Fg%2F11g6wfs282",
   },
+  contacts: [
+    {
+      name: { mr: "अविनाश माधव दिवेकर", en: "Avinash Madhav Divekar" },
+      phone: "9860184808",
+    },
+    {
+      name: { mr: "दिनेश वासुदेव दिवेकर", en: "Dinesh Vasudev Divekar" },
+      phone: "9890172234",
+    },
+    {
+      name: { mr: "देवदत्त हरी दिवेकर", en: "Devdatta Hari Divekar" },
+      phone: "7972845656",
+    },
+  ],
   routes: [
     {
       mode: { mr: "रस्त्याने (Road Transport)", en: "By Road" },
@@ -83,5 +102,3 @@ export const locationInfo = {
     },
   ],
 };
-
-
