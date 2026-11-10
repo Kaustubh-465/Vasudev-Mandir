@@ -31,8 +31,8 @@ export const deepotsavInfo: DeepotsavData = {
     {
       title: { mr: "पारंपरिक दीपप्रज्वलन", en: "Traditional Lamp Lighting" },
       description: {
-        mr: "दररोज संध्याकाळी संपूर्ण मंदिर परिसर, सागवानी मंडप आणि पायऱ्यांवर पणत्या व समयांचे प्रज्वलन केले जाते.",
-        en: "Every evening traditional earthen lamps and brass samai lamps are lit across the temple grounds and mandap.",
+        mr: "दररोज रात्री ९:३० वाजता संपूर्ण मंदिर परिसर, सागवानी मंडप आणि पायऱ्यांवर पणत्या व समयांचे प्रज्वलन केले जाते.",
+        en: "Every night at 9:30 PM, traditional earthen lamps and brass samai lamps are lit across the temple grounds and mandap.",
       },
       icon: "Flame",
     },
@@ -71,19 +71,19 @@ export const deepotsavInfo: DeepotsavData = {
       },
     },
     {
-      time: { mr: "संध्याकाळी ६:३० वा.", en: "6:30 PM" },
-      event: { mr: "दीपप्रज्वलन", en: "Lighting of Lamps" },
+      time: { mr: "रात्री ९:३० वा.", en: "9:30 PM" },
+      event: { mr: "दीपप्रज्वलन (दीपोत्सव)", en: "Deepotsav (Lighting of Lamps)" },
       details: {
         mr: "मंदिर परिसरात सर्व समया व पणत्यांचे प्रज्वलन.",
         en: "Lighting of traditional lamps and samai lights around the temple.",
       },
     },
     {
-      time: { mr: "संध्याकाळी ७:३० वा.", en: "7:30 PM" },
-      event: { mr: "सायंकाळची आरती", en: "Evening Aarti" },
+      time: { mr: "रात्री १०:०० वा.", en: "10:00 PM" },
+      event: { mr: "मुख्य आरती", en: "Mukhya Aarti" },
       details: {
-        mr: "सायंकाळची मुख्य आरती व मंत्रपुष्पांजली.",
-        en: "Main evening Aarti and prayer worship.",
+        mr: "रात्रीची मुख्य आरती व मंत्रपुष्पांजली.",
+        en: "Main Aarti and prayer worship.",
       },
     },
   ],
