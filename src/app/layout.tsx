@@ -4,6 +4,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const mukta = Mukta({
   subsets: ["devanagari", "latin"],
@@ -55,7 +56,9 @@ export default function RootLayout({
           <main className="flex-grow w-full">{children}</main>
           <Footer />
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
 }
+
